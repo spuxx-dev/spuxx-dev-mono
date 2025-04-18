@@ -15,3 +15,9 @@ jobs:
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v4.1.0
     with:
       COVERAGE_DISABLE: true
+
+  dependabot_auto_merge:
+    uses: spuxx-dev/ci-cd/.github/workflows/dependabot_auto_merge.yml@v4.1.0
+    needs:
+      - run_checks
+      - run_unit_tests

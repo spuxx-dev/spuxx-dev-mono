@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@nanogiants/nestjs-swagger-api-exception-decorator": "1.6.11",
-    "@nestjs/common": "10.4.15",
+    "@nestjs/common": "10.4.16",
     "@nestjs/core": "11.0.20",
     "@nestjs/platform-express": "11.0.20",
     "@nestjs/sequelize": "11.0.0",
@@ -61,7 +61,7 @@
     "ts-node": "10.9.1",
     "typescript": "5.7.3",
     "unplugin-swc": "1.5.1",
-    "vite": "6.0.11",
+    "vite": "6.0.15",
     "vite-plugin-dts": "4.5.0",
     "vite-plugin-externalize-deps": "^0.8.0",
     "vite-tsconfig-paths": "5.1.4",

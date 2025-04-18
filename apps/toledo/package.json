@@ -31,7 +31,7 @@
     "@vue/tsconfig": "0.5.1",
     "playwright": "1.50.1",
     "typescript": "5.7.3",
-    "vite": "6.0.15",
+    "vite": "6.3.2",
     "vite-plugin-dts": "4.5.0",
     "vite-tsconfig-paths": "5.1.4",
     "vue-tsc": "https://pkg.pr.new/vuejs/language-tools/vue-tsc@3fb59af"

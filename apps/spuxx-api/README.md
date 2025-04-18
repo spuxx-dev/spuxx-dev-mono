@@ -15,7 +15,7 @@
 
 ## <a name='Setup'></a>Setup
 
-1.  Clone the repository: `git clone https://github.com/spuxx1701/spuxx-dev-mono.git`
+1.  Clone the repository: `git clone https://github.com/spuxx-dev/spuxx-dev-mono.git`
 2.  Navigate to the project directory: `cd spuxx-dev-mono` and run `pnpm -r i`
 3.  Create a `.env` file in the root directory and add the necessary environment variables (see [here](src/env/env.module.ts)).
 4.  Run the application: `pnpm dev:api`.

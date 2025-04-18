@@ -7,7 +7,7 @@
     "url": "https://spuxx.dev"
   },
   "repository": {
-    "url": "https://github.com/spuxx1701/spuxx-dev-mono",
+    "url": "https://github.com/spuxx-dev/spuxx-dev-mono",
     "directory": "apps/spuxx-api",
     "type": "git"
   },

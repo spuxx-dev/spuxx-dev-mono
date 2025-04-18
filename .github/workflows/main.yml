@@ -8,17 +8,17 @@ on:
 jobs:
   run_checks:
     name: Run code checks
-    uses: spuxx1701/ci-cd/.github/workflows/pnpm_run_checks.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_checks.yml@v4.1.0
 
   run_unit_tests:
     name: Run tests (vitest)
-    uses: spuxx1701/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v4.1.0
     with:
       COVERAGE_DISABLE: true
 
   staging_spuxx_api:
     name: Release artifact (spuxx-api)
-    uses: spuxx1701/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
     needs:
     - run_checks
     - run_unit_tests
@@ -32,7 +32,7 @@ jobs:
 
   staging_toledo:
     name: Release artifact (toledo)
-    uses: spuxx1701/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
     needs:
     - run_checks
     - run_unit_tests
@@ -45,7 +45,7 @@ jobs:
 
   run_release_please:
     name: Run release-please
-    uses: spuxx1701/ci-cd/.github/workflows/pnpm_release-please.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_release-please.yml@v4.1.0
     needs:
     - run_checks
     - run_unit_tests

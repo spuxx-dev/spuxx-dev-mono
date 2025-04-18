@@ -22,7 +22,7 @@ export class AppController {
         ? `Logged in as ${getSession(request).preferred_username}.`
         : 'Not logged in.',
       author: appConfig.author,
-      repository: 'https://github.com/spuxx1701/spuxx-dev-mono',
+      repository: 'https://github.com/spuxx-dev/spuxx-dev-mono',
       auth: {
         login: `${EnvModule.get('APP_BASE_URL')}/auth/login`,
         logout: `${EnvModule.get('APP_BASE_URL')}/auth/logout`,

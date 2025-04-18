@@ -10,7 +10,7 @@
     "email": "hi@spuxx.dev",
     "url": "https://spuxx.dev"
   },
-  "homepage": "https://github.com/spuxx1701/spuxx-dev-mono",
+  "homepage": "https://github.com/spuxx-dev/spuxx-dev-mono",
   "packageManager": "pnpm@9.6.0",
   "scripts": {
     "dev:astro": "cd apps/spuxx-astro && pnpm dev",

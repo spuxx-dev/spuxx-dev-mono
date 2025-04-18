@@ -14,7 +14,8 @@ import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger'
 import { AuthRole } from '@src/auth/auth.config';
 import { InviteLinkResource } from '@src/utils/invite-links/invite-link.resource';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
-import { AuthGuard, HttpLoggingInterceptor, Roles } from '@spuxx/nest-utils';
+import { HttpLoggingInterceptor } from '@spuxx/nest-utils';
+import { AuthGuard, Roles } from '@spuxx/nest-auth';
 import { type Request } from 'express';
 import { listProperties } from '../config/list.properties';
 import { listsExceptions } from '../config/lists.exceptions';
@@ -37,7 +38,7 @@ export class ListsActionsController {
     summary: 'Create a new invite for the list.',
     description: `Create a new invite link for the list using a randomly generated code.
     The invite link will be valid until a new invite link is generated.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listProperties.id)
@@ -57,7 +58,7 @@ export class ListsActionsController {
   @ApiOperation({
     summary: 'Accepts an invite to a list.',
     description: `Accepts an invite to a list. The invite link must be valid.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listProperties.id)

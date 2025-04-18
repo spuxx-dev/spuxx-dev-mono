@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { getSession } from '@spuxx/nest-utils';
+import { getSession } from '@spuxx/nest-auth';
 import { User } from '@src/users/models/user.model';
 import { Request } from 'express';
 import { Model, type ModelCtor } from 'sequelize-typescript';

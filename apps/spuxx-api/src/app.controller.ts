@@ -3,7 +3,7 @@ import { EnvModule } from './env/env.module';
 import type { Request } from 'express';
 import { ApiExcludeEndpoint, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { appConfig } from './config/app.config';
-import { isAuthenticated, getSession } from '@spuxx/nest-utils';
+import { isAuthenticated, getSession } from '@spuxx/nest-auth';
 
 @Controller()
 @ApiTags('General')

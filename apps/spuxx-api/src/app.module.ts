@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AuthModule, MappingModule } from '@spuxx/nest-utils';
+import { MappingModule } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 import { EnvModule } from './env/env.module';
 import { authConfig } from './auth/auth.config';
 import { ToledoModule } from './toledo/toledo.module';

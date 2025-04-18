@@ -1,6 +1,6 @@
 import { INestApplication } from '@nestjs/common';
 import { Supertest, TestContainer } from '@spuxx/nest-testing';
-import { AuthModule } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 import { authConfig } from '@src/auth/auth.config';
 import { TestOrmModule } from '@tests/database/test-orm-module';
 import { RecipesModule } from '../recipes.module';

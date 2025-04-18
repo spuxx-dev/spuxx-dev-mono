@@ -5,7 +5,7 @@ import { authConfig } from '@src/auth/auth.config';
 import { listCreateMockData } from '@tests/mock-data/list.mock-data';
 import { sessionMockData } from '@tests/mock-data/session.mock-data';
 import { ListReadResource } from '../dtos/list.read.resource';
-import { AuthModule } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 
 describe('ListsActionsController', () => {
   let supertest: Supertest;

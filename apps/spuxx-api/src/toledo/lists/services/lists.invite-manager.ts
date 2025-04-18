@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { type Request } from 'express';
-import { getSession } from '@spuxx/nest-utils';
+import { getSession } from '@spuxx/nest-auth';
 import { listsExceptions } from '../config/lists.exceptions';
 import { EnvModule } from '@src/env/env.module';
 import { generateInviteCode } from '@src/utils/invite-links/invite-links.utils';

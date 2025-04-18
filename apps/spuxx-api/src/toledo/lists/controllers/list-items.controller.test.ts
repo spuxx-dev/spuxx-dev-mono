@@ -8,7 +8,7 @@ import { sessionMockData } from '@tests/mock-data/session.mock-data';
 import { ListItemReadResource } from '../dtos/list-item.read.resource';
 import { ListItemCreateResource } from '../dtos/list-item.create.resource';
 import { ListItemUpdateResource } from '../dtos/list-item.update.resource';
-import { AuthModule } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 
 describe('ListItemsController', () => {
   let supertest: Supertest;

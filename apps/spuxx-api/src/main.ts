@@ -1,6 +1,7 @@
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { CustomLogger, AuthModule } from '@spuxx/nest-utils';
+import { CustomLogger } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 import { AppModule } from './app.module';
 import { authConfig } from './auth/auth.config';
 import { EnvModule } from './env/env.module';

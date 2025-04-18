@@ -14,7 +14,8 @@ import {
 } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
-import { AuthGuard, HttpLoggingInterceptor, Mapper, Roles } from '@spuxx/nest-utils';
+import { HttpLoggingInterceptor, Mapper } from '@spuxx/nest-utils';
+import { AuthGuard, Roles } from '@spuxx/nest-auth';
 import { AuthRole } from '@src/auth/auth.config';
 import type { Request } from 'express';
 import { ListReadResource } from '../dtos/list.read.resource';
@@ -46,7 +47,7 @@ export class ListsCrudController {
   @ApiOperation({
     summary: "Get all of the user's lists.",
     description: `Returns all lists accessibly by the currently authenticated user.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiOkResponse({
@@ -67,7 +68,7 @@ export class ListsCrudController {
   @ApiOperation({
     summary: 'Create a new list.',
     description: `Creates a new list owned by the currently authenticated user.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiOkResponse({
@@ -87,7 +88,7 @@ export class ListsCrudController {
   @ApiOperation({
     summary: 'Get a list by id.',
     description: `Finds and returns a specific list by the given id.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listProperties.id)
@@ -109,7 +110,7 @@ export class ListsCrudController {
   @ApiOperation({
     summary: 'Update a list.',
     description: `Updates a list. Can only be done by the list's owner.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listProperties.id)
@@ -137,7 +138,7 @@ export class ListsCrudController {
   @ApiOperation({
     summary: 'Delete a list.',
     description: `Deletes a list. Can only be done by the list's owner.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listProperties.id)

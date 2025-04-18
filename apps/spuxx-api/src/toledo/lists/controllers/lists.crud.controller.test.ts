@@ -7,7 +7,7 @@ import { sessionMockData } from '@tests/mock-data/session.mock-data';
 import { ListReadResource } from '../dtos/list.read.resource';
 import { ListCreateResource } from '../dtos/list.create.resource';
 import { ListUpdateResource } from '../dtos/list.update.resource';
-import { AuthModule } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 import { INestApplication } from '@nestjs/common';
 import { ListsAccessManager } from '../services/lists.access-manager';
 import { List } from '../models/list.model';

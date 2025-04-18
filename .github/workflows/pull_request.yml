@@ -17,6 +17,7 @@ jobs:
       COVERAGE_DISABLE: true
 
   dependabot_auto_merge:
+    name: Auto-merge dependabot PR
     uses: spuxx-dev/ci-cd/.github/workflows/dependabot_auto_merge.yml@v4.1.0
     needs:
       - run_checks

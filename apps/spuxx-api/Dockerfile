@@ -1,5 +1,6 @@
 # Build stage
 FROM node:22-alpine AS build-env
+RUN apk add g++ make py3-pip
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable

@@ -1,4 +1,5 @@
 FROM node:lts-alpine AS build
+RUN apk add g++ make py3-pip
 WORKDIR /app
 COPY package*.json ./
 RUN npm install --frozen-lockfile

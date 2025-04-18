@@ -1,5 +1,6 @@
 # Build stage
 FROM node:22-alpine AS build-env
+RUN apk add g++ make py3-pip
 RUN npm install -g pnpm
 
 # Set the working directory to /project

@@ -2,7 +2,7 @@
 import { Dialog } from '@/services/dialog';
 import type { DialogOptions } from '@/services/dialog/types';
 import { VBtn, VCard, VCardText, VTextField } from 'vuetify/components';
-import DialogTitle from './title/DialogTitle.vue';
+import DialogTitle from './template/dialog-title.vue';
 import { intl } from '@spuxx/js-utils';
 import { Icon } from '@iconify/vue/dist/iconify.js';
 

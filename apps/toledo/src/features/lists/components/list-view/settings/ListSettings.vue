@@ -1,24 +1,16 @@
 <script setup lang="ts">
-import { intl, isEmptyOrWhitespace } from '@spuxx/js-utils';
-import {
-  VAutocomplete,
-  VCol,
-  VExpansionPanel,
-  VExpansionPanels,
-  VForm,
-  VRow,
-  VSwitch,
-} from 'vuetify/components';
+import { intl } from '@spuxx/js-utils';
+import { VCol, VExpansionPanel, VExpansionPanels, VForm, VRow, VSwitch } from 'vuetify/components';
 import { Icon } from '@iconify/vue/dist/iconify.js';
 import ValidatedTextField from '@/components/input/ValidatedTextField.vue';
-import { computed, ref, useTemplateRef, type Ref } from 'vue';
-import { Api } from '@/services/api';
+import { computed, useTemplateRef } from 'vue';
 import { SessionManager } from '@/services/session';
 import type { List, UpdatedList } from '@/services/api/lists/lists.types';
 import { listValidationRules } from '../../../validation/list.validation-rules';
 import { Interface } from '@/services/interface';
 import DeleteList from './DeleteList.vue';
 import ShareList from './ShareList.vue';
+import IconSearch from '@/components/input/IconSearch.vue';
 
 const { list, update } = defineProps<{
   list: List;
@@ -29,12 +21,6 @@ const form = useTemplateRef('form');
 const isOwned = computed(() => {
   return list.owner.id === SessionManager.session.value?.sub;
 });
-const icons = ref<string[]>([]);
-
-async function handleIconSearch(value: string) {
-  if (!value || isEmptyOrWhitespace(value) || value.length < 1) return;
-  icons.value = [...(await Api.findManyIcons(value))];
-}
 
 async function handleUpdate() {
   if ((await form.value?.validate())?.valid) {
@@ -64,7 +50,8 @@ async function handleUpdate() {
               />
             </VCol>
             <VCol>
-              <VAutocomplete
+              <IconSearch v-model="list.icon" @select="handleUpdate"></IconSearch>
+              <!-- <VAutocomplete
                 :label="intl('lists.route.list.settings.icon.label')"
                 :items="icons"
                 v-model="list.icon"
@@ -73,7 +60,7 @@ async function handleUpdate() {
                 auto-select-first="exact"
                 @update:search.self="handleIconSearch"
                 @update:model-value="handleUpdate"
-              />
+              /> -->
             </VCol>
           </VRow>
           <VRow no-gutters>

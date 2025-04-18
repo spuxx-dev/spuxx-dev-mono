@@ -9,7 +9,7 @@ interface Props extends /* @vue-ignore */ VProps<typeof VTextField, 'rules' | 'm
 const props = defineProps<Props>();
 
 const emit = defineEmits<{
-  (e: 'update:modelValue', value: string): void;
+  (e: 'input', value: string): void;
 }>();
 
 const localValue = ref(props.modelValue);
@@ -26,10 +26,10 @@ const handleInput = (newValue: string) => {
   const { rules } = props;
   if (rules) {
     if (rules.every((rule) => (rule as Function)(newValue) === true)) {
-      emit('update:modelValue', newValue);
+      emit('input', newValue);
     }
   } else {
-    emit('update:modelValue', newValue);
+    emit('input', newValue);
   }
 };
 </script>

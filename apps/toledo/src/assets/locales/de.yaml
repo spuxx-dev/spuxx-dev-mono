@@ -61,8 +61,6 @@ lists:
         shared: Andere Listen
         empty: Listen, die jemand mit Dir geteilt hat, tauchen hier auf.
     list:
-      title: Liste
-      description: Sieh Dir Deine Liste an und verwalte sie.
       item:
         text:
           label: Neuer Eintrag
@@ -81,8 +79,6 @@ lists:
         title: Listeneinstellungen
         name:
           label: Name
-        icon:
-          label: Icon
         uses-quantities:
           label: Zeige Mengen
         uses-checkboxes:
@@ -120,6 +116,18 @@ recipes:
   route:
     index:
       title: Rezepte
+      description: Stöbere in Deinen leckeren Rezepten und finde Inspiration für Deine nächste Mahlzeit.
+    recipe:
+      title: Neues Rezept
+      general:
+        title: Allgemeine Informationen
+        name: Name
+      text:
+        title: Beschreibung
+        edit: Bearbeiten
+      website:
+        title: Website
+        url: URL
   sidebar:
     home: Startseite
     recipes: Alle Rezepte
@@ -138,6 +146,9 @@ component:
   common:
     user-select:
       label: Nutzer:in
+  input:
+    icon-search:
+      label: Icon
   dialog:
     share:
       input-label: Link kopieren

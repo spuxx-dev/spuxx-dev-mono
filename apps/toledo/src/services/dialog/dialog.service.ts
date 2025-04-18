@@ -19,16 +19,16 @@ export class Dialog extends ServiceMixin<Dialog>() {
    * @param options The dialog options.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  static open<TOptions extends DialogOptions>(component: any, options: TOptions) {
+  static open = <TOptions extends DialogOptions>(component: any, options: TOptions) => {
     this._activeDialogComponent.value = component;
     this._activeDialogOptions.value = options;
-  }
+  };
 
   /**
    * Closes the active dialog.
    */
-  static close() {
+  static close = () => {
     this._activeDialogComponent.value = null;
     this._activeDialogOptions.value = null;
-  }
+  };
 }

@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { getSession, Mapper } from '@spuxx/nest-utils';
+import { Mapper } from '@spuxx/nest-utils';
+import { getSession } from '@spuxx/nest-auth';
 import { RecipeCreateResource } from '../dtos/recipe.create.resource';
 import { UsersRegistrar } from '@src/users/services/users.registrar';
 import { Request } from 'express';

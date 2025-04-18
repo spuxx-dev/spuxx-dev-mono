@@ -1,6 +1,7 @@
 import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
-import { AuthGuard, Mapper, Roles } from '@spuxx/nest-utils';
+import { Mapper } from '@spuxx/nest-utils';
+import { AuthGuard, Roles } from '@spuxx/nest-auth';
 import { UserReadResource } from '../dtos/user.read.resource';
 import { ApiException } from '@nanogiants/nestjs-swagger-api-exception-decorator';
 import { usersExceptions } from '../config/users.exceptions';
@@ -22,7 +23,7 @@ export class UsersController {
   @ApiOperation({
     summary: 'Returns the list of all users.',
     description: `Returns all users that are registered with the application.
-    
+
     🔒 Application access`,
   })
   @ApiOkResponse({
@@ -40,7 +41,7 @@ export class UsersController {
   @ApiOperation({
     summary: 'Returns a user by its id.',
     description: `Finds and returns a user by its id.
-    
+
     🔒 Application access`,
   })
   @ApiParam(userProperties.id)

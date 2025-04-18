@@ -13,7 +13,7 @@ import {
 import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { AuthRole } from '@src/auth/auth.config';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
-import { AuthGuard, HttpLoggingInterceptor, Mapper, Roles } from '@spuxx/nest-utils';
+import { HttpLoggingInterceptor, Mapper } from '@spuxx/nest-utils';
 import { ListItemReadResource } from '../dtos/list-item.read.resource';
 import { ListItemCreateResource } from '../dtos/list-item.create.resource';
 import { ApiException } from '@nanogiants/nestjs-swagger-api-exception-decorator';
@@ -23,6 +23,7 @@ import { ListItem } from '../models/list-item.model';
 import { type Request } from 'express';
 import { listItemProperties } from '../config/list-item.properties';
 import { ListItemUpdateResource } from '../dtos/list-item.update.resource';
+import { AuthGuard, Roles } from '@spuxx/nest-auth';
 
 const requiredRoles = [AuthRole.toledo];
 
@@ -42,7 +43,7 @@ export class ListItemsController {
   @ApiOperation({
     summary: 'Create a new list item.',
     description: `Creates a new list item on the specified list.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listItemProperties.listId)
@@ -64,7 +65,7 @@ export class ListItemsController {
   @ApiOperation({
     summary: 'Update a list item.',
     description: `Updates the specified list item.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listItemProperties.listId)
@@ -87,7 +88,7 @@ export class ListItemsController {
   @ApiOperation({
     summary: 'Delete a list item.',
     description: `Deletes the specified list item.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(listItemProperties.listId)

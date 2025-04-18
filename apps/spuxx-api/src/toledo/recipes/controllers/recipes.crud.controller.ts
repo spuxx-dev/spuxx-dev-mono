@@ -13,7 +13,8 @@ import {
   UsePipes,
 } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
-import { AuthGuard, HttpLoggingInterceptor, Mapper, Roles } from '@spuxx/nest-utils';
+import { HttpLoggingInterceptor, Mapper } from '@spuxx/nest-utils';
+import { AuthGuard, Roles } from '@spuxx/nest-auth';
 import { AuthRole } from '@src/auth/auth.config';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
 import { RecipesProvider } from '../services/recipes.provider';
@@ -46,7 +47,7 @@ export class RecipesCrudController {
   @ApiOperation({
     summary: "Get all of the user's recipes.",
     description: `Returns all recipes accessible by the currently authenticated user.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiOkResponse({
@@ -67,7 +68,7 @@ export class RecipesCrudController {
   @ApiOperation({
     summary: 'Create a new recipe.',
     description: `Creates a new recipe owned by the currently authenticated user.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiOkResponse({
@@ -87,7 +88,7 @@ export class RecipesCrudController {
   @ApiOperation({
     summary: 'Get a recipe by id.',
     description: `Finds and returns a specific recipe by the given id.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(recipeProperties.id)
@@ -109,7 +110,7 @@ export class RecipesCrudController {
   @ApiOperation({
     summary: 'Update a recipe.',
     description: `Updates a recipe. Can only be done by the recipe's owner.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(recipeProperties.id)
@@ -137,7 +138,7 @@ export class RecipesCrudController {
   @ApiOperation({
     summary: 'Delete a recipe.',
     description: `Deletes a recipe. Can only be done by the recipe's owner.
-    
+
     🔒 Role access (${requiredRoles})`,
   })
   @ApiParam(recipeProperties.id)

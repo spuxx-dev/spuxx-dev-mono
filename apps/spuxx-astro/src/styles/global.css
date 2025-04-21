@@ -1,6 +1,6 @@
-@import './theme.css';
-@import './text.css';
-@import './markdown.css';
+@import '@spuxx/browser-utils/styles';
+@import '@spuxx/browser-utils/themes';
+@import './content.css';
 
 :root * {
   transition:
@@ -10,45 +10,55 @@
     background-color 200ms,
     border-color 200ms,
     padding 200ms;
-
-  --body-width: max(1000px, 100vh);
 }
 
 html {
-  background-color: var(--color-app-background);
-  scroll-behavior: smooth;
+  background: var(--spx-color-background);
+  color: var(--spx-color-on-background);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: var(--body-width);
-  background-color: var(--color-body-background);
-  color: var(--color-text-default);
-  font-family: Verdana, sans-serif;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  font-size: 18px;
+  margin: 0;
 }
 
 main {
-  box-sizing: border-box;
-  margin: 54px 10px;
+  max-width: var(--spx-main-content-width);
+  margin: auto;
 }
 
-main > h1:first-child {
-  margin-top: 1rem;
+.spx-app-bar-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-textarea {
-  width: 100%;
-  font-size: 16px;
+a.spx-button {
+  text-decoration: none;
 }
-input {
-  font-size: 16px;
-}
-content {
-  line-height: 1.6;
+
+.spx-app {
+  pre.astro-code {
+    padding: 0.5rem;
+    border-radius: var(--spx-border-radius);
+    font-size: medium;
+  }
+
+  code:not(:has(span)) {
+    padding: 0.25rem;
+    border-radius: var(--spx-border-radius);
+  }
+
+  pre.astro-code,
+  code,
+  blockquote {
+    background: var(--spx-color-surface) !important;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--spx-border-radius);
+  }
 }

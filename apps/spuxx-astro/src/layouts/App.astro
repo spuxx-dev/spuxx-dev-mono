@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/app/BaseHead.astro';
-import Header from '../components/app/Header.astro';
+import { Header } from '../components/app/Header';
 import Footer from '../components/app/Footer.astro';
 import ProgressIndicator from '../components/app/ProgressIndicator.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
@@ -12,12 +12,12 @@ const showProgressIndicator = pathname.includes('blog/');
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="spx-app">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <Header />
+      <Header client:load/>
     <main>
       <slot />
     </main>

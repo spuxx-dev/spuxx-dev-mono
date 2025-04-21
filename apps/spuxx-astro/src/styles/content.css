@@ -1,0 +1,12 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: var(--spx-border-radius);
+}

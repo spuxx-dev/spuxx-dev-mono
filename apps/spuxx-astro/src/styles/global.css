@@ -37,6 +37,11 @@ a.spx-button {
   text-decoration: none;
 }
 
+a:has(h2),
+a.article-card {
+  color: inherit !important;
+}
+
 .spx-app {
   pre.astro-code {
     padding: 0.5rem;

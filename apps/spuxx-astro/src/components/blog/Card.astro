@@ -11,28 +11,18 @@ const { post } = Astro.props;
 
 <style>
   .article-card {
-    background: var(--gradient-quote-background);
+    background: var(--spx-color-surface);
     border-radius: 8px;
     padding: 1rem;
     text-decoration: none;
   }
 
   .article-card:hover {
-    --gradient-quote-background: linear-gradient(
-      135deg,
-      rgb(73, 128, 130, 0.6),
-      rgb(103, 82, 219, 0.5),
-      rgb(231, 94, 255, 0.4)
-    );
     transform: translateY(-3px) scale(1.01);
   }
 
   .article-card * {
-    color: var(--color-text-highlight) !important;
     margin: 0;
   }
 
-  .article-card p {
-    color: var(--color-text-subtle) !important;
-  }
 </style>

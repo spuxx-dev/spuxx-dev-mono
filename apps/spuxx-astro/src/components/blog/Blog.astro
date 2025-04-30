@@ -9,7 +9,9 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <section>
-  <Heading level={2} hash="blog">I sometimes pretend to be having a tech blog.</Heading>
+  <Heading level={2} hash="blog"
+    >I sometimes pretend to be having a tech blog.</Heading
+  >
   <div class="article-grid">
     {
       posts

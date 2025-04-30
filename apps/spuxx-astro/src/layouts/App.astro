@@ -11,13 +11,13 @@ const { pathname } = Astro.url;
 const showProgressIndicator = pathname.includes('blog/');
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="spx-app">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-      <Header client:load/>
+    <Header client:load />
     <main>
       <slot />
     </main>

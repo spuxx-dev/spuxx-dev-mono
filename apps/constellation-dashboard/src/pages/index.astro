@@ -1,0 +1,36 @@
+---
+import Layout from '../Layout.astro';
+import { Container } from '@spuxx/solid/server';
+import { Link } from '../components/Link';
+---
+
+<Layout>
+  <Container
+    style={{
+      'max-width': '400px',
+      margin: 'auto',
+      display: 'flex',
+      'flex-direction': 'column',
+      gap: '4px',
+    }}
+  >
+    <Link
+      client:only
+      path="/dashboard/#/"
+      icon="mdi:kubernetes"
+      title="Dashboard"
+    />
+    <Link
+      client:only
+      path="/grafana/#/"
+      icon="mdi:chart-areaspline-variant"
+      title="Grafana"
+    />
+    <Link
+      client:only
+      path="/longhorn/#/"
+      icon="mdi:database"
+      title="Longhorn"
+    />
+  </Container>
+</Layout>

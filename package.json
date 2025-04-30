@@ -13,6 +13,7 @@
   "homepage": "https://github.com/spuxx-dev/spuxx-dev-mono",
   "packageManager": "pnpm@9.6.0",
   "scripts": {
+    "dev:constellation": "cd apps/constellation-dashboard && pnpm dev",
     "dev:astro": "cd apps/spuxx-astro && pnpm dev",
     "dev:toledo": "concurrently 'pnpm dev:api' 'cd apps/toledo && pnpm dev'",
     "dev:api": "pnpm db:start && cd apps/spuxx-api && pnpm dev",
@@ -38,6 +39,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.3",
     "prettier": "3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
     "release-please": "16.15.0"
   }
 }

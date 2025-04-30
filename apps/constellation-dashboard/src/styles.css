@@ -1,0 +1,26 @@
+@import '@spuxx/browser-utils/styles';
+@import '@spuxx/browser-utils/themes';
+
+:root {
+  --spx-main-content-width: 800px;
+}
+
+body {
+  height: 100svh;
+}
+
+main {
+  position: relative;
+  top: 50%;
+  transform: translateY(-75%);
+}
+
+/* Patches */
+
+.spx-button {
+  box-sizing: border-box;
+}
+
+a.spx-button {
+  text-decoration: none;
+}

@@ -22,10 +22,10 @@ export class Dialog extends ServiceMixin<Dialog>() {
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   static open<TOptions extends DialogOptions>(
-    component: any,
+    component: unknown,
     options: TOptions
   ) {
-    this._activeDialogComponent.value = component;
+    this._activeDialogComponent.value = component as HTMLDialogElement | null;
     this._activeDialogOptions.value = options;
   }
 

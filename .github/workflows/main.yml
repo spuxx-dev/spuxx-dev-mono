@@ -36,7 +36,6 @@ jobs:
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
     needs:
     - run_checks
-    - run_unit_tests
     with:
       tag: branch
       latest: true

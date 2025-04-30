@@ -19,10 +19,14 @@ export const useListsStore = defineStore(storeName, {
       return state.lists.sort((a, b) => a.name.localeCompare(b.name));
     },
     owned(): List[] {
-      return this.all.filter((list) => list.owner.id === SessionManager.session?.value?.sub);
+      return this.all.filter(
+        (list) => list.owner.id === SessionManager.session?.value?.sub
+      );
     },
     shared(): List[] {
-      return this.all.filter((list) => list.owner.id !== SessionManager.session?.value?.sub);
+      return this.all.filter(
+        (list) => list.owner.id !== SessionManager.session?.value?.sub
+      );
     },
   },
   actions: {

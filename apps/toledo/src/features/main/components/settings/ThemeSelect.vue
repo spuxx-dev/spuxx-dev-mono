@@ -12,7 +12,9 @@ const themeInstance = useTheme();
 const { global, themes } = themeInstance;
 const themeNames = Object.keys(themes.value);
 const currentThemeName = computed(() => global.name.value);
-const currentThemeIndex = computed(() => themeNames.indexOf(currentThemeName.value));
+const currentThemeIndex = computed(() =>
+  themeNames.indexOf(currentThemeName.value)
+);
 function handleSelect(index: number) {
   const selectedThemeName = themeNames[index];
   global.name.value = selectedThemeName;

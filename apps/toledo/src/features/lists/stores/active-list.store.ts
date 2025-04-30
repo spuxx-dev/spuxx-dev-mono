@@ -1,5 +1,10 @@
 import { Api } from '@/services/api';
-import type { List, ListItem, NewListItem, UpdatedList } from '@/services/api/lists/lists.types';
+import type {
+  List,
+  ListItem,
+  NewListItem,
+  UpdatedList,
+} from '@/services/api/lists/lists.types';
 import { Logger } from '@spuxx/js-utils';
 import { defineStore } from 'pinia';
 
@@ -16,7 +21,8 @@ export const useActiveListStore = defineStore(storeName, {
     list: (state) => state.activeList,
     items: (state) =>
       state.activeList?.items?.sort(
-        (a, b) => Number(a.checked) - Number(b.checked) || a.text.localeCompare(b.text),
+        (a, b) =>
+          Number(a.checked) - Number(b.checked) || a.text.localeCompare(b.text)
       ) ?? [],
   },
   actions: {
@@ -73,7 +79,9 @@ export const useActiveListStore = defineStore(storeName, {
      */
     async addItem(item: NewListItem): Promise<ListItem> {
       if (!this.activeList) {
-        throw new Error('Must have an active list when attempting add a new item.');
+        throw new Error(
+          'Must have an active list when attempting add a new item.'
+        );
       }
       const result = await Api.createListItem(this.activeList.id, item);
       this.items.push(result);

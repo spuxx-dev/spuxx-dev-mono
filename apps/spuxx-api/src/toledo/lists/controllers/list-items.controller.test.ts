@@ -32,9 +32,12 @@ describe('ListItemsController', () => {
         });
         expect(response.statusCode).toBe(201);
         const listId = response.body.id;
-        response = await supertest.get(`/toledo/lists/${listId}?include=items`, {
-          session: sessionMockData.privileged,
-        });
+        response = await supertest.get(
+          `/toledo/lists/${listId}?include=items`,
+          {
+            session: sessionMockData.privileged,
+          }
+        );
         expect(response.statusCode).toBe(200);
         expect(response.body.items).toEqual([]);
 
@@ -46,9 +49,12 @@ describe('ListItemsController', () => {
         const firstItem: ListItemReadResource = response.body;
         expect(response.statusCode).toBe(201);
         expect(response.body).toMatchObject(listItemCreateMockData.apples);
-        response = await supertest.get(`/toledo/lists/${listId}?include=items`, {
-          session: sessionMockData.privileged,
-        });
+        response = await supertest.get(
+          `/toledo/lists/${listId}?include=items`,
+          {
+            session: sessionMockData.privileged,
+          }
+        );
         expect(response.statusCode).toBe(200);
         expect(response.body.items).toEqual([firstItem]);
 
@@ -60,15 +66,18 @@ describe('ListItemsController', () => {
         const secondItem: ListItemReadResource = response.body;
         expect(response.statusCode).toBe(201);
         expect(response.body).toMatchObject(listItemCreateMockData.bananas);
-        response = await supertest.get(`/toledo/lists/${listId}?include=items`, {
-          session: sessionMockData.privileged,
-        });
+        response = await supertest.get(
+          `/toledo/lists/${listId}?include=items`,
+          {
+            session: sessionMockData.privileged,
+          }
+        );
         expect(response.statusCode).toBe(200);
         expect(response.body.items).toEqual([firstItem, secondItem]);
       },
       {
         retry: 3,
-      },
+      }
     );
 
     it('should use default values', async () => {
@@ -107,14 +116,20 @@ describe('ListItemsController', () => {
       expect(response.statusCode).toBe(404);
 
       // Generate and accept the invite
-      response = await supertest.post(`/toledo/lists/${listId}/generate-invite`, {
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.post(
+        `/toledo/lists/${listId}/generate-invite`,
+        {
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(201);
       const { code }: { code: string } = response.body;
-      response = await supertest.put(`/toledo/lists/${listId}/accept-invite?code=${code}`, {
-        session: sessionMockData.toledo,
-      });
+      response = await supertest.put(
+        `/toledo/lists/${listId}/accept-invite?code=${code}`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(200);
 
       // Try to add item again
@@ -235,12 +250,15 @@ describe('ListItemsController', () => {
       const itemId = originalItem.id;
 
       // Update text
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          text: 'Bananas',
-        } as ListItemUpdateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            text: 'Bananas',
+          } as ListItemUpdateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       let updatedItem: ListItemReadResource = response.body;
       expect(response.statusCode).toBe(200);
       expect(updatedItem).toEqual({
@@ -250,12 +268,15 @@ describe('ListItemsController', () => {
       });
 
       // Update quantity
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          quantity: 42,
-        } as ListItemUpdateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            quantity: 42,
+          } as ListItemUpdateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       updatedItem = response.body;
       expect(response.statusCode).toBe(200);
       expect(updatedItem).toEqual({
@@ -266,12 +287,15 @@ describe('ListItemsController', () => {
       });
 
       // Update checked state
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          checked: true,
-        } as ListItemUpdateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            checked: true,
+          } as ListItemUpdateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       updatedItem = response.body;
       expect(response.statusCode).toBe(200);
       expect(updatedItem).toEqual({
@@ -283,10 +307,13 @@ describe('ListItemsController', () => {
       });
 
       // Revert back to original state
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: originalItem,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: originalItem,
+          session: sessionMockData.privileged,
+        }
+      );
       updatedItem = response.body;
       expect(response.statusCode).toBe(200);
       expect(updatedItem).toEqual({
@@ -312,44 +339,59 @@ describe('ListItemsController', () => {
       expect(response.statusCode).toBe(201);
       const itemId: string = response.body.id;
 
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          text: '',
-        } as ListItemCreateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            text: '',
+          } as ListItemCreateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(400);
 
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          text: 'a'.repeat(256),
-        } as ListItemCreateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            text: 'a'.repeat(256),
+          } as ListItemCreateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(400);
 
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          quantity: 'foo',
-        } as unknown as ListItemCreateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            quantity: 'foo',
+          } as unknown as ListItemCreateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(400);
 
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          quantity: -1,
-        } as ListItemCreateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            quantity: -1,
+          } as ListItemCreateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(400);
 
-      response = await supertest.patch(`/toledo/lists/${listId}/items/${itemId}`, {
-        body: {
-          quantity: 9999999,
-        } as ListItemCreateResource,
-        session: sessionMockData.privileged,
-      });
+      response = await supertest.patch(
+        `/toledo/lists/${listId}/items/${itemId}`,
+        {
+          body: {
+            quantity: 9999999,
+          } as ListItemCreateResource,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(400);
     });
 
@@ -390,9 +432,12 @@ describe('ListItemsController', () => {
       const item: ListItemReadResource = response.body;
 
       // Attempt to delete the list item
-      response = await supertest.delete(`/toledo/lists/${listId}/items/${item.id}`, {
-        session: sessionMockData.toledo,
-      });
+      response = await supertest.delete(
+        `/toledo/lists/${listId}/items/${item.id}`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(404);
     });
   });
@@ -429,9 +474,12 @@ describe('ListItemsController', () => {
       expect(response.body.items.length).toBe(2);
 
       // Delete first item
-      response = await supertest.delete(`/toledo/lists/${listId}/items/${firstItem.id}`, {
-        session: sessionMockData.toledo,
-      });
+      response = await supertest.delete(
+        `/toledo/lists/${listId}/items/${firstItem.id}`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(200);
       response = await supertest.get(`/toledo/lists/${listId}?include=items`, {
         session: sessionMockData.toledo,
@@ -440,9 +488,12 @@ describe('ListItemsController', () => {
       expect(response.body.items.length).toBe(1);
 
       // Delete second item
-      response = await supertest.delete(`/toledo/lists/${listId}/items/${secondItem.id}`, {
-        session: sessionMockData.toledo,
-      });
+      response = await supertest.delete(
+        `/toledo/lists/${listId}/items/${secondItem.id}`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(200);
       response = await supertest.get(`/toledo/lists/${listId}?include=items`, {
         session: sessionMockData.toledo,
@@ -504,9 +555,12 @@ describe('ListItemsController', () => {
       const item: ListItemReadResource = response.body;
 
       // Attempt to delete the list item
-      response = await supertest.delete(`/toledo/lists/${listId}/items/${item.id}`, {
-        session: sessionMockData.toledo,
-      });
+      response = await supertest.delete(
+        `/toledo/lists/${listId}/items/${item.id}`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(404);
     });
   });

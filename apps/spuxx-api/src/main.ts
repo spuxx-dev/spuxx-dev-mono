@@ -29,7 +29,7 @@ async function bootstrap() {
   await app.listen(EnvModule.get('APP_PORT'));
   Logger.log(
     `Application is running on: http://localhost:${EnvModule.get('APP_PORT')}`,
-    'Bootstrap',
+    'Bootstrap'
   );
   Logger.verbose('Verbose logging is enabled.', 'Bootstrap');
 }

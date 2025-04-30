@@ -5,7 +5,9 @@ import { FindOptions } from 'sequelize';
  * @param query The query object.
  * @returns The Sequelize `FindOptions`.
  */
-export function transformQueryToFindOptions(query: { include?: string[] }): FindOptions<unknown> {
+export function transformQueryToFindOptions(query: {
+  include?: string[];
+}): FindOptions<unknown> {
   const findOptions: FindOptions<unknown> = {};
   if (query.include) {
     findOptions.include = [...query.include];

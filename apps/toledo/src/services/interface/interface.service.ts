@@ -24,12 +24,18 @@ export class Interface extends ServiceMixin<Interface>() {
   static toggleSidebar() {
     const newValue = !Interface.instance._sidebarExpanded.value;
     Interface.instance._sidebarExpanded.value = newValue;
-    Logger.debug(`Sidebar has been ${newValue ? 'expanded' : 'collapsed'}.`, Interface.name);
+    Logger.debug(
+      `Sidebar has been ${newValue ? 'expanded' : 'collapsed'}.`,
+      Interface.name
+    );
   }
 
   static setSidebarExpanded(open: boolean) {
     Interface.instance._sidebarExpanded.value = open;
-    Logger.debug(`Sidebar has been ${open ? 'expanded' : 'collapsed'}.`, Interface.name);
+    Logger.debug(
+      `Sidebar has been ${open ? 'expanded' : 'collapsed'}.`,
+      Interface.name
+    );
   }
 
   static unfocusActiveElement() {
@@ -67,6 +73,9 @@ export class Interface extends ServiceMixin<Interface>() {
   }
 
   private static toggleDocumentScrolling(enable: boolean) {
-    this.documentStyle.setProperty('--document-overflow-y', enable ? 'auto' : 'hidden');
+    this.documentStyle.setProperty(
+      '--document-overflow-y',
+      enable ? 'auto' : 'hidden'
+    );
   }
 }

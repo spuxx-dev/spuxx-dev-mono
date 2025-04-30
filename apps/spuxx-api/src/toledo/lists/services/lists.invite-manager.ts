@@ -17,7 +17,7 @@ export class ListsInviteManager {
     @InjectModel(List) private model: typeof List,
     private readonly provider: ListsProvider,
     private readonly accessManager: ListsAccessManager,
-    private readonly usersRegistrar: UsersRegistrar,
+    private readonly usersRegistrar: UsersRegistrar
   ) {}
 
   /**
@@ -26,7 +26,10 @@ export class ListsInviteManager {
    * @param listId The list id to generate the invite link for.
    * @param request {@link Request}
    */
-  async generateInvite(listId: string, request: Request): Promise<InviteLinkResource> {
+  async generateInvite(
+    listId: string,
+    request: Request
+  ): Promise<InviteLinkResource> {
     const { preferred_username } = getSession(request);
     const list = await this.provider.findById(listId, request);
     this.accessManager.checkOwnership(list, request);
@@ -34,7 +37,7 @@ export class ListsInviteManager {
     await list.update({ inviteCode: code });
     Logger.log(
       `User '${preferred_username}' has generated an invite link for list '${list.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
     return {
       link: `${EnvModule.get('APP_BASE_URL')}/toledo/lists/${list.id}/accept-incite?code=${code}`,
@@ -48,15 +51,20 @@ export class ListsInviteManager {
    * @param code The invite code to accept.
    * @param request {@link Request}
    */
-  async acceptInvite(listId: string, code: string, request: Request): Promise<void> {
+  async acceptInvite(
+    listId: string,
+    code: string,
+    request: Request
+  ): Promise<void> {
     this.usersRegistrar.registerUserVisit(request);
     const { sub, preferred_username } = getSession(request);
     const list = await this.model.findByPk(listId);
-    if (!list || code !== list.inviteCode) throw listsExceptions.acceptInvite.notFound;
+    if (!list || code !== list.inviteCode)
+      throw listsExceptions.acceptInvite.notFound;
     await this.accessManager.grantGuestAccess(list, sub);
     Logger.log(
       `User '${preferred_username}' has accepted an invite to list '${list.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
   }
 }

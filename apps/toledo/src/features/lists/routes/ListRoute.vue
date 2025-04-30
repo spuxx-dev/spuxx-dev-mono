@@ -14,7 +14,7 @@ watch(
   () => route.params.id,
   (newId) => {
     listId.value = newId as string;
-  },
+  }
 );
 </script>
 

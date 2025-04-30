@@ -2,7 +2,8 @@
 import { ref, watch } from 'vue';
 import { VTextField } from 'vuetify/components';
 
-interface Props extends /* @vue-ignore */ VProps<typeof VTextField, 'rules' | 'modelValue'> {
+interface Props
+  extends /* @vue-ignore */ VProps<typeof VTextField, 'rules' | 'modelValue'> {
   rules: Array<(v: string) => boolean | string>;
   modelValue: string;
 }
@@ -18,7 +19,7 @@ watch(
   () => props.modelValue,
   (newValue) => {
     localValue.value = newValue;
-  },
+  }
 );
 
 const handleInput = (newValue: string) => {

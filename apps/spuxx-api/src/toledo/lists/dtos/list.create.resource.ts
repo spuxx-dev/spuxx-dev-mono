@@ -1,6 +1,12 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { listProperties } from '../config/list.properties';
-import { IsBoolean, IsOptional, IsString, MaxLength, MinLength } from 'class-validator';
+import {
+  IsBoolean,
+  IsOptional,
+  IsString,
+  MaxLength,
+  MinLength,
+} from 'class-validator';
 import { Map, TransformBooleanString } from '@spuxx/nest-utils';
 
 export class ListCreateResource {
@@ -31,7 +37,8 @@ export class ListCreateResource {
   @IsOptional()
   @Map()
   @ApiPropertyOptional(listProperties.requiresDeleteConfirmation)
-  requiresDeleteConfirmation: boolean = listProperties.requiresDeleteConfirmation.default;
+  requiresDeleteConfirmation: boolean =
+    listProperties.requiresDeleteConfirmation.default;
 
   @TransformBooleanString()
   @IsBoolean()

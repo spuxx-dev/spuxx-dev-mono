@@ -14,12 +14,14 @@ export const recipeProperties = {
   } as ApiPropertyOptions,
 
   icon: {
-    description: 'The icon of the recipe. Supports icons from https://fonts.google.com/icons.',
+    description:
+      'The icon of the recipe. Supports icons from https://fonts.google.com/icons.',
     default: 'note-text',
   } as ApiPropertyOptions,
 
   text: {
-    description: 'A text describing the recipe, for example including preparation steps.',
+    description:
+      'A text describing the recipe, for example including preparation steps.',
     example: '1. Put water on to boil. 2. Cook pasta.',
   } as ApiPropertyOptions,
 

@@ -48,7 +48,11 @@ async function resetForm() {
       </template>
       <template v-slot:item>
         <ListItemActions>
-          <VBtn type="submit" variant="text" :disabled="form?.isValid ? false : true">
+          <VBtn
+            type="submit"
+            variant="text"
+            :disabled="form?.isValid ? false : true"
+          >
             <Icon icon="mdi:plus" />
             <p>{{ intl('lists.route.list.item.create.label') }}</p>
           </VBtn>

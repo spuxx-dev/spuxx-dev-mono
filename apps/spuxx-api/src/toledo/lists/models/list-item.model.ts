@@ -1,5 +1,11 @@
 import { Map } from '@spuxx/nest-utils';
-import { Model, Column, DataType, ForeignKey, Table } from 'sequelize-typescript';
+import {
+  Model,
+  Column,
+  DataType,
+  ForeignKey,
+  Table,
+} from 'sequelize-typescript';
 import { List } from './list.model';
 import { listItemProperties } from '../config/list-item.properties';
 
@@ -7,7 +13,11 @@ import { listItemProperties } from '../config/list-item.properties';
   tableName: 'Toledo_ListItems',
 })
 export class ListItem extends Model {
-  @Column({ primaryKey: true, type: DataType.UUID, defaultValue: DataType.UUIDV4 })
+  @Column({
+    primaryKey: true,
+    type: DataType.UUID,
+    defaultValue: DataType.UUIDV4,
+  })
   @Map()
   declare id: string;
 

@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { useActiveListStore } from '@/features/lists/stores/active-list.store';
 import { listValidationRules } from '@/features/lists/validation/list.validation-rules';
-import type { List, ListItem, NewListItem } from '@/services/api/lists/lists.types';
+import type {
+  List,
+  ListItem,
+  NewListItem,
+} from '@/services/api/lists/lists.types';
 import { intl } from '@spuxx/js-utils';
 import { VTextField } from 'vuetify/components';
 import { VNumberInput } from 'vuetify/labs/components';

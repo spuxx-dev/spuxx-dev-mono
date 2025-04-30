@@ -15,7 +15,7 @@ export class ListItemsProvider {
     @InjectModel(ListItem) private model: typeof ListItem,
     private readonly listsProvider: ListsProvider,
     private readonly accessManager: ListsAccessManager,
-    private readonly mapper: Mapper,
+    private readonly mapper: Mapper
   ) {}
 
   /**
@@ -27,7 +27,7 @@ export class ListItemsProvider {
   async create(
     listId: string,
     resource: ListItemCreateResource,
-    request: Request,
+    request: Request
   ): Promise<ListItem> {
     const { preferred_username } = getSession(request);
     const list = await this.listsProvider.findById(listId, request, {
@@ -39,7 +39,7 @@ export class ListItemsProvider {
     const createdItem = newItem.save();
     Logger.log(
       `User '${preferred_username}' has created list item '${newItem.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
     return createdItem;
   }
@@ -55,7 +55,7 @@ export class ListItemsProvider {
     listId: string,
     itemId: string,
     resource: ListItemUpdateResource,
-    request: Request,
+    request: Request
   ): Promise<ListItem> {
     const { preferred_username } = getSession(request);
     const list = await this.listsProvider.findById(listId, request, {
@@ -72,7 +72,7 @@ export class ListItemsProvider {
     const updatedItem = await item.save();
     Logger.log(
       `User '${preferred_username}' has updated list item '${updatedItem.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
     return updatedItem;
   }
@@ -83,7 +83,11 @@ export class ListItemsProvider {
    * @param itemId The item id.
    * @param request {@link Request}
    */
-  async delete(listId: string, itemId: string, request: Request): Promise<void> {
+  async delete(
+    listId: string,
+    itemId: string,
+    request: Request
+  ): Promise<void> {
     const { preferred_username } = getSession(request);
     const list = await this.listsProvider.findById(listId, request);
     await this.accessManager.checkAccess(list, request);
@@ -92,7 +96,7 @@ export class ListItemsProvider {
     await item.destroy();
     Logger.log(
       `User '${preferred_username}' has deleted list item '${item.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
     return;
   }

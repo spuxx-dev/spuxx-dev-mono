@@ -17,7 +17,7 @@ export class RecipesProvider {
     @InjectModel(Recipe) private model: typeof Recipe,
     private readonly accessManager: RecipesAccessManager,
     private readonly usersRegistrar: UsersRegistrar,
-    private readonly mapper: Mapper,
+    private readonly mapper: Mapper
   ) {}
 
   /**
@@ -27,7 +27,10 @@ export class RecipesProvider {
    * @param options (optional) {@link FindOptions}
    * @returns All of the user's recipes.
    */
-  async findMany(request: Request, options?: FindOptions<Recipe>): Promise<Recipe[]> {
+  async findMany(
+    request: Request,
+    options?: FindOptions<Recipe>
+  ): Promise<Recipe[]> {
     const { sub } = getSession(request);
     return this.model.findAll({
       ...options,
@@ -44,7 +47,11 @@ export class RecipesProvider {
    * @param options (optional) {@link FindOptions}
    * @returns The recipe.
    */
-  async findById(id: string, request: Request, options?: FindOptions<Recipe>): Promise<Recipe> {
+  async findById(
+    id: string,
+    request: Request,
+    options?: FindOptions<Recipe>
+  ): Promise<Recipe> {
     const recipe = await this.model.findByPk(id, options);
     if (!recipe) throw recipesExceptions.findById.notFound;
     await this.accessManager.checkAccess(recipe, request);
@@ -57,16 +64,23 @@ export class RecipesProvider {
    * @param request {@link Request}
    * @returns The newly created recipe.
    */
-  async create(resource: RecipeCreateResource, request: Request): Promise<Recipe> {
+  async create(
+    resource: RecipeCreateResource,
+    request: Request
+  ): Promise<Recipe> {
     await this.usersRegistrar.registerUserVisit(request);
     const { sub, preferred_username } = getSession(request);
-    const preSave: Recipe = this.mapper.map(resource, RecipeCreateResource, Recipe);
+    const preSave: Recipe = this.mapper.map(
+      resource,
+      RecipeCreateResource,
+      Recipe
+    );
     preSave.set('ownerId', sub);
     const { id } = await preSave.save();
     const result = await this.findById(id, request);
     Logger.log(
       `User '${preferred_username}' has created recipe '${result.id}'.`,
-      this.constructor.name,
+      this.constructor.name
     );
     return result;
   }
@@ -83,7 +97,7 @@ export class RecipesProvider {
     id: string,
     resource: RecipeUpdateResource,
     request: Request,
-    options?: FindOptions<Recipe>,
+    options?: FindOptions<Recipe>
   ): Promise<Recipe> {
     const { preferred_username } = getSession(request);
     const recipe = await this.findById(id, request, {
@@ -98,7 +112,7 @@ export class RecipesProvider {
     const result = await recipe.save();
     Logger.log(
       `User '${preferred_username}' has updated recipe '${result.id}'.`,
-      this.constructor.name,
+      this.constructor.name
     );
     return result;
   }
@@ -116,7 +130,7 @@ export class RecipesProvider {
       await recipe.destroy();
       Logger.log(
         `User '${preferred_username}' has deleted recipe '${recipe.id}'.`,
-        this.constructor.name,
+        this.constructor.name
       );
     } catch (error) {
       return;

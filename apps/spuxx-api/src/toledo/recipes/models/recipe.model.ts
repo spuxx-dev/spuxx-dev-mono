@@ -20,7 +20,11 @@ import { RecipeGuest } from './recipe-guest.model';
   tableName: 'Toledo_Recipes',
 })
 export class Recipe extends Model {
-  @Column({ primaryKey: true, type: DataType.UUID, defaultValue: DataType.UUIDV4 })
+  @Column({
+    primaryKey: true,
+    type: DataType.UUID,
+    defaultValue: DataType.UUIDV4,
+  })
   @Map()
   declare id: string;
 

@@ -11,7 +11,9 @@ const { resource, loaderType = 'spinner' } = defineProps<{
   loaderType?: LoaderType;
 }>();
 
-const showContent = computed(() => resource.state.value === ResourceState.success);
+const showContent = computed(
+  () => resource.state.value === ResourceState.success
+);
 const error = computed(() => resource.error.value as HttpError);
 </script>
 
@@ -20,7 +22,9 @@ const error = computed(() => resource.error.value as HttpError);
   <slot name="default" v-if="showContent"></slot>
   <VContainer v-if="error">
     <p><Icon icon="mdi:sync-alert" height="2rem"></Icon></p>
-    <i v-if="error.status" class="text-medium-emphasis">{{ error.status }} {{ error.message }}</i>
+    <i v-if="error.status" class="text-medium-emphasis"
+      >{{ error.status }} {{ error.message }}</i
+    >
     <p>{{ intl('error.resource.text') }}</p>
   </VContainer>
 </template>

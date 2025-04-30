@@ -2,7 +2,9 @@ import { ServiceMixin } from '@spuxx/js-utils';
 import { ref, shallowRef } from 'vue';
 import type { DialogOptions } from './types';
 export class Dialog extends ServiceMixin<Dialog>() {
-  private static _activeDialogComponent = shallowRef<HTMLDialogElement | null>(null);
+  private static _activeDialogComponent = shallowRef<HTMLDialogElement | null>(
+    null
+  );
   private static _activeDialogOptions = ref<DialogOptions | null>(null);
 
   static get activeDialogComponent() {
@@ -19,7 +21,10 @@ export class Dialog extends ServiceMixin<Dialog>() {
    * @param options The dialog options.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  static open<TOptions extends DialogOptions>(component: any, options: TOptions) {
+  static open<TOptions extends DialogOptions>(
+    component: any,
+    options: TOptions
+  ) {
     this._activeDialogComponent.value = component;
     this._activeDialogOptions.value = options;
   }

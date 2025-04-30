@@ -21,8 +21,17 @@ const state = computed(() => {
 });
 </script>
 <template>
-  <span v-if="state === 'pending'" class="loader" :aria-label="intl('misc.loading')" :bind="$attrs">
-    <Icon v-if="type === 'spinner'" class="spinner" icon="svg-spinners:270-ring" />
+  <span
+    v-if="state === 'pending'"
+    class="loader"
+    :aria-label="intl('misc.loading')"
+    :bind="$attrs"
+  >
+    <Icon
+      v-if="type === 'spinner'"
+      class="spinner"
+      icon="svg-spinners:270-ring"
+    />
     <VSkeletonLoader class="skeleton" v-else :type="type" />
   </span>
 </template>

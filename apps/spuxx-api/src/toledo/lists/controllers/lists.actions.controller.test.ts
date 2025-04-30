@@ -26,9 +26,12 @@ describe('ListsActionsController', () => {
       });
       expect(createResponse.statusCode).toBe(201);
       const id = createResponse.body.id;
-      const response = await supertest.post(`/toledo/lists/${id}/generate-invite`, {
-        session: sessionMockData.privileged,
-      });
+      const response = await supertest.post(
+        `/toledo/lists/${id}/generate-invite`,
+        {
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(201);
       const { link, code }: { link: string; code: string } = response.body;
       expect(link).toBeDefined();
@@ -37,22 +40,30 @@ describe('ListsActionsController', () => {
     });
 
     it('should return 401', async () => {
-      const response = await supertest.post('/toledo/lists/123/generate-invite');
+      const response = await supertest.post(
+        '/toledo/lists/123/generate-invite'
+      );
       expect(response.statusCode).toBe(401);
     });
 
     it('should return 403', async () => {
-      const response = await supertest.post('/toledo/lists/123/generate-invite', {
-        session: sessionMockData.unprivileged,
-      });
+      const response = await supertest.post(
+        '/toledo/lists/123/generate-invite',
+        {
+          session: sessionMockData.unprivileged,
+        }
+      );
       expect(response.statusCode).toBe(403);
     });
 
     it("should return 404 if the list doesn't exist", async () => {
-      const response = await supertest.post('/toledo/lists/123/generate-invite', {
-        body: listCreateMockData.groceries,
-        session: sessionMockData.privileged,
-      });
+      const response = await supertest.post(
+        '/toledo/lists/123/generate-invite',
+        {
+          body: listCreateMockData.groceries,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(404);
     });
 
@@ -63,9 +74,12 @@ describe('ListsActionsController', () => {
       });
       expect(createResponse.statusCode).toBe(201);
       const id = createResponse.body.id;
-      const response = await supertest.post(`/toledo/lists/${id}/generate-invite`, {
-        session: sessionMockData.toledo,
-      });
+      const response = await supertest.post(
+        `/toledo/lists/${id}/generate-invite`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(404);
     });
   });
@@ -78,14 +92,20 @@ describe('ListsActionsController', () => {
       });
       expect(createResponse.statusCode).toBe(201);
       const id = createResponse.body.id;
-      const generateInviteResponse = await supertest.post(`/toledo/lists/${id}/generate-invite`, {
-        session: sessionMockData.privileged,
-      });
+      const generateInviteResponse = await supertest.post(
+        `/toledo/lists/${id}/generate-invite`,
+        {
+          session: sessionMockData.privileged,
+        }
+      );
       expect(generateInviteResponse.statusCode).toBe(201);
       const { code }: { code: string } = generateInviteResponse.body;
-      const response = await supertest.put(`/toledo/lists/${id}/accept-invite?code=${code}`, {
-        session: sessionMockData.toledo,
-      });
+      const response = await supertest.put(
+        `/toledo/lists/${id}/accept-invite?code=${code}`,
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(200);
       // Check that the user was added to the list as a guest
       let getResponse = await supertest.get(`/toledo/lists/${id}`, {
@@ -117,29 +137,40 @@ describe('ListsActionsController', () => {
     });
 
     it('should return 400 due to invalid code', async () => {
-      const response = await supertest.put('/toledo/lists/123/accept-invite?code=', {
-        session: sessionMockData.toledo,
-      });
+      const response = await supertest.put(
+        '/toledo/lists/123/accept-invite?code=',
+        {
+          session: sessionMockData.toledo,
+        }
+      );
       expect(response.statusCode).toBe(400);
     });
 
     it('should return 401', async () => {
-      const response = await supertest.put(`/toledo/lists/123/accept-invite?code=123`);
+      const response = await supertest.put(
+        `/toledo/lists/123/accept-invite?code=123`
+      );
       expect(response.statusCode).toBe(401);
     });
 
     it('should return 403', async () => {
-      const response = await supertest.put('/toledo/lists/123/accept-invite?code=123', {
-        session: sessionMockData.unprivileged,
-      });
+      const response = await supertest.put(
+        '/toledo/lists/123/accept-invite?code=123',
+        {
+          session: sessionMockData.unprivileged,
+        }
+      );
       expect(response.statusCode).toBe(403);
     });
 
     it("should return 404 if the list doesn't exist", async () => {
-      const response = await supertest.put('/toledo/lists/123/accept-invite?code=123', {
-        body: listCreateMockData.groceries,
-        session: sessionMockData.privileged,
-      });
+      const response = await supertest.put(
+        '/toledo/lists/123/accept-invite?code=123',
+        {
+          body: listCreateMockData.groceries,
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(404);
     });
   });

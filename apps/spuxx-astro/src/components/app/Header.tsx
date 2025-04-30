@@ -6,10 +6,20 @@ export const Header: Component = () => {
     <AppBar>
       <AppBar.Section>
         <nav>
-          <ButtonLink icon="mdi:home" href="/" variant="colored" color="text-default">
+          <ButtonLink
+            icon="mdi:home"
+            href="/"
+            variant="colored"
+            color="text-default"
+          >
             Home
           </ButtonLink>
-          <ButtonLink icon="mdi:post" href="/#blog" variant="colored" color="text-default">
+          <ButtonLink
+            icon="mdi:post"
+            href="/#blog"
+            variant="colored"
+            color="text-default"
+          >
             Blog
           </ButtonLink>
         </nav>

@@ -90,7 +90,7 @@ describe('RecipesCrudController', () => {
         {
           id: secondRecipe.id,
         } as Recipe,
-        sessionMockData.toledo.sub,
+        sessionMockData.toledo.sub
       );
 
       // Second response should also include second recipe
@@ -100,7 +100,10 @@ describe('RecipesCrudController', () => {
       expect(response.statusCode).toBe(200);
       expect(response.body.length).toBe(2);
       expect(response.body[0]).toEqual(firstRecipe);
-      expect(response.body[1]).toEqual({ ...secondRecipe, guests: response.body[1].guests });
+      expect(response.body[1]).toEqual({
+        ...secondRecipe,
+        guests: response.body[1].guests,
+      });
 
       // Requesting recipes with a totally different user should not include the shared list,
       // since recipes are only shared with specific users
@@ -296,7 +299,7 @@ describe('RecipesCrudController', () => {
         {
           id: recipe.id,
         } as Recipe,
-        sessionMockData.toledo.sub,
+        sessionMockData.toledo.sub
       );
 
       // Second response should return 200

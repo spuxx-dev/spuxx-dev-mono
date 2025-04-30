@@ -15,7 +15,9 @@ import { intl } from '@spuxx/js-utils';
 import { useDisplay } from 'vuetify';
 import { useActiveListStore } from '../../stores/active-list.store';
 import { Dialog } from '@/services/dialog';
-import ConfirmDialog, { type ConfirmDialogOptions } from '@/components/dialog/ConfirmDialog.vue';
+import ConfirmDialog, {
+  type ConfirmDialogOptions,
+} from '@/components/dialog/ConfirmDialog.vue';
 
 const store = useActiveListStore();
 const { mobile } = useDisplay();
@@ -73,7 +75,12 @@ const rightTouchAction: HorizontalTouchAction = {
 <template>
   <VForm ref="form" @submit.prevent="handleUpdate" validate-on="blur" block>
     <HorizontalTouchActions :left="leftTouchAction" :right="rightTouchAction">
-      <VCard class="card mb-2" variant="flat" color="surface" :data-checked="item.checked">
+      <VCard
+        class="card mb-2"
+        variant="flat"
+        color="surface"
+        :data-checked="item.checked"
+      >
         <template v-slot:title>
           <ListItemActions>
             <ListItemToggle :list :item />
@@ -85,7 +92,12 @@ const rightTouchAction: HorizontalTouchAction = {
               @change="handleUpdate"
               hide-details
             />
-            <ListItemText :item @change="handleUpdate" blur-on-enter hide-details />
+            <ListItemText
+              :item
+              @change="handleUpdate"
+              blur-on-enter
+              hide-details
+            />
           </ListItemActions>
         </template>
         <template v-slot:item>

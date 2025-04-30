@@ -27,7 +27,7 @@ export class OrmModule {
   onModuleInit() {
     Logger.log(
       `Connection with database host '${EnvModule.get('DATABASE_HOST')}:${EnvModule.get('DATABASE_PORT')}' has been established.`,
-      OrmModule.name,
+      OrmModule.name
     );
   }
 }

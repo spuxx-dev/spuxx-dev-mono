@@ -9,7 +9,12 @@ store.fetch();
 </script>
 
 <template>
-  <VListItem v-for="list in store.all" :key="list.id" link :to="`/lists/${list.id}`">
+  <VListItem
+    v-for="list in store.all"
+    :key="list.id"
+    link
+    :to="`/lists/${list.id}`"
+  >
     <template v-slot:prepend>
       <Icon :icon="`mdi:${list.icon}`" />
     </template>

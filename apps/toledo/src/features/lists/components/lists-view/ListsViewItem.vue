@@ -8,7 +8,12 @@ const { list } = defineProps<{
 </script>
 
 <template>
-  <CardGridElement :icon="`mdi:${list.icon}`" :text="list.name" link :to="`/lists/${list.id}`" />
+  <CardGridElement
+    :icon="`mdi:${list.icon}`"
+    :text="list.name"
+    link
+    :to="`/lists/${list.id}`"
+  />
 </template>
 
 <style scoped></style>

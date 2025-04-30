@@ -15,7 +15,8 @@ export const listProperties = {
   } as ApiPropertyOptions,
 
   icon: {
-    description: 'The icon of the list. Supports icons from https://fonts.google.com/icons.',
+    description:
+      'The icon of the list. Supports icons from https://fonts.google.com/icons.',
     default: 'list-box',
     required: false,
   } as ApiPropertyOptions,

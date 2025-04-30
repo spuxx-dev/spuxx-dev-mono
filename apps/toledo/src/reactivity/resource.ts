@@ -35,7 +35,10 @@ export class Resource<T, Args extends unknown[] = []> {
     try {
       this._data.value = await this._loader(...args);
       this.state.value = ResourceState.success;
-      Logger.debug(`Resource '${this._name}' loaded successfully.`, this.constructor.name);
+      Logger.debug(
+        `Resource '${this._name}' loaded successfully.`,
+        this.constructor.name
+      );
       return this;
     } catch (error) {
       this.state.value = ResourceState.failed;

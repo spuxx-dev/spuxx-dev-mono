@@ -26,7 +26,10 @@ export const listsEndpoints = {
   findListById: defineEndpoint({
     function: async (id: string): Promise<Response> => {
       const { API_URL } = Config.getConfig<AppConfig>();
-      return fetch(`${API_URL}/toledo/lists/${id}?include=items`, Api.requestOptions);
+      return fetch(
+        `${API_URL}/toledo/lists/${id}?include=items`,
+        Api.requestOptions
+      );
     },
     transformer: async (response): Promise<List> => {
       const json = await response.json();

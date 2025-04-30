@@ -10,7 +10,12 @@ import {
   UseInterceptors,
   UsePipes,
 } from '@nestjs/common';
-import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
+import {
+  ApiOkResponse,
+  ApiOperation,
+  ApiParam,
+  ApiTags,
+} from '@nestjs/swagger';
 import { AuthRole } from '@src/auth/auth.config';
 import { InviteLinkResource } from '@src/utils/invite-links/invite-link.resource';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
@@ -49,7 +54,7 @@ export class ListsActionsController {
   @ApiException(() => Object.values(listsExceptions.generateInvite))
   async generateInvite(
     @Param('id') id: string,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<InviteLinkResource> {
     return this.inviteManager.generateInvite(id, request);
   }
@@ -69,7 +74,7 @@ export class ListsActionsController {
   async acceptInvite(
     @Param('id') id: string,
     @Query() query: AcceptInviteQuery,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<void> {
     return this.inviteManager.acceptInvite(id, query.code, request);
   }

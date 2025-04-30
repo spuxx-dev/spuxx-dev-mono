@@ -1,6 +1,10 @@
 <script lang="ts" setup>
-import ConfirmDialog, { type ConfirmDialogOptions } from '@/components/dialog/ConfirmDialog.vue';
-import ShareDialog, { type ShareDialogOptions } from '@/components/dialog/ShareDialog.vue';
+import ConfirmDialog, {
+  type ConfirmDialogOptions,
+} from '@/components/dialog/ConfirmDialog.vue';
+import ShareDialog, {
+  type ShareDialogOptions,
+} from '@/components/dialog/ShareDialog.vue';
 import { Api } from '@/services/api';
 import type { List } from '@/services/api/lists/lists.types';
 import { Dialog } from '@/services/dialog';
@@ -22,7 +26,10 @@ const handleClick = async () => {
       const { code } = await Api.generateListInvite(list.id);
       Dialog.close();
       const url = `${window.location.origin}/lists/${list.id}/invite?code=${code}`;
-      Logger.debug(`Generated new frontend list invite link: ${url}`, `ShareList`);
+      Logger.debug(
+        `Generated new frontend list invite link: ${url}`,
+        `ShareList`
+      );
       Dialog.open<ShareDialogOptions>(ShareDialog, {
         title: intl('lists.route.list.settings.share.dialog.title'),
         text: intl('lists.route.list.settings.share.dialog.text'),

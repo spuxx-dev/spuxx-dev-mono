@@ -11,7 +11,9 @@ const store = useListsStore();
 
 <template>
   <VContainer>
-    <h1 class="magelove mb-4">{{ intl(`lists.route.index.collection.owned`) }}</h1>
+    <h1 class="magelove mb-4">
+      {{ intl(`lists.route.index.collection.owned`) }}
+    </h1>
     <CardGrid>
       <ListsViewItem v-for="list in store.owned" :list="list" />
       <CreateNewList />

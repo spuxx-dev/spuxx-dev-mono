@@ -1,7 +1,15 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Map, TransformBooleanString } from '@spuxx/nest-utils';
 import { listItemProperties } from '../config/list-item.properties';
-import { IsBoolean, IsNumber, IsString, Max, MaxLength, Min, MinLength } from 'class-validator';
+import {
+  IsBoolean,
+  IsNumber,
+  IsString,
+  Max,
+  MaxLength,
+  Min,
+  MinLength,
+} from 'class-validator';
 
 export class ListItemCreateResource {
   @IsString()

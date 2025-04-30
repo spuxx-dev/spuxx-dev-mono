@@ -12,7 +12,12 @@ import {
   UseInterceptors,
   UsePipes,
 } from '@nestjs/common';
-import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
+import {
+  ApiOkResponse,
+  ApiOperation,
+  ApiParam,
+  ApiTags,
+} from '@nestjs/swagger';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
 import { HttpLoggingInterceptor, Mapper } from '@spuxx/nest-utils';
 import { AuthGuard, Roles } from '@spuxx/nest-auth';
@@ -27,7 +32,11 @@ import { ApiException } from '@nanogiants/nestjs-swagger-api-exception-decorator
 import { listsExceptions } from '../config/lists.exceptions';
 import { ListUpdateResource } from '../dtos/list.update.resource';
 import { transformQueryToFindOptions } from '@src/orm/orm.utils';
-import { ListsFindByIdQuery, ListsFindManyQuery, ListsUpdateQuery } from './queries';
+import {
+  ListsFindByIdQuery,
+  ListsFindManyQuery,
+  ListsUpdateQuery,
+} from './queries';
 
 const requiredRoles = [AuthRole.toledo];
 
@@ -40,7 +49,7 @@ const requiredRoles = [AuthRole.toledo];
 export class ListsCrudController {
   constructor(
     private readonly provider: ListsProvider,
-    private mapper: Mapper,
+    private mapper: Mapper
   ) {}
 
   @Get()
@@ -58,9 +67,12 @@ export class ListsCrudController {
   @ApiException(() => Object.values(listsExceptions.findMany))
   async findMany(
     @Query() query: ListsFindManyQuery,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<ListReadResource[]> {
-    const lists = await this.provider.findMany(request, transformQueryToFindOptions(query));
+    const lists = await this.provider.findMany(
+      request,
+      transformQueryToFindOptions(query)
+    );
     return lists.map((list) => this.mapper.map(list, List, ListReadResource));
   }
 
@@ -78,7 +90,7 @@ export class ListsCrudController {
   @ApiException(() => Object.values(listsExceptions.create))
   async create(
     @Body() resource: ListCreateResource,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<ListReadResource> {
     const list = await this.provider.create(resource, request);
     return this.mapper.map(list, List, ListReadResource);
@@ -100,9 +112,13 @@ export class ListsCrudController {
   async findById(
     @Param('id') id: string,
     @Query() query: ListsFindByIdQuery,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<ListReadResource> {
-    const list = await this.provider.findById(id, request, transformQueryToFindOptions(query));
+    const list = await this.provider.findById(
+      id,
+      request,
+      transformQueryToFindOptions(query)
+    );
     return this.mapper.map(list, List, ListReadResource);
   }
 
@@ -123,13 +139,13 @@ export class ListsCrudController {
     @Param('id') id: string,
     @Query() query: ListsUpdateQuery,
     @Body() resource: ListUpdateResource,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<ListReadResource> {
     const list = await this.provider.update(
       id,
       resource,
       request,
-      transformQueryToFindOptions(query),
+      transformQueryToFindOptions(query)
     );
     return this.mapper.map(list, List, ListReadResource);
   }
@@ -146,7 +162,10 @@ export class ListsCrudController {
     description: 'The list has been deleted.',
   })
   @ApiException(() => Object.values(listsExceptions.delete))
-  async delete(@Param('id') id: string, @Req() request: Request): Promise<void> {
+  async delete(
+    @Param('id') id: string,
+    @Req() request: Request
+  ): Promise<void> {
     return this.provider.delete(id, request);
   }
 }

@@ -12,6 +12,8 @@ function handleLogout() {
 <template>
   <ErrorPage :title="intl('error.403.title')" status-code="403">
     <p class="text-center">{{ intl('error.403.description') }}</p>
-    <VBtn variant="plain" @click="handleLogout">{{ intl('error.403.suggestion') }}</VBtn>
+    <VBtn variant="plain" @click="handleLogout">{{
+      intl('error.403.suggestion')
+    }}</VBtn>
   </ErrorPage>
 </template>

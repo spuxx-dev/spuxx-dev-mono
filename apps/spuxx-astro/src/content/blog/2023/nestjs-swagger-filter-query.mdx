@@ -243,9 +243,9 @@ export class Catscontroller {
         },
         whitelist: true,
         forbidNonWhitelisted: true,
-      }),
+      })
     )
-    query: CatsFindManyQuery,
+    query: CatsFindManyQuery
   ): CatResource[] {
     console.log(query);
     return this.service.findMany();
@@ -310,7 +310,12 @@ This is where it gets slightly more complicated, so bear with me. We will implem
 
 ```ts
 import { applyDecorators } from '@nestjs/common';
-import { ApiExtraModels, ApiQuery, ApiQueryOptions, getSchemaPath } from '@nestjs/swagger';
+import {
+  ApiExtraModels,
+  ApiQuery,
+  ApiQueryOptions,
+  getSchemaPath,
+} from '@nestjs/swagger';
 
 /**
  * Use this decorator to document the 'filter' query parameter on an endpoint.
@@ -318,7 +323,10 @@ import { ApiExtraModels, ApiQuery, ApiQueryOptions, getSchemaPath } from '@nestj
  * @param options (optional) Use this to overwrite any of the default options.
  * @returns
  */
-export function ApiFilterQuery(filterQuery: new () => object, options?: ApiQueryOptions) {
+export function ApiFilterQuery(
+  filterQuery: new () => object,
+  options?: ApiQueryOptions
+) {
   return applyDecorators(
     ApiExtraModels(filterQuery),
     ApiQuery({
@@ -331,7 +339,7 @@ export function ApiFilterQuery(filterQuery: new () => object, options?: ApiQuery
         $ref: getSchemaPath(filterQuery),
       },
       ...options,
-    }),
+    })
   );
 }
 ```

@@ -1,8 +1,6 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    "./src"
-  ],
+  "include": ["./src"],
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "solid-js"

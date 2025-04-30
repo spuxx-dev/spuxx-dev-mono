@@ -89,7 +89,7 @@ describe('ListsCrudController', () => {
         {
           id: secondList.id,
         } as List,
-        sessionMockData.toledo.sub,
+        sessionMockData.toledo.sub
       );
 
       // Second response should also include second list
@@ -99,7 +99,10 @@ describe('ListsCrudController', () => {
       expect(response.statusCode).toBe(200);
       expect(response.body.length).toBe(2);
       expect(response.body[0]).toEqual(firstList);
-      expect(response.body[1]).toEqual({ ...secondList, guests: response.body[1].guests });
+      expect(response.body[1]).toEqual({
+        ...secondList,
+        guests: response.body[1].guests,
+      });
 
       // Requesting lists with a totally different user should not include the shared list,
       // since lists are only shared with specific users
@@ -199,7 +202,7 @@ describe('ListsCrudController', () => {
         {
           id: list.id,
         } as List,
-        sessionMockData.toledo.sub,
+        sessionMockData.toledo.sub
       );
 
       // Second response should return 200
@@ -220,7 +223,7 @@ describe('ListsCrudController', () => {
         `/toledo/lists/${createResponse.body.id}?include=items`,
         {
           session: sessionMockData.privileged,
-        },
+        }
       );
       expect(response.statusCode).toBe(200);
       expect(response.body.guests).toBeDefined();
@@ -232,9 +235,12 @@ describe('ListsCrudController', () => {
         body: listCreateMockData.groceries,
         session: sessionMockData.privileged,
       });
-      const response = await supertest.get(`/toledo/lists/${createResponse.body.id}?include=foo`, {
-        session: sessionMockData.privileged,
-      });
+      const response = await supertest.get(
+        `/toledo/lists/${createResponse.body.id}?include=foo`,
+        {
+          session: sessionMockData.privileged,
+        }
+      );
       expect(response.statusCode).toBe(400);
     });
 

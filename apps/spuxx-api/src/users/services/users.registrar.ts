@@ -9,7 +9,7 @@ import { InjectModel } from '@nestjs/sequelize';
 export class UsersRegistrar {
   constructor(
     private readonly provider: UsersProvider,
-    @InjectModel(User) private model: typeof User,
+    @InjectModel(User) private model: typeof User
   ) {}
 
   /**
@@ -28,7 +28,7 @@ export class UsersRegistrar {
       await existingUser.save();
       Logger.verbose(
         `User '${session.preferred_username}' (sub: '${session.sub}') has been seen.`,
-        UsersRegistrar.name,
+        UsersRegistrar.name
       );
     } catch (error) {
       const newUser: IncompleteModel<User> & { id: string } = {
@@ -41,7 +41,7 @@ export class UsersRegistrar {
       await this.model.create(newUser);
       Logger.log(
         `User '${session.preferred_username}' (sub: '${session.sub}') has been registered.`,
-        UsersRegistrar.name,
+        UsersRegistrar.name
       );
     }
   }

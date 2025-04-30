@@ -25,7 +25,10 @@ export class SessionManager extends ServiceMixin<SessionManager>() {
     if (!this.session.value) {
       const session: Session | undefined = await Api.getSession();
       if (!session) return;
-      Logger.debug(`Logged in as ${session.preferred_username}.`, SessionManager.name);
+      Logger.debug(
+        `Logged in as ${session.preferred_username}.`,
+        SessionManager.name
+      );
       SessionManager.session.value = session;
     }
     return SessionManager.instance._session;

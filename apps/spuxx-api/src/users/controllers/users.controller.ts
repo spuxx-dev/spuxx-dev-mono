@@ -1,5 +1,10 @@
 import { Controller, Get, Param, UseGuards } from '@nestjs/common';
-import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
+import {
+  ApiOkResponse,
+  ApiOperation,
+  ApiParam,
+  ApiTags,
+} from '@nestjs/swagger';
 import { Mapper } from '@spuxx/nest-utils';
 import { AuthGuard, Roles } from '@spuxx/nest-auth';
 import { UserReadResource } from '../dtos/user.read.resource';
@@ -16,7 +21,7 @@ import { userProperties } from '../config/users.properties';
 export class UsersController {
   constructor(
     private readonly provider: UsersProvider,
-    private readonly mapper: Mapper,
+    private readonly mapper: Mapper
   ) {}
 
   @Get()

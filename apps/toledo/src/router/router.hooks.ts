@@ -7,7 +7,10 @@ import { useRouter } from 'vue-router';
  * @param check The check to perform.
  * @param target The route to redirect to.
  */
-export const useConditionalRedirect = (check: () => boolean | Promise<boolean>, target: string) => {
+export const useConditionalRedirect = (
+  check: () => boolean | Promise<boolean>,
+  target: string
+) => {
   onBeforeMount(async () => {
     const { replace } = useRouter();
     const result = await check();

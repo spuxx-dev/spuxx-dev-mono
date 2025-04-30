@@ -22,7 +22,11 @@ import { listProperties } from '../config/list.properties';
   tableName: 'Toledo_Lists',
 })
 export class List extends Model {
-  @Column({ primaryKey: true, type: DataType.UUID, defaultValue: DataType.UUIDV4 })
+  @Column({
+    primaryKey: true,
+    type: DataType.UUID,
+    defaultValue: DataType.UUIDV4,
+  })
   @Map()
   declare id: string;
 

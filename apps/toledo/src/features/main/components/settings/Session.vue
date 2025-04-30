@@ -18,7 +18,11 @@ const handleLogout = () => {
 </script>
 
 <template>
-  <SettingsSection v-if="session" :title="intl('main.route.settings.session.title')" style>
+  <SettingsSection
+    v-if="session"
+    :title="intl('main.route.settings.session.title')"
+    style
+  >
     <p>{{ intl('main.route.settings.session.text') }}</p>
     <p>
       {{ intl('main.route.settings.session.name') }}
@@ -29,7 +33,11 @@ const handleLogout = () => {
       <b>{{ session.preferred_username }}</b>
     </p>
     <VRow justify="center" class="my-2">
-      <VBtn color="primary-darken-1" :href="ACCOUNT_SERVICE_URL" target="_blank">
+      <VBtn
+        color="primary-darken-1"
+        :href="ACCOUNT_SERVICE_URL"
+        target="_blank"
+      >
         <Icon icon="mdi:account" />
         <p>{{ intl('main.route.settings.session.account-service') }}</p>
       </VBtn>

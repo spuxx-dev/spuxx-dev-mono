@@ -55,11 +55,19 @@ const controls: TouchControls = {
 
 <template>
   <div ref="container" class="touch-control-horizontal" v-touch="controls">
-    <VCard class="underlay left" :color="left.color" :data-visible="leftUnderlayVisible">
+    <VCard
+      class="underlay left"
+      :color="left.color"
+      :data-visible="leftUnderlayVisible"
+    >
       <Icon :icon="left.icon" />
       <p v-if="left.label" class="ma-2">{{ left.label }}</p>
     </VCard>
-    <VCard class="underlay right" :color="right.color" :data-visible="rightUnderlayVisible">
+    <VCard
+      class="underlay right"
+      :color="right.color"
+      :data-visible="rightUnderlayVisible"
+    >
       <Icon :icon="right.icon" />
       <p v-if="right.label" class="ma-2">
         {{ right.label }}

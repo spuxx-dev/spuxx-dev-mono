@@ -40,7 +40,9 @@ const cancelLabel = options.cancelLabel || intl('misc.cancel');
     </template>
     <template v-slot:actions>
       <VBtn variant="text" @click="handleCancel">{{ cancelLabel }}</VBtn>
-      <VBtn :color="confirmColor" variant="flat" @click="handleConfirm">{{ confirmLabel }}</VBtn>
+      <VBtn :color="confirmColor" variant="flat" @click="handleConfirm">{{
+        confirmLabel
+      }}</VBtn>
     </template>
   </VCard>
 </template>

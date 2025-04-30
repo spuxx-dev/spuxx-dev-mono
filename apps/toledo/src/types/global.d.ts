@@ -7,10 +7,10 @@ declare global {
   /**
    * Unwraps the type of the properties of a Vuetify component.
    */
-  export type VProps<TComponent, Except extends keyof TComponent = never> = Omit<
-    ExtractPublicPropTypes<TComponent>,
-    Except
-  >;
+  export type VProps<
+    TComponent,
+    Except extends keyof TComponent = never,
+  > = Omit<ExtractPublicPropTypes<TComponent>, Except>;
   /**
    * Unwraps the type of a specific property of a Vuetify component.
    */

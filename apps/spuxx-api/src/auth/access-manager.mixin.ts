@@ -11,7 +11,11 @@ import { Model, type ModelCtor } from 'sequelize-typescript';
  * @returns The model-specific access manager.
  */
 export function AccessManagerMixin<
-  TModel extends Model<TModel> & { ownerId: string; owner: User; guests?: User[] },
+  TModel extends Model<TModel> & {
+    ownerId: string;
+    owner: User;
+    guests?: User[];
+  },
 >(modelClass: ModelCtor<TModel>) {
   @Injectable()
   class AccessManager {
@@ -30,7 +34,9 @@ export function AccessManagerMixin<
         });
       }
       const usersWithAccess = [model.owner, ...(model.guests ?? [])];
-      const hasAccess = usersWithAccess.some((user) => user.id === getSession(request).sub);
+      const hasAccess = usersWithAccess.some(
+        (user) => user.id === getSession(request).sub
+      );
       if (!hasAccess) {
         throw new NotFoundException();
       }
@@ -63,7 +69,9 @@ export function AccessManagerMixin<
         });
       }
       const usersWithAccess = [model.owner, ...(model.guests ?? [])];
-      const alreadyHasAccess = usersWithAccess.some((user) => user.id === userId);
+      const alreadyHasAccess = usersWithAccess.some(
+        (user) => user.id === userId
+      );
       if (alreadyHasAccess) return;
       await model.$add('guests', userId);
     }

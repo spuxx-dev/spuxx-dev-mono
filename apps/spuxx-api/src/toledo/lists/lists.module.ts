@@ -13,8 +13,20 @@ import { ListsInviteManager } from './services/lists.invite-manager';
 import { ListItemsProvider } from './services/list-items.provider';
 
 @Module({
-  imports: [SequelizeModule.forFeature([List, ListItem, ListGuest]), UsersModule],
-  controllers: [ListsCrudController, ListsActionsController, ListItemsController],
-  providers: [ListsProvider, ListsInviteManager, ListsAccessManager, ListItemsProvider],
+  imports: [
+    SequelizeModule.forFeature([List, ListItem, ListGuest]),
+    UsersModule,
+  ],
+  controllers: [
+    ListsCrudController,
+    ListsActionsController,
+    ListItemsController,
+  ],
+  providers: [
+    ListsProvider,
+    ListsInviteManager,
+    ListsAccessManager,
+    ListItemsProvider,
+  ],
 })
 export class ListsModule {}

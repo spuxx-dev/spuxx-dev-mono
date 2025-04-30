@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-import ConfirmDialog, { type ConfirmDialogOptions } from '@/components/dialog/ConfirmDialog.vue';
+import ConfirmDialog, {
+  type ConfirmDialogOptions,
+} from '@/components/dialog/ConfirmDialog.vue';
 import { useListsStore } from '@/features/lists/stores/lists.store';
 import router from '@/router';
 import type { List } from '@/services/api/lists/lists.types';

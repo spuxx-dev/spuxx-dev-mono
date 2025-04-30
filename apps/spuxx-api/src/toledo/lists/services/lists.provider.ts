@@ -19,7 +19,7 @@ export class ListsProvider {
     private readonly accessManager: ListsAccessManager,
     private readonly usersRegistrar: UsersRegistrar,
     private readonly usersProvider: UsersProvider,
-    private readonly mapper: Mapper,
+    private readonly mapper: Mapper
   ) {}
 
   /**
@@ -29,7 +29,10 @@ export class ListsProvider {
    * @param options (optional) {@link FindOptions}
    * @returns All of the user's lists.
    */
-  async findMany(request: Request, options?: FindOptions<List>): Promise<List[]> {
+  async findMany(
+    request: Request,
+    options?: FindOptions<List>
+  ): Promise<List[]> {
     const { sub } = getSession(request);
     return this.model.findAll({
       ...options,
@@ -46,7 +49,11 @@ export class ListsProvider {
    * @param options (optional) {@link FindOptions}
    * @returns The list.
    */
-  async findById(id: string, request: Request, options?: FindOptions<List>): Promise<List> {
+  async findById(
+    id: string,
+    request: Request,
+    options?: FindOptions<List>
+  ): Promise<List> {
     const list = await this.model.findByPk(id, options);
     if (!list) throw listsExceptions.findById.notFound;
     await this.accessManager.checkAccess(list, request);
@@ -68,7 +75,7 @@ export class ListsProvider {
     const createdList = await this.findById(id, request);
     Logger.log(
       `User '${preferred_username}' has created list '${createdList.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
     return createdList;
   }
@@ -85,7 +92,7 @@ export class ListsProvider {
     id: string,
     resource: ListUpdateResource,
     request: Request,
-    options?: FindOptions<List>,
+    options?: FindOptions<List>
   ): Promise<List> {
     const { preferred_username } = getSession(request);
     const list = await this.findById(id, request, {
@@ -100,7 +107,7 @@ export class ListsProvider {
     const updatedList = await list.save();
     Logger.log(
       `User '${preferred_username}' has updated list '${updatedList.id}'.`,
-      ListsProvider.name,
+      ListsProvider.name
     );
     return updatedList;
   }
@@ -116,7 +123,10 @@ export class ListsProvider {
       const list = await this.findById(id, request);
       this.accessManager.checkOwnership(list, request);
       await list.destroy();
-      Logger.log(`User '${preferred_username}' has deleted list '${list.id}'.`, ListsProvider.name);
+      Logger.log(
+        `User '${preferred_username}' has deleted list '${list.id}'.`,
+        ListsProvider.name
+      );
     } catch (error) {
       return;
     }

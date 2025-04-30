@@ -10,7 +10,12 @@ import {
   UseInterceptors,
   UsePipes,
 } from '@nestjs/common';
-import { ApiOkResponse, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
+import {
+  ApiOkResponse,
+  ApiOperation,
+  ApiParam,
+  ApiTags,
+} from '@nestjs/swagger';
 import { AuthRole } from '@src/auth/auth.config';
 import { defaultValidationPipe } from '@src/validation/default-validation.pipe';
 import { HttpLoggingInterceptor, Mapper } from '@spuxx/nest-utils';
@@ -36,7 +41,7 @@ const requiredRoles = [AuthRole.toledo];
 export class ListItemsController {
   constructor(
     private readonly provider: ListItemsProvider,
-    private readonly mapper: Mapper,
+    private readonly mapper: Mapper
   ) {}
 
   @Post(':listId/items')
@@ -55,7 +60,7 @@ export class ListItemsController {
   async create(
     @Param('listId') listId: string,
     @Body() resource: ListItemCreateResource,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<ListItemReadResource> {
     const list = await this.provider.create(listId, resource, request);
     return this.mapper.map(list, ListItem, ListItemReadResource);
@@ -78,7 +83,7 @@ export class ListItemsController {
     @Param('listId') listId: string,
     @Param('itemId') itemId: string,
     @Body() resource: ListItemUpdateResource,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<ListItemReadResource> {
     const list = await this.provider.update(listId, itemId, resource, request);
     return this.mapper.map(list, ListItem, ListItemReadResource);
@@ -99,7 +104,7 @@ export class ListItemsController {
   async delete(
     @Param('listId') listId: string,
     @Param('itemId') itemId: string,
-    @Req() request: Request,
+    @Req() request: Request
   ): Promise<void> {
     return this.provider.delete(listId, itemId, request);
   }

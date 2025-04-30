@@ -10,9 +10,13 @@ const store = useListsStore();
 
 <template>
   <VContainer>
-    <h1 class="magelove mb-4">{{ intl(`lists.route.index.collection.shared`) }}</h1>
+    <h1 class="magelove mb-4">
+      {{ intl(`lists.route.index.collection.shared`) }}
+    </h1>
     <CardGrid>
-      <i v-if="store.shared.length === 0">{{ intl(`lists.route.index.collection.empty`) }}</i>
+      <i v-if="store.shared.length === 0">{{
+        intl(`lists.route.index.collection.empty`)
+      }}</i>
       <ListsViewItem v-for="list in store.shared" :list="list" />
     </CardGrid>
   </VContainer>

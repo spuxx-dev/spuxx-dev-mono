@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/spuxx-dev/spuxx-dev-mono/compare/spuxx-astro-v1.3.0...spuxx-astro-v1.4.0) (2025-05-01)
+
+
+### Features
+
+* Migrate to solid-js and @spuxx/solid ([2e55ca0](https://github.com/spuxx-dev/spuxx-dev-mono/commit/2e55ca0c27ed135ba7cfe2fd200d9e7d11a17347))
+
+
+### Bug Fixes
+
+* Fix a couple of styling issues ([7a33352](https://github.com/spuxx-dev/spuxx-dev-mono/commit/7a33352c746445709a14666ed78e0893930d2c67))
+* Remove console.log ([201d77c](https://github.com/spuxx-dev/spuxx-dev-mono/commit/201d77c79fb366e85f5d59d27d56053a6ac45c27))
+
 ## [1.3.0](https://github.com/spuxx-dev/spuxx-dev-mono/compare/spuxx-astro-v1.2.0...spuxx-astro-v1.3.0) (2024-10-06)
 
 

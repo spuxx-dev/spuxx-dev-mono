@@ -1,0 +1,5 @@
+---
+main:
+  page:
+    login:
+      login-via-oidc: Anmelden via auth.spuxx.dev

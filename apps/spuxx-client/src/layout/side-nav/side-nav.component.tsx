@@ -24,6 +24,14 @@ export const SideNav = () => {
           color="text-default"
           onClick={Layout.closeSidebarOnMobile}
         />
+        <ButtonLink
+          icon="mdi:login"
+          title="Login"
+          href="/login"
+          variant="colored"
+          color="text-default"
+          onClick={Layout.closeSidebarOnMobile}
+        />
         <Button
           icon="mdi:account"
           title="Account"

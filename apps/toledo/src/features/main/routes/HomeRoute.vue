@@ -7,6 +7,7 @@ import MainSidebar from '../sidebar/MainSidebar.vue';
 
 useProtection();
 const { session } = SessionManager;
+// const isThea =
 </script>
 
 <template>
@@ -15,5 +16,8 @@ const { session } = SessionManager;
     v-if="session"
     :title="` ${intl('main.route.index.greeting', { name: session.given_name })}`"
   >
+    <div v-if="session.sub === '5bac0409-18a5-4f61-adc1-e0cf9b8dbbf7'">
+      Ich liebe Dich. ❤️
+    </div>
   </PageContent>
 </template>

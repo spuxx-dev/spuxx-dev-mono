@@ -7,6 +7,9 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [vue(), ViteYaml(), tsconfigPaths()],
+  server: {
+    port: 3000,
+  },
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
   },

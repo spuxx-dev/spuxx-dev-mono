@@ -1,10 +1,13 @@
 import { defineEndpoint } from '@spuxx/js-utils';
 
 export const iconsEndpoints = {
-  findManyIcons: defineEndpoint({
-    function: async (query: string): Promise<Response> => {
+  findManyIcons: defineEndpoint<{ query: string }>({
+    function: async ({ args, signal }): Promise<Response> => {
       const response = await fetch(
-        `https://api.iconify.design/search?query=mdi:${query}`
+        `https://api.iconify.design/search?query=mdi:${args.query}`,
+        {
+          signal,
+        }
       );
       return response;
     },

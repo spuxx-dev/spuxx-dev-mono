@@ -3,3 +3,8 @@ main:
   page:
     login:
       login-via-oidc: Anmelden via auth.spuxx.dev
+
+layout:
+  side-nav:
+    lists:
+      title: Listen

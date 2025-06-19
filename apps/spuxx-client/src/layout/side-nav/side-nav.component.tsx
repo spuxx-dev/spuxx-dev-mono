@@ -1,11 +1,18 @@
 import { Button, ButtonLink, Layout, Sidebar } from '@spuxx/solid';
 import { UserAgent } from '@spuxx/browser-utils';
-import { For, Show } from 'solid-js';
-// import { routes } from '../../routes/routes';
+import { Show } from 'solid-js';
+import { SideNavLists } from './side-nav-lists.component';
+import { LocalStorage } from '@/services/local-storage';
 
 export const SideNav = () => {
+  if (LocalStorage.get('sideNavOpen')) Layout.openSidebar();
+
+  const handleContentPresentChange = (present: boolean) => {
+    LocalStorage.set('sideNavOpen', present);
+  };
+
   return (
-    <Sidebar side="left">
+    <Sidebar side="left" onContentPresentChange={handleContentPresentChange}>
       <Sidebar.Toolbar>
         <Show when={!UserAgent.isDesktop}>
           <Button
@@ -45,21 +52,11 @@ export const SideNav = () => {
           color="text-default"
         />
       </Sidebar.Toolbar>
-      {/* <Sidebar.Content>
-        <nav>
-          <ul>
-            <For each={routes}>
-              {(route) => (
-                <li>
-                  <ButtonLink class="decoration-transparent" href={route.path}>
-                    {route.path}
-                  </ButtonLink>
-                </li>
-              )}
-            </For>
-          </ul>
+      <Sidebar.Content>
+        <nav class="all-inherit">
+          <SideNavLists />
         </nav>
-      </Sidebar.Content> */}
+      </Sidebar.Content>
     </Sidebar>
   );
 };

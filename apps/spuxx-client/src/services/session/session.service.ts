@@ -5,6 +5,7 @@ import { Api } from '../api';
 import { Config } from '@spuxx/browser-utils';
 import { AppConfig } from '@/config/app.config';
 import { useNavigate } from '@solidjs/router';
+import { createListsStore } from '@/stores/lists.store';
 
 export class SessionService extends ServiceMixin<SessionService>() {
   private _session = createSignal<Session | null>(null);
@@ -34,7 +35,7 @@ export class SessionService extends ServiceMixin<SessionService>() {
     if (this.session()?.sub) {
       return this.session();
     }
-    const session: Session | undefined = await Api.getSession();
+    const session: Session | undefined = await Api.getSession().promise;
     if (!session) return;
     Logger.debug(
       `Logged in as ${session.preferred_username}.`,

@@ -3,6 +3,11 @@ main:
   page:
     login:
       login-via-oidc: Anmelden via auth.spuxx.dev
+lists:
+  component:
+    create-list-button:
+      title: Neue Liste
+      new-list-name: Neue Liste
 
 layout:
   side-nav:

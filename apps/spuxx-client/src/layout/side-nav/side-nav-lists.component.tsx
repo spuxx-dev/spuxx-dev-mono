@@ -1,3 +1,4 @@
+import { CreateListButton } from '@/features/lists/components/create-list-button.component';
 import { createListsStore } from '@/stores/lists.store';
 import { intl } from '@spuxx/js-utils';
 import { ButtonLink, Layout, Sidebar } from '@spuxx/solid';
@@ -18,7 +19,6 @@ export const SideNavLists: Component = () => {
       <For each={store.lists}>
         {(list) => (
           <ButtonLink
-            class="decoration-transsparent"
             href={`/lists/${list.id}`}
             variant="colored"
             color="text-default"
@@ -30,6 +30,7 @@ export const SideNavLists: Component = () => {
           </ButtonLink>
         )}
       </For>
+      <CreateListButton />
     </Sidebar.Group>
   );
 };

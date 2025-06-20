@@ -300,7 +300,7 @@ describe('ListsCrudController', () => {
       const result: ListReadResource = response.body;
       expect(result).toMatchObject({
         name: 'groceries',
-        icon: 'list-box',
+        icon: 'mdi:list-box',
         requiresDeleteConfirmation: false,
         usesQuantities: false,
       });

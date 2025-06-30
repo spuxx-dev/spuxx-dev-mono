@@ -7,5 +7,13 @@ import solidJs from '@astrojs/solid-js';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://spuxx.dev',
-  integrations: [mdx(), sitemap(), icon(), solidJs()],
+  integrations: [
+    mdx(),
+    sitemap({
+      // Exclude specific paths from the sitemap
+      filter: (page) => !page.includes('/schlangi'),
+    }),
+    icon(),
+    solidJs(),
+  ],
 });

@@ -3,6 +3,10 @@ main:
   page:
     login:
       login-via-oidc: Anmelden via auth.spuxx.dev
+    not-found:
+      title: Hoppla!
+      text: Diese Seite kann ich nicht finden. Bist Du falsch abgebogen?
+      back: Bring mich zurück!
 lists:
   component:
     create-list-button:

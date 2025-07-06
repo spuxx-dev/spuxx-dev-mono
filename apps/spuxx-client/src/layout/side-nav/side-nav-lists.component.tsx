@@ -1,10 +1,12 @@
 import { CreateListButton } from '@/features/lists/components/create-list-button.component';
 import { createListsStore } from '@/stores/lists.store';
+import { useLocation } from '@solidjs/router';
 import { intl } from '@spuxx/js-utils';
 import { ButtonLink, Layout, Sidebar } from '@spuxx/solid';
 import { Component, createEffect, For } from 'solid-js';
 
 export const SideNavLists: Component = () => {
+  const location = useLocation();
   const { store, fetchLists } = createListsStore();
 
   createEffect(() => {

@@ -3,6 +3,8 @@ main:
   page:
     login:
       login-via-oidc: Anmelden via auth.spuxx.dev
+    root:
+      title: Hallo {name}!
     not-found:
       title: Hoppla!
       text: Diese Seite kann ich nicht finden. Bist Du falsch abgebogen?

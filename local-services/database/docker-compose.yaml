@@ -1,7 +1,7 @@
 services:
   mariadb:
     image: mariadb:latest
-    restart: always
+    restart: on-failure
     environment:
       MARIADB_ROOT_PASSWORD: root
     healthcheck:
@@ -19,7 +19,7 @@ services:
 
   adminer:
     image: adminer:latest
-    restart: always
+    restart: on-failure
     environment:
       ADMINER_DEFAULT_SERVER: mariadb
     ports:

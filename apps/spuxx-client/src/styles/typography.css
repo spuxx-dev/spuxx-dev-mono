@@ -9,11 +9,11 @@
 
 @layer base {
   h1 {
-    font-size: var(--text-4xl);
-    font-family: Magelove, Times, serif;
+    font-size: var(--text-3xl);
+    /* font-family: Magelove, Times, serif; */
   }
   h2 {
-    font-size: var(--text-3xl);
-    font-family: Magelove, Times, serif;
+    font-size: var(--text-2xl);
+    /* font-family: Magelove, Times, serif; */
   }
 }

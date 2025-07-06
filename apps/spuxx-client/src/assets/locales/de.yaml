@@ -14,7 +14,8 @@ lists:
     create-list-button:
       title: Neue Liste
       new-list-name: Neue Liste
-
+    settings:
+      title: Einstellungen
 layout:
   side-nav:
     lists:

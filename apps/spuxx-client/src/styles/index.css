@@ -11,6 +11,8 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   height: calc(100svh - 2 * var(--spx-app-bar-height));
 }
 

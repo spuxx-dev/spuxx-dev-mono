@@ -27,7 +27,7 @@
     "@tsconfig/node20": "20.1.4",
     "@types/markdown-it": "14.1.2",
     "@types/node": "20.17.0",
-    "@vitejs/plugin-vue": "5.1.4",
+    "@vitejs/plugin-vue": "6.0.1",
     "@vue/tsconfig": "0.5.1",
     "playwright": "1.50.1",
     "typescript": "5.7.3",

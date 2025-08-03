@@ -3,7 +3,7 @@ import { ListPage } from './pages/list.page';
 
 export const listsRoutes: RouteProps<string, never>[] = [
   {
-    path: '/list/:id',
+    path: '/lists/:id',
     component: ListPage,
   },
 ];

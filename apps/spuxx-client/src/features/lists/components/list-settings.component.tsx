@@ -8,5 +8,10 @@ interface Props {
 }
 
 export const ListSettings: Component<Props> = (props) => {
-  return <Container>{intl('lists.component.settings.title')}</Container>;
+  return (
+    <Container>
+      {intl('lists.component.settings.title')}
+      {props.list.name}
+    </Container>
+  );
 };

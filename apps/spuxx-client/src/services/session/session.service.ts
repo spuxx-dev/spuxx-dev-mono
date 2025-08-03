@@ -5,7 +5,6 @@ import { Api } from '../api';
 import { Config } from '@spuxx/browser-utils';
 import { AppConfig } from '@/config/app.config';
 import { useNavigate } from '@solidjs/router';
-import { createListsStore } from '@/stores/lists.store';
 
 export class SessionService extends ServiceMixin<SessionService>() {
   private _session = createSignal<Session | null>(null);
@@ -18,17 +17,13 @@ export class SessionService extends ServiceMixin<SessionService>() {
     this.instance._session[1](session);
   }
 
-  static async isAuthenticated() {
-    try {
-      const session = await SessionService.getSession();
-      return !!session;
-    } catch (error) {
-      return false;
-    }
+  static get isAuthenticated() {
+    const session = this.session();
+    return !!session;
   }
 
-  static async isNotAuthenticated() {
-    return !(await SessionService.isAuthenticated());
+  static get isNotAuthenticated() {
+    return !this.isAuthenticated;
   }
 
   static async getSession() {
@@ -59,7 +54,8 @@ export class SessionService extends ServiceMixin<SessionService>() {
 
   static async protectRoute() {
     const navigate = useNavigate();
-    if (!(await this.isAuthenticated())) {
+    await this.getSession();
+    if (this.isNotAuthenticated) {
       navigate('/login', { replace: true });
     }
   }

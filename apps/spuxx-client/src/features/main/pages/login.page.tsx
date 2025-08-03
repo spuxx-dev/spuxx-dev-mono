@@ -8,7 +8,8 @@ export const LoginPage: Component = () => {
   const navigate = useNavigate();
 
   async function checkAuthentication() {
-    const isAuthenticated = await SessionService.isAuthenticated();
+    await SessionService.getSession();
+    const { isAuthenticated } = SessionService;
     if (isAuthenticated) navigate('/', { replace: true });
   }
   checkAuthentication();

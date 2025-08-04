@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "1.1.0",
-    "@playwright/test": "1.49.1",
+    "@playwright/test": "1.54.2",
     "@tsconfig/node20": "20.1.4",
     "@types/markdown-it": "14.1.2",
     "@types/node": "20.17.0",

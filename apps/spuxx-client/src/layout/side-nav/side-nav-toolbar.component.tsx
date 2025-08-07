@@ -1,8 +1,11 @@
+import { useLocation } from '@solidjs/router';
 import { UserAgent } from '@spuxx/browser-utils';
 import { Button, ButtonLink, Layout, Sidebar } from '@spuxx/solid';
 import { Component, Show } from 'solid-js';
 
 export const SideNavToolbar: Component = () => {
+  const location = useLocation();
+
   return (
     <Sidebar.Toolbar>
       <Show when={!UserAgent.isDesktop}>
@@ -20,6 +23,7 @@ export const SideNavToolbar: Component = () => {
         href="/"
         variant="colored"
         color="text-default"
+        active={location.pathname === '/'}
         onClick={Layout.closeSidebarOnMobile}
       />
       <ButtonLink

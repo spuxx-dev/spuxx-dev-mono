@@ -21,9 +21,9 @@
   },
   "dependencies": {
     "@solidjs/router": "0.15.3",
-    "@spuxx/browser-utils": "1.8.0",
+    "@spuxx/browser-utils": "1.9.0",
     "@spuxx/js-utils": "2.0.1",
-    "@spuxx/solid": "1.5.1",
+    "@spuxx/solid": "1.6.0",
     "iconify-icon": "2.3.0",
     "solid-js": "^1.9.5"
   }

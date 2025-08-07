@@ -25,17 +25,7 @@ export const TopAppBar = () => {
           </Button>
         </a>
       </AppBar.Section>
-      <AppBar.Section>
-        <a href="https://github.com/spuxx-dev/jslibs" target="_blank">
-          <Button
-            icon="mdi:github"
-            title="GitHub"
-            variant="colored"
-            color="text-default"
-            rounded
-          />
-        </a>
-      </AppBar.Section>
+      <AppBar.Section></AppBar.Section>
     </AppBar>
   );
 };

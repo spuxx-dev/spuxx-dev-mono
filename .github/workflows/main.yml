@@ -31,16 +31,16 @@ jobs:
     secrets:
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
-  staging_toledo:
-    name: Release artifact (toledo)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
-    with:
-      tag: branch
-      path: ./apps/toledo
-      dockerfile: ./apps/toledo/Dockerfile
-      dockerhub_repository: toledo
-    secrets:
-      dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
+  # staging_toledo:
+  #   name: Release artifact (toledo)
+  #   uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
+  #   with:
+  #     tag: branch
+  #     path: ./apps/toledo
+  #     dockerfile: ./apps/toledo/Dockerfile
+  #     dockerhub_repository: toledo
+  #   secrets:
+  #     dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
   release_constellation_dashboard:
     name: Release artifact (constellation-dashboard)

@@ -16,6 +16,8 @@ lists:
       new-list-name: Neue Liste
     settings:
       title: Einstellungen
+      name:
+        label: Name
 layout:
   side-nav:
     lists:

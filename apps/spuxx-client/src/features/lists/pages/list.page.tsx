@@ -23,7 +23,7 @@ export const ListPage: Component = () => {
   createEffect(() => {});
 
   return (
-    <Container class="text-center m-auto">
+    <Container class="text-center m-auto w-2xl">
       <Show when={status() === HttpRequestStatus.pending}>
         {/* TODO: Move to Loader component in @spuxx/solid?  */}
         <Icon icon="svg-spinners:ring-resize" class="text-2xl" />

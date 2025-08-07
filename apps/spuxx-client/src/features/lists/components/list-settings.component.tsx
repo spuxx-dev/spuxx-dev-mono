@@ -1,6 +1,6 @@
 import { List } from '@/services/api/lists/lists.types';
 import { intl } from '@spuxx/js-utils';
-import { Container } from '@spuxx/solid';
+import { Accordion, Input } from '@spuxx/solid';
 import { Component } from 'solid-js';
 
 interface Props {
@@ -8,10 +8,20 @@ interface Props {
 }
 
 export const ListSettings: Component<Props> = (props) => {
+  // const p = {};
+
   return (
-    <Container>
-      {intl('lists.component.settings.title')}
-      {props.list.name}
-    </Container>
+    <Accordion>
+      <Accordion.Item
+        title={intl('lists.component.settings.title')}
+        icon="mdi:gear"
+      >
+        <Input
+          label={intl('lists.component.settings.name.label')}
+          size="full"
+          // value={props.list.name}
+        />
+      </Accordion.Item>
+    </Accordion>
   );
 };

@@ -18,7 +18,7 @@ const posts = (await getCollection('blog')).sort(
         .sort((a, b) => {
           return b.data.pubDate.getTime() - a.data.pubDate.getTime();
         })
-        .map((post) => <Card post={post} />)
+        .map((post) => <Card post={post} client:load />)
     }
   </div>
 </section>

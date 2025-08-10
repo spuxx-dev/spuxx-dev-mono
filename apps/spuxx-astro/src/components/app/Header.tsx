@@ -12,7 +12,7 @@ export const Header: Component = () => {
             variant="colored"
             color="text-default"
           >
-            Home
+            <p>Home</p>
           </ButtonLink>
           <ButtonLink
             icon="mdi:post"
@@ -20,7 +20,7 @@ export const Header: Component = () => {
             variant="colored"
             color="text-default"
           >
-            Blog
+            <p>Blog</p>
           </ButtonLink>
         </nav>
         <ButtonLink
@@ -30,7 +30,7 @@ export const Header: Component = () => {
           color="text-default"
           attrs={{ target: '_blank' }}
         >
-          Totally not Twitter
+          <p>Totally not Twitter</p>
         </ButtonLink>
         <ButtonLink
           icon="mdi:github"
@@ -39,7 +39,7 @@ export const Header: Component = () => {
           color="text-default"
           attrs={{ target: '_blank' }}
         >
-          GitHub
+          <p>GitHub</p>
         </ButtonLink>
       </AppBar.Section>
     </AppBar>

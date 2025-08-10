@@ -4,24 +4,22 @@ import FormattedDate from '../misc/FormattedDate.astro';
 const { post } = Astro.props;
 ---
 
-<a class="article-card" href={`/blog/${post.slug}/`}>
-  <h3>{post.data.title}</h3>
+<a
+  class="spx spx-card spx-card-content"
+  spx-variant="contained"
+  spx-color="surface"
+  href={`/blog/${post.slug}/`}
+>
+  <h3 class="spx" spx-color="text-default">{post.data.title}</h3>
   <p><FormattedDate date={post.data.pubDate} /></p>
 </a>
 
 <style>
-  .article-card {
-    background: var(--spx-color-surface);
-    border-radius: 8px;
-    padding: 1rem;
-    text-decoration: none;
-  }
+  a {
+    color: var(--spx-color-on-surface) !important;
 
-  .article-card:hover {
-    transform: translateY(-3px) scale(1.01);
-  }
-
-  .article-card * {
-    margin: 0;
+    > * {
+      margin: 0;
+    }
   }
 </style>

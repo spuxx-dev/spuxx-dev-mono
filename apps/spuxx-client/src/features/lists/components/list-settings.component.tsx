@@ -7,7 +7,7 @@ interface Props {
   list: List;
 }
 
-export const ListSettings: Component<Props> = (props) => {
+export const ListSettings: Component<Props> = () => {
   // const p = {};
 
   return (

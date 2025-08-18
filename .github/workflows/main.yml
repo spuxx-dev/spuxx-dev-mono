@@ -44,7 +44,7 @@ jobs:
 
   release_astro:
     name: Release artifact (spuxx-astro)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push_image.yml@v5.0.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_publish_image.yml@v5.0.0
     needs:
     - run_checks
     with:

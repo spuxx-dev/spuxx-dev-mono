@@ -53,7 +53,7 @@ jobs:
       path: ./apps/spuxx-astro
       context: ./apps/spuxx-astro
       dockerfile: ./apps/spuxx-astro/Dockerfile
-      dockerhub_repository: spuxx-astro
+      repository: spuxx-astro
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
 

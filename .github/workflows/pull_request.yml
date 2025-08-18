@@ -22,7 +22,7 @@ jobs:
 
   dependabot_auto_merge:
     name: Auto-merge dependabot PR
-    uses: spuxx-dev/ci-cd/.github/workflows/dependabot_auto_merge.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/dependabot_auto_merge.yml@v5.0.0
     needs:
       - run_checks
       - run_unit_tests

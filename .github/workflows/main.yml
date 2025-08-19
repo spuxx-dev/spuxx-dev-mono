@@ -6,6 +6,10 @@ on:
     branches:
     - main
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   run_checks:
     name: Run code checks
@@ -52,8 +56,6 @@ jobs:
       latest: true
       path: ./apps/spuxx-astro
       context: ./apps/spuxx-astro
-      # dockerfile: ./apps/spuxx-astro/Dockerfile
-      # repository: spuxx-astro
       image_name: spuxx-astro
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}

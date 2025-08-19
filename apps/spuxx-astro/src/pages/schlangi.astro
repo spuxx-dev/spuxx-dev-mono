@@ -3,26 +3,44 @@ import AppLayout from '../layouts/App.astro';
 ---
 
 <AppLayout>
+  <div class="image-grid">
+    <img src="/schlangi/20250621_144102.jpg" />
+  </div>
+
+  <h3>Ich darf vorstellen: Schlangi</h3>
+
   <p>
-    <h3>Ich darf vorstellen: Schlangi</h3>
-    Schlangi ist eine Kornnatter (Wildfärbung), 13 Jahre alt und begleitet mich nun
-    schon seit 2013 (das Jahr, in dem ich mein Biologiestudium begonnen habe 🙂).
-    Schlangi hieß mal Lucy, aber dann war klar dass er ein Kerl ist, und seitdem
-    heißt er halt Schlangi (kann ja eh nix hören). Schlangi ist ein (wie für Kornnattern
-    üblich) wahnsinnig neugieriges und ruhiges Tier. Er klettert gerne und viel und
-    man kann ihn praktisch täglich beobachten, vor allem während des Frühjahrs und
-    Sommers. Man kann ihn problemlos anfassen und hantieren (mache ich aber kaum
-    noch - er hat ja doch am liebsten seine Ruhe).
+    Schlangi ist eine Kornnatter (Wildfärbung), 13 Jahre alt und begleitet mich
+    nun schon seit 2013 (das Jahr, in dem ich mein Biologiestudium begonnen habe
+    🙂). Schlangi hieß mal Lucy, aber dann war klar dass er ein Kerl ist, und
+    seitdem heißt er halt Schlangi (kann ja eh nix hören). Schlangi ist ein (wie
+    für Kornnattern üblich) wahnsinnig neugieriges und ruhiges Tier. Er klettert
+    gerne und viel und man kann ihn praktisch täglich beobachten, vor allem
+    während des Frühjahrs und Sommers. Man kann ihn problemlos anfassen und
+    hantieren (mache ich aber kaum noch - er hat ja doch am liebsten seine
+    Ruhe).
+  </p>
 
-    <h3>Wieso ich Schlangi abgeben möchte</h3>
+  <div class="image-grid">
+    <img src="/schlangi/20250621_144058.jpg" />
+  </div>
 
+  <h3>Wieso ich Schlangi abgeben möchte</h3>
+
+  <p>
     Die Zeit hat sich weitergedreht. Weil ich inzwischen Kinder habe und der
     Platz in der Wohnung langsam knapp wird, suche ich ein neues Zuhause für
     Schlangi. Einen Ort, an dem er in Ruhe und in guter Pflege seine zweite
     Lebenshälfte verbringen kann.
+  </p>
 
-    <h3>Kosten, Pflegeaufwände etc.</h3>
+  <div class="image-grid">
+    <img src="/schlangi/20250621_144115.jpg" />
+  </div>
 
+  <h3>Kosten, Pflegeaufwände etc.</h3>
+
+  <p>
     Schlangi wird samt Terrarium und allem Zubehör abgegeben. Für das
     Gesamtpaket möchte ich gerne <b>250 Euro</b>. Mit dabei ist alles, was Du
     für die Pflege brauchst. Gerne weise ich Dich auch umfassend ein und stehe
@@ -32,9 +50,17 @@ import AppLayout from '../layouts/App.astro';
     Befeuchten/Gießen des Feuchtmoduls (alle 1-2 Wochen). Außerdem erhältst Du
     von mir ein Fachbuch, in dem alles wichtige über die Haltung von Kornnattern
     steht.
+  </p>
 
-    <h3>Das modulare Terrarium</h3>
+  <div class="image-grid">
+    <img src="/schlangi/20250621_144025.jpg" />
+    <img src="/schlangi/20250621_144013.jpg" />
+    <img src="/schlangi/20250621_144018.jpg" />
+  </div>
 
+  <h3>Das modulare Terrarium</h3>
+
+  <p>
     Hervorheben möchte ich das modulare Terrarium (BxHxT 120x120x60), das aus
     zwei trennbaren Hälften besteht. Die beiden Hälften können einfach getrennt
     werden. Sie sind durch zwei Durchgänge miteinander verbunden, die jederzeit
@@ -48,9 +74,19 @@ import AppLayout from '../layouts/App.astro';
     hochkant transportieren kannst (das spart viel Zeit, denn dann müssen wir
     die Module nicht leeren). Um den Transport kümmerst bitte Du Dich selbst -
     ich helfe aber natürlich gern.
+  </p>
 
-    <h3>Weitere Mitbewohner des Terrariums</h3>
+  <div class="image-grid">
+    <img src="/schlangi/20250621_144127.jpg" />
+    <img src="/schlangi/20250621_144135.jpg" />
+    <img src="/schlangi/20250621_144145.jpg" />
+    <img src="/schlangi/20250621_144156.jpg" />
+    <img src="/schlangi/20250621_144200.jpg" />
+  </div>
 
+  <h3>Weitere Mitbewohner des Terrariums</h3>
+
+  <p>
     Schlangi ist nicht der einzige Bewohner des Terrariums. Vor allem im
     Feuchtmodul finden sich noch weitere: Eine ganze Menge tropischer <a
       href="https://insektenliebe.com/de/produkt/weisse-asseln/"
@@ -81,14 +117,35 @@ import AppLayout from '../layouts/App.astro';
     auch proteinhaltiges Futter und Kalkgranulat). Wenn Du nicht vor hast, im großen
     Stil Asseln zu züchten, rate ich Dir aber, eher wenig zu füttern. Die wandern
     bei Überpopulation nämlich aus. 😉
+  </p>
 
-    <h3>Kontakt</h3>
+  <h3>Kontakt</h3>
 
+  <p>
     Wenn ich Dein Interesse geweckt habe, dann melde Dich bei mir unter <a
       href="mailto:hi@spuxx.dev">hi@spuxx.dev</a
     >. Wir können die weiteren Details dann per Mail oder telefonisch klären.
     Gerne kannst Du auch vorbei kommen und Dir das Terrarium und Schlangi live
     ansehen sowie Dich von mir umfassend beraten lassen, bevor Du zusagst. Ich
-    wohne in Wü
+    wohne in Würzburg in der Nähe der Missioklinik.
   </p>
 </AppLayout>
+
+<style>
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
+
+  /* Style the images */
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    max-height: 500px;
+  }
+</style>

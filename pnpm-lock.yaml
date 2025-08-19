@@ -228,13 +228,13 @@ importers:
         version: 0.15.3(solid-js@1.9.5)
       '@spuxx/browser-utils':
         specifier: 1.10.0
-        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/js-utils':
         specifier: 2.0.1
-        version: 2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/solid':
         specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
+        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
       iconify-icon:
         specifier: 2.3.0
         version: 2.3.0
@@ -243,8 +243,8 @@ importers:
         version: 1.9.5
     devDependencies:
       '@modyfi/vite-plugin-yaml':
-        specifier: 1.1.0
-        version: 1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        specifier: 1.1.1
+        version: 1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       '@tailwindcss/vite':
         specifier: 4.1.5
         version: 4.1.5(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
@@ -1262,6 +1262,11 @@ packages:
     resolution: {integrity: sha512-L26xfzkSo1yamODCAtk/ipVlL6OEw2bcJ92zunyHu8zxi7+meV0zefA9xscRMDCsMY8xL3C3wi3DhMiPxcbxbw==}
     peerDependencies:
       vite: ^3.2.7 || ^4.0.5 || ^5.0.5
+
+  '@modyfi/vite-plugin-yaml@1.1.1':
+    resolution: {integrity: sha512-rEbfFNlMGLKpAYs2RsfLAhxCHFa6M4QKHHk0A4EYcCJAUwFtFO6qiEdLjUGUTtnRUxAC7GxxCa+ZbeUILSDvqQ==}
+    peerDependencies:
+      vite: '>=3.2.7'
 
   '@nanogiants/nestjs-swagger-api-exception-decorator@1.6.11':
     resolution: {integrity: sha512-F2Jvj52BDFvKo0I5LFj+kSjwLQecqrs+ibDWokq6Xkod/wrT6gxGia1H/z7ENGk9XwwXfQL9rZt4W/+Vwp0ZhQ==}
@@ -8252,7 +8257,7 @@ snapshots:
       - rollup
     optional: true
 
-  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
+  '@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
     dependencies:
       '@rollup/pluginutils': 5.1.0(rollup@4.46.2)
       js-yaml: 4.1.0
@@ -8575,7 +8580,7 @@ snapshots:
 
   '@rollup/pluginutils@5.1.0(rollup@4.46.2)':
     dependencies:
-      '@types/estree': 1.0.7
+      '@types/estree': 1.0.8
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
@@ -8861,9 +8866,9 @@ snapshots:
     transitivePeerDependencies:
       - '@modyfi/vite-plugin-yaml'
 
-  '@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     dependencies:
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
     transitivePeerDependencies:
       - '@modyfi/vite-plugin-yaml'
 
@@ -8879,17 +8884,17 @@ snapshots:
     optionalDependencies:
       '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
   '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@6.3.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
       '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.46.2)(vite@6.3.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
   '@spuxx/nest-auth@1.0.2(lrna37nnb2tzhpgrs3balrghsa)':
     dependencies:
@@ -8946,13 +8951,13 @@ snapshots:
       iconify-icon: 2.3.0
       solid-js: 1.9.5
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
+  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.5)
       '@corvu/dialog': 0.2.4(solid-js@1.9.5)
       '@corvu/drawer': 0.2.4(solid-js@1.9.5)
-      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
-      '@spuxx/js-utils': 2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.46.2)(vite@7.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       iconify-icon: 2.3.0
       solid-js: 1.9.5
 

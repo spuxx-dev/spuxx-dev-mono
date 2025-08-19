@@ -14,29 +14,25 @@
 </div>
 <style>
   :root {
-    --avatar-background: linear-gradient(
-      135deg,
-      var(--color-gradient-1),
-      var(--color-gradient-1),
-      var(--color-gradient-3),
-      var(--color-gradient-3)
-    );
     --avatar-size: 300px;
   }
+
   .container {
     width: var(--avatar-size);
     height: var(--avatar-size);
     margin: 2rem auto;
     padding: 1.4rem;
     overflow: hidden;
-    background: var(--color-gradient-0);
-    box-shadow: 10px 10px 0px var(--color-gradient-0);
+    background: var(--spx-color-surface);
+    box-shadow: 10px 10px 0px var(--spx-color-surface);
   }
+
   .container:hover {
     transform: translate(-5px, -5px);
-    background: var(--avatar-background);
-    box-shadow: 20px 20px 0px var(--color-gradient-2);
+    background: var(--spx-color-gradient);
+    box-shadow: 20px 20px 0px var(--spx-color-primary);
   }
+
   .clip {
     position: absolute;
     height: var(--avatar-size);
@@ -45,6 +41,7 @@
     background-size: var(--avatar-size);
     box-shadow: 0px -2px 2px rgba(34, 34, 34, 0.6);
   }
+
   @keyframes clip1 {
     0% {
       clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50%);
@@ -53,6 +50,7 @@
       clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
     }
   }
+
   @keyframes clipa {
     0% {
       clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55%);
@@ -61,6 +59,7 @@
       clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
     }
   }
+
   @keyframes clip2 {
     0% {
       clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);
@@ -69,6 +68,7 @@
       clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
     }
   }
+
   @keyframes clipb {
     0% {
       clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);
@@ -77,6 +77,7 @@
       clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
     }
   }
+
   @keyframes clip3 {
     0% {
       clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);
@@ -85,6 +86,7 @@
       clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
     }
   }
+
   @keyframes clip4 {
     0% {
       clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);
@@ -93,30 +95,36 @@
       clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
     }
   }
+
   #clip1 {
     animation: clip1 8s linear infinite;
     opacity: 0.2;
   }
+
   #clipa {
     transform: scale(1.1, 1.1);
     animation: clipa 18s linear infinite;
     opacity: 0.2;
   }
+
   #clip2 {
     transform: scale(1.12, 1.12);
     animation: clip2 10s linear infinite;
     opacity: 0.2;
   }
+
   #clipb {
     transform: scale(1.14, 1.14);
     animation: clipb 8s linear infinite;
     opacity: 0.2;
   }
+
   #clip3 {
     transform: scale(1.15, 1.15);
     animation: clip3 14s linear infinite;
     opacity: 0.2;
   }
+
   #clip4 {
     transform: scale(1.13, 1.13);
     animation: clip4 12s linear infinite;

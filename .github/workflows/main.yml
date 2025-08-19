@@ -56,7 +56,7 @@ jobs:
       latest: true
       path: ./apps/spuxx-astro
       context: ./apps/spuxx-astro
-      image_name: spuxx-astro
+      repository: spuxx-astro
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
 

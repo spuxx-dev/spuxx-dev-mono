@@ -46,13 +46,13 @@ importers:
         version: 5.0.8(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.34.1)(yaml@2.5.1)
       '@spuxx/browser-utils':
         specifier: 1.10.0
-        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/solid':
         specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
+        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
       astro:
         specifier: ^5.13.1
-        version: 5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.0)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1)
+        version: 5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.1)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1)
       iconify-icon:
         specifier: 2.3.0
         version: 2.3.0
@@ -82,13 +82,13 @@ importers:
         version: 11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
       '@spuxx/js-utils':
         specifier: 1.3.0
-        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/nest-auth':
         specifier: 1.0.2
-        version: 1.0.2(g6c7l7yyv2jefnevpymekdeyey)
+        version: 1.0.2(nexmxfgqavayf27ll46ib5u4pa)
       '@spuxx/nest-utils':
         specifier: 4.0.0
-        version: 4.0.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.4.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+        version: 4.0.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.4.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       class-transformer:
         specifier: 0.5.1
         version: 0.5.1
@@ -122,7 +122,7 @@ importers:
         version: 11.0.3(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20))
       '@spuxx/nest-testing':
         specifier: 2.0.2
-        version: 2.0.2(6yfxtw7s5d5limimku5uow6e6y)
+        version: 2.0.2(a667yedz2db57r4s5uojsl5k5u)
       '@swc/cli':
         specifier: 0.6.0
         version: 0.6.0(@swc/core@1.10.12(@swc/helpers@0.5.17))(chokidar@4.0.3)
@@ -164,19 +164,19 @@ importers:
         version: 5.7.3
       unplugin-swc:
         specifier: 1.5.1
-        version: 1.5.1(@swc/core@1.10.12(@swc/helpers@0.5.17))(rollup@4.48.0)(webpack-sources@3.2.3)
+        version: 1.5.1(@swc/core@1.10.12(@swc/helpers@0.5.17))(rollup@4.48.1)(webpack-sources@3.2.3)
       vite:
-        specifier: 7.1.1
-        version: 7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+        specifier: 7.1.3
+        version: 7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
       vite-plugin-dts:
         specifier: 4.5.0
-        version: 4.5.0(@types/node@22.7.4)(rollup@4.48.0)(typescript@5.7.3)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 4.5.0(@types/node@22.7.4)(rollup@4.48.1)(typescript@5.7.3)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       vite-plugin-externalize-deps:
         specifier: ^0.9.0
-        version: 0.9.0(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 0.9.0(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
-        version: 5.1.4(typescript@5.7.3)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 5.1.4(typescript@5.7.3)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       vitest:
         specifier: 3.1.1
         version: 3.1.1(@types/debug@4.1.12)(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
@@ -185,7 +185,7 @@ importers:
     dependencies:
       '@astrojs/mdx':
         specifier: 4.3.3
-        version: 4.3.3(astro@5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.0)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1))
+        version: 4.3.3(astro@5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.1)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1))
       '@astrojs/sitemap':
         specifier: 3.3.0
         version: 3.3.0
@@ -194,16 +194,16 @@ importers:
         version: 5.1.0(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.34.1)(yaml@2.5.1)
       '@spuxx/browser-utils':
         specifier: 1.10.0
-        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/js-utils':
         specifier: 1.3.0
-        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/solid':
         specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
+        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
       astro:
         specifier: 5.13.1
-        version: 5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.0)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1)
+        version: 5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.1)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1)
       iconify-icon:
         specifier: 2.3.0
         version: 2.3.0
@@ -228,13 +228,13 @@ importers:
         version: 0.15.3(solid-js@1.9.5)
       '@spuxx/browser-utils':
         specifier: 1.10.0
-        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/js-utils':
         specifier: 2.0.1
-        version: 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+        version: 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       '@spuxx/solid':
         specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
+        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)
       iconify-icon:
         specifier: 2.3.0
         version: 2.3.0
@@ -244,10 +244,10 @@ importers:
     devDependencies:
       '@modyfi/vite-plugin-yaml':
         specifier: 1.1.1
-        version: 1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       '@tailwindcss/vite':
         specifier: 4.1.5
-        version: 4.1.5(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 4.1.5(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       tailwindcss:
         specifier: 4.1.5
         version: 4.1.5
@@ -255,14 +255,14 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
       vite:
-        specifier: 7.1.1
-        version: 7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+        specifier: 7.1.3
+        version: 7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
       vite-plugin-solid:
         specifier: 2.11.6
-        version: 2.11.6(solid-js@1.9.5)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 2.11.6(solid-js@1.9.5)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
-        version: 5.1.4(typescript@5.7.2)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+        version: 5.1.4(typescript@5.7.2)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
 packages:
 
@@ -1463,6 +1463,11 @@ packages:
     cpu: [arm]
     os: [android]
 
+  '@rollup/rollup-android-arm-eabi@4.48.1':
+    resolution: {integrity: sha512-rGmb8qoG/zdmKoYELCBwu7vt+9HxZ7Koos3pD0+sH5fR3u3Wb/jGcpnqxcnWsPEKDUyzeLSqksN8LJtgXjqBYw==}
+    cpu: [arm]
+    os: [android]
+
   '@rollup/rollup-android-arm64@4.40.1':
     resolution: {integrity: sha512-PPkxTOisoNC6TpnDKatjKkjRMsdaWIhyuMkA4UsBXT9WEZY4uHezBTjs6Vl4PbqQQeu6oION1w2voYZv9yquCw==}
     cpu: [arm64]
@@ -1470,6 +1475,11 @@ packages:
 
   '@rollup/rollup-android-arm64@4.48.0':
     resolution: {integrity: sha512-diOdQuw43xTa1RddAFbhIA8toirSzFMcnIg8kvlzRbK26xqEnKJ/vqQnghTAajy2Dcy42v+GMPMo6jq67od+Dw==}
+    cpu: [arm64]
+    os: [android]
+
+  '@rollup/rollup-android-arm64@4.48.1':
+    resolution: {integrity: sha512-4e9WtTxrk3gu1DFE+imNJr4WsL13nWbD/Y6wQcyku5qadlKHY3OQ3LJ/INrrjngv2BJIHnIzbqMk1GTAC2P8yQ==}
     cpu: [arm64]
     os: [android]
 
@@ -1483,6 +1493,11 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
+  '@rollup/rollup-darwin-arm64@4.48.1':
+    resolution: {integrity: sha512-+XjmyChHfc4TSs6WUQGmVf7Hkg8ferMAE2aNYYWjiLzAS/T62uOsdfnqv+GHRjq7rKRnYh4mwWb4Hz7h/alp8A==}
+    cpu: [arm64]
+    os: [darwin]
+
   '@rollup/rollup-darwin-x64@4.40.1':
     resolution: {integrity: sha512-nIwkXafAI1/QCS7pxSpv/ZtFW6TXcNUEHAIA9EIyw5OzxJZQ1YDrX+CL6JAIQgZ33CInl1R6mHet9Y/UZTg2Bw==}
     cpu: [x64]
@@ -1490,6 +1505,11 @@ packages:
 
   '@rollup/rollup-darwin-x64@4.48.0':
     resolution: {integrity: sha512-Q9RMXnQVJ5S1SYpNSTwXDpoQLgJ/fbInWOyjbCnnqTElEyeNvLAB3QvG5xmMQMhFN74bB5ZZJYkKaFPcOG8sGg==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rollup/rollup-darwin-x64@4.48.1':
+    resolution: {integrity: sha512-upGEY7Ftw8M6BAJyGwnwMw91rSqXTcOKZnnveKrVWsMTF8/k5mleKSuh7D4v4IV1pLxKAk3Tbs0Lo9qYmii5mQ==}
     cpu: [x64]
     os: [darwin]
 
@@ -1503,6 +1523,11 @@ packages:
     cpu: [arm64]
     os: [freebsd]
 
+  '@rollup/rollup-freebsd-arm64@4.48.1':
+    resolution: {integrity: sha512-P9ViWakdoynYFUOZhqq97vBrhuvRLAbN/p2tAVJvhLb8SvN7rbBnJQcBu8e/rQts42pXGLVhfsAP0k9KXWa3nQ==}
+    cpu: [arm64]
+    os: [freebsd]
+
   '@rollup/rollup-freebsd-x64@4.40.1':
     resolution: {integrity: sha512-VXeo/puqvCG8JBPNZXZf5Dqq7BzElNJzHRRw3vjBE27WujdzuOPecDPc/+1DcdcTptNBep3861jNq0mYkT8Z6Q==}
     cpu: [x64]
@@ -1510,6 +1535,11 @@ packages:
 
   '@rollup/rollup-freebsd-x64@4.48.0':
     resolution: {integrity: sha512-NcD5uVUmE73C/TPJqf78hInZmiSBsDpz3iD5MF/BuB+qzm4ooF2S1HfeTChj5K4AV3y19FFPgxonsxiEpy8v/A==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@rollup/rollup-freebsd-x64@4.48.1':
+    resolution: {integrity: sha512-VLKIwIpnBya5/saccM8JshpbxfyJt0Dsli0PjXozHwbSVaHTvWXJH1bbCwPXxnMzU4zVEfgD1HpW3VQHomi2AQ==}
     cpu: [x64]
     os: [freebsd]
 
@@ -1523,6 +1553,11 @@ packages:
     cpu: [arm]
     os: [linux]
 
+  '@rollup/rollup-linux-arm-gnueabihf@4.48.1':
+    resolution: {integrity: sha512-3zEuZsXfKaw8n/yF7t8N6NNdhyFw3s8xJTqjbTDXlipwrEHo4GtIKcMJr5Ed29leLpB9AugtAQpAHW0jvtKKaQ==}
+    cpu: [arm]
+    os: [linux]
+
   '@rollup/rollup-linux-arm-musleabihf@4.40.1':
     resolution: {integrity: sha512-m39iO/aaurh5FVIu/F4/Zsl8xppd76S4qoID8E+dSRQvTyZTOI2gVk3T4oqzfq1PtcvOfAVlwLMK3KRQMaR8lg==}
     cpu: [arm]
@@ -1530,6 +1565,11 @@ packages:
 
   '@rollup/rollup-linux-arm-musleabihf@4.48.0':
     resolution: {integrity: sha512-9xu92F0TxuMH0tD6tG3+GtngwdgSf8Bnz+YcsPG91/r5Vgh5LNofO48jV55priA95p3c92FLmPM7CvsVlnSbGQ==}
+    cpu: [arm]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm-musleabihf@4.48.1':
+    resolution: {integrity: sha512-leo9tOIlKrcBmmEypzunV/2w946JeLbTdDlwEZ7OnnsUyelZ72NMnT4B2vsikSgwQifjnJUbdXzuW4ToN1wV+Q==}
     cpu: [arm]
     os: [linux]
 
@@ -1543,6 +1583,11 @@ packages:
     cpu: [arm64]
     os: [linux]
 
+  '@rollup/rollup-linux-arm64-gnu@4.48.1':
+    resolution: {integrity: sha512-Vy/WS4z4jEyvnJm+CnPfExIv5sSKqZrUr98h03hpAMbE2aI0aD2wvK6GiSe8Gx2wGp3eD81cYDpLLBqNb2ydwQ==}
+    cpu: [arm64]
+    os: [linux]
+
   '@rollup/rollup-linux-arm64-musl@4.40.1':
     resolution: {integrity: sha512-jEwjn3jCA+tQGswK3aEWcD09/7M5wGwc6+flhva7dsQNRZZTe30vkalgIzV4tjkopsTS9Jd7Y1Bsj6a4lzz8gQ==}
     cpu: [arm64]
@@ -1550,6 +1595,11 @@ packages:
 
   '@rollup/rollup-linux-arm64-musl@4.48.0':
     resolution: {integrity: sha512-QJ4hCOnz2SXgCh+HmpvZkM+0NSGcZACyYS8DGbWn2PbmA0e5xUk4bIP8eqJyNXLtyB4gZ3/XyvKtQ1IFH671vQ==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm64-musl@4.48.1':
+    resolution: {integrity: sha512-x5Kzn7XTwIssU9UYqWDB9VpLpfHYuXw5c6bJr4Mzv9kIv242vmJHbI5PJJEnmBYitUIfoMCODDhR7KoZLot2VQ==}
     cpu: [arm64]
     os: [linux]
 
@@ -1563,6 +1613,11 @@ packages:
     cpu: [loong64]
     os: [linux]
 
+  '@rollup/rollup-linux-loongarch64-gnu@4.48.1':
+    resolution: {integrity: sha512-yzCaBbwkkWt/EcgJOKDUdUpMHjhiZT/eDktOPWvSRpqrVE04p0Nd6EGV4/g7MARXXeOqstflqsKuXVM3H9wOIQ==}
+    cpu: [loong64]
+    os: [linux]
+
   '@rollup/rollup-linux-powerpc64le-gnu@4.40.1':
     resolution: {integrity: sha512-BvvA64QxZlh7WZWqDPPdt0GH4bznuL6uOO1pmgPnnv86rpUpc8ZxgZwcEgXvo02GRIZX1hQ0j0pAnhwkhwPqWg==}
     cpu: [ppc64]
@@ -1570,6 +1625,11 @@ packages:
 
   '@rollup/rollup-linux-ppc64-gnu@4.48.0':
     resolution: {integrity: sha512-/dNFc6rTpoOzgp5GKoYjT6uLo8okR/Chi2ECOmCZiS4oqh3mc95pThWma7Bgyk6/WTEvjDINpiBCuecPLOgBLQ==}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@rollup/rollup-linux-ppc64-gnu@4.48.1':
+    resolution: {integrity: sha512-UK0WzWUjMAJccHIeOpPhPcKBqax7QFg47hwZTp6kiMhQHeOYJeaMwzeRZe1q5IiTKsaLnHu9s6toSYVUlZ2QtQ==}
     cpu: [ppc64]
     os: [linux]
 
@@ -1583,6 +1643,11 @@ packages:
     cpu: [riscv64]
     os: [linux]
 
+  '@rollup/rollup-linux-riscv64-gnu@4.48.1':
+    resolution: {integrity: sha512-3NADEIlt+aCdCbWVZ7D3tBjBX1lHpXxcvrLt/kdXTiBrOds8APTdtk2yRL2GgmnSVeX4YS1JIf0imFujg78vpw==}
+    cpu: [riscv64]
+    os: [linux]
+
   '@rollup/rollup-linux-riscv64-musl@4.40.1':
     resolution: {integrity: sha512-n/vQ4xRZXKuIpqukkMXZt9RWdl+2zgGNx7Uda8NtmLJ06NL8jiHxUawbwC+hdSq1rrw/9CghCpEONor+l1e2gA==}
     cpu: [riscv64]
@@ -1590,6 +1655,11 @@ packages:
 
   '@rollup/rollup-linux-riscv64-musl@4.48.0':
     resolution: {integrity: sha512-FI3Rr2aGAtl1aHzbkBIamsQyuauYtTF9SDUJ8n2wMXuuxwchC3QkumZa1TEXYIv/1AUp1a25Kwy6ONArvnyeVQ==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@rollup/rollup-linux-riscv64-musl@4.48.1':
+    resolution: {integrity: sha512-euuwm/QTXAMOcyiFCcrx0/S2jGvFlKJ2Iro8rsmYL53dlblp3LkUQVFzEidHhvIPPvcIsxDhl2wkBE+I6YVGzA==}
     cpu: [riscv64]
     os: [linux]
 
@@ -1603,6 +1673,11 @@ packages:
     cpu: [s390x]
     os: [linux]
 
+  '@rollup/rollup-linux-s390x-gnu@4.48.1':
+    resolution: {integrity: sha512-w8mULUjmPdWLJgmTYJx/W6Qhln1a+yqvgwmGXcQl2vFBkWsKGUBRbtLRuKJUln8Uaimf07zgJNxOhHOvjSQmBQ==}
+    cpu: [s390x]
+    os: [linux]
+
   '@rollup/rollup-linux-x64-gnu@4.40.1':
     resolution: {integrity: sha512-XiK5z70PEFEFqcNj3/zRSz/qX4bp4QIraTy9QjwJAb/Z8GM7kVUsD0Uk8maIPeTyPCP03ChdI+VVmJriKYbRHQ==}
     cpu: [x64]
@@ -1610,6 +1685,11 @@ packages:
 
   '@rollup/rollup-linux-x64-gnu@4.48.0':
     resolution: {integrity: sha512-GUdZKTeKBq9WmEBzvFYuC88yk26vT66lQV8D5+9TgkfbewhLaTHRNATyzpQwwbHIfJvDJ3N9WJ90wK/uR3cy3Q==}
+    cpu: [x64]
+    os: [linux]
+
+  '@rollup/rollup-linux-x64-gnu@4.48.1':
+    resolution: {integrity: sha512-90taWXCWxTbClWuMZD0DKYohY1EovA+W5iytpE89oUPmT5O1HFdf8cuuVIylE6vCbrGdIGv85lVRzTcpTRZ+kA==}
     cpu: [x64]
     os: [linux]
 
@@ -1623,6 +1703,11 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  '@rollup/rollup-linux-x64-musl@4.48.1':
+    resolution: {integrity: sha512-2Gu29SkFh1FfTRuN1GR1afMuND2GKzlORQUP3mNMJbqdndOg7gNsa81JnORctazHRokiDzQ5+MLE5XYmZW5VWg==}
+    cpu: [x64]
+    os: [linux]
+
   '@rollup/rollup-win32-arm64-msvc@4.40.1':
     resolution: {integrity: sha512-b2bcNm9Kbde03H+q+Jjw9tSfhYkzrDUf2d5MAd1bOJuVplXvFhWz7tRtWvD8/ORZi7qSCy0idW6tf2HgxSXQSg==}
     cpu: [arm64]
@@ -1630,6 +1715,11 @@ packages:
 
   '@rollup/rollup-win32-arm64-msvc@4.48.0':
     resolution: {integrity: sha512-kpFno46bHtjZVdRIOxqaGeiABiToo2J+st7Yce+aiAoo1H0xPi2keyQIP04n2JjDVuxBN6bSz9R6RdTK5hIppw==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@rollup/rollup-win32-arm64-msvc@4.48.1':
+    resolution: {integrity: sha512-6kQFR1WuAO50bxkIlAVeIYsz3RUx+xymwhTo9j94dJ+kmHe9ly7muH23sdfWduD0BA8pD9/yhonUvAjxGh34jQ==}
     cpu: [arm64]
     os: [win32]
 
@@ -1643,6 +1733,11 @@ packages:
     cpu: [ia32]
     os: [win32]
 
+  '@rollup/rollup-win32-ia32-msvc@4.48.1':
+    resolution: {integrity: sha512-RUyZZ/mga88lMI3RlXFs4WQ7n3VyU07sPXmMG7/C1NOi8qisUg57Y7LRarqoGoAiopmGmChUhSwfpvQ3H5iGSQ==}
+    cpu: [ia32]
+    os: [win32]
+
   '@rollup/rollup-win32-x64-msvc@4.40.1':
     resolution: {integrity: sha512-ECyOuDeH3C1I8jH2MK1RtBJW+YPMvSfT0a5NN0nHfQYnDSJ6tUiZH3gzwVP5/Kfh/+Tt7tpWVF9LXNTnhTJ3kA==}
     cpu: [x64]
@@ -1650,6 +1745,11 @@ packages:
 
   '@rollup/rollup-win32-x64-msvc@4.48.0':
     resolution: {integrity: sha512-sq0hHLTgdtwOPDB5SJOuaoHyiP1qSwg+71TQWk8iDS04bW1wIE0oQ6otPiRj2ZvLYNASLMaTp8QRGUVZ+5OL5A==}
+    cpu: [x64]
+    os: [win32]
+
+  '@rollup/rollup-win32-x64-msvc@4.48.1':
+    resolution: {integrity: sha512-8a/caCUN4vkTChxkaIJcMtwIVcBhi4X2PQRoT+yCK3qRYaZ7cURrmJFL5Ux9H9RaMIXj9RuihckdmkBX3zZsgg==}
     cpu: [x64]
     os: [win32]
 
@@ -5483,6 +5583,11 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
+  rollup@4.48.1:
+    resolution: {integrity: sha512-jVG20NvbhTYDkGAty2/Yh7HK6/q3DGSRH4o8ALKGArmMuaauM9kLfoMZ+WliPwA5+JHr2lTn3g557FxBV87ifg==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+
   router@2.2.0:
     resolution: {integrity: sha512-nLTrUKm2UyiL7rlhapu/Zl45FwNgkZGaCpZbIHajDYgwlJCOzLSk+cIPAnsEqV955GjILJnKbdQC1nVPz+gAYQ==}
     engines: {node: '>= 18'}
@@ -6554,8 +6659,8 @@ packages:
       yaml:
         optional: true
 
-  vite@7.1.1:
-    resolution: {integrity: sha512-yJ+Mp7OyV+4S+afWo+QyoL9jFWD11QFH0i5i7JypnfTcA1rmgxCbiA8WwAICDEtZ1Z1hzrVhN8R8rGTqkTY8ZQ==}
+  vite@7.1.3:
+    resolution: {integrity: sha512-OOUi5zjkDxYrKhTV3V7iKsoS37VUM7v40+HuwEmcrsf11Cdx9y3DIr2Px6liIcZFwt3XSRpQvFpL3WVy7ApkGw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -7075,12 +7180,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.3(astro@5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.0)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1))':
+  '@astrojs/mdx@4.3.3(astro@5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.1)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.5
       '@mdx-js/mdx': 3.1.0(acorn@8.15.0)
       acorn: 8.15.0
-      astro: 5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.0)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1)
+      astro: 5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.1)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -7822,9 +7927,9 @@ snapshots:
 
   '@microsoft/tsdoc@0.15.1': {}
 
-  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
+  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(rollup@4.48.0)
+      '@rollup/pluginutils': 5.1.0(rollup@4.48.1)
       js-yaml: 4.1.0
       tosource: 2.0.0-alpha.3
       vite: 6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
@@ -7832,22 +7937,22 @@ snapshots:
       - rollup
     optional: true
 
-  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
+  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(rollup@4.48.0)
+      '@rollup/pluginutils': 5.1.0(rollup@4.48.1)
       js-yaml: 4.1.0
       tosource: 2.0.0-alpha.3
-      vite: 7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
     transitivePeerDependencies:
       - rollup
     optional: true
 
-  '@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
+  '@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(rollup@4.48.0)
+      '@rollup/pluginutils': 5.1.0(rollup@4.48.1)
       js-yaml: 4.1.0
       tosource: 2.0.0-alpha.3
-      vite: 7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
     transitivePeerDependencies:
       - rollup
 
@@ -8163,42 +8268,45 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@rollup/pluginutils@5.1.0(rollup@4.48.0)':
+  '@rollup/pluginutils@5.1.0(rollup@4.48.1)':
     dependencies:
       '@types/estree': 1.0.8
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
-      rollup: 4.48.0
+      rollup: 4.48.1
 
-  '@rollup/pluginutils@5.1.3(rollup@4.48.0)':
+  '@rollup/pluginutils@5.1.3(rollup@4.48.1)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 4.0.3
     optionalDependencies:
-      rollup: 4.48.0
+      rollup: 4.48.1
 
-  '@rollup/pluginutils@5.1.4(rollup@4.48.0)':
+  '@rollup/pluginutils@5.1.4(rollup@4.48.1)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 4.0.3
     optionalDependencies:
-      rollup: 4.48.0
+      rollup: 4.48.1
 
-  '@rollup/pluginutils@5.2.0(rollup@4.48.0)':
+  '@rollup/pluginutils@5.2.0(rollup@4.48.1)':
     dependencies:
       '@types/estree': 1.0.8
       estree-walker: 2.0.2
       picomatch: 4.0.3
     optionalDependencies:
-      rollup: 4.48.0
+      rollup: 4.48.1
 
   '@rollup/rollup-android-arm-eabi@4.40.1':
     optional: true
 
   '@rollup/rollup-android-arm-eabi@4.48.0':
+    optional: true
+
+  '@rollup/rollup-android-arm-eabi@4.48.1':
     optional: true
 
   '@rollup/rollup-android-arm64@4.40.1':
@@ -8207,10 +8315,16 @@ snapshots:
   '@rollup/rollup-android-arm64@4.48.0':
     optional: true
 
+  '@rollup/rollup-android-arm64@4.48.1':
+    optional: true
+
   '@rollup/rollup-darwin-arm64@4.40.1':
     optional: true
 
   '@rollup/rollup-darwin-arm64@4.48.0':
+    optional: true
+
+  '@rollup/rollup-darwin-arm64@4.48.1':
     optional: true
 
   '@rollup/rollup-darwin-x64@4.40.1':
@@ -8219,10 +8333,16 @@ snapshots:
   '@rollup/rollup-darwin-x64@4.48.0':
     optional: true
 
+  '@rollup/rollup-darwin-x64@4.48.1':
+    optional: true
+
   '@rollup/rollup-freebsd-arm64@4.40.1':
     optional: true
 
   '@rollup/rollup-freebsd-arm64@4.48.0':
+    optional: true
+
+  '@rollup/rollup-freebsd-arm64@4.48.1':
     optional: true
 
   '@rollup/rollup-freebsd-x64@4.40.1':
@@ -8231,10 +8351,16 @@ snapshots:
   '@rollup/rollup-freebsd-x64@4.48.0':
     optional: true
 
+  '@rollup/rollup-freebsd-x64@4.48.1':
+    optional: true
+
   '@rollup/rollup-linux-arm-gnueabihf@4.40.1':
     optional: true
 
   '@rollup/rollup-linux-arm-gnueabihf@4.48.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm-gnueabihf@4.48.1':
     optional: true
 
   '@rollup/rollup-linux-arm-musleabihf@4.40.1':
@@ -8243,10 +8369,16 @@ snapshots:
   '@rollup/rollup-linux-arm-musleabihf@4.48.0':
     optional: true
 
+  '@rollup/rollup-linux-arm-musleabihf@4.48.1':
+    optional: true
+
   '@rollup/rollup-linux-arm64-gnu@4.40.1':
     optional: true
 
   '@rollup/rollup-linux-arm64-gnu@4.48.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-gnu@4.48.1':
     optional: true
 
   '@rollup/rollup-linux-arm64-musl@4.40.1':
@@ -8255,10 +8387,16 @@ snapshots:
   '@rollup/rollup-linux-arm64-musl@4.48.0':
     optional: true
 
+  '@rollup/rollup-linux-arm64-musl@4.48.1':
+    optional: true
+
   '@rollup/rollup-linux-loongarch64-gnu@4.40.1':
     optional: true
 
   '@rollup/rollup-linux-loongarch64-gnu@4.48.0':
+    optional: true
+
+  '@rollup/rollup-linux-loongarch64-gnu@4.48.1':
     optional: true
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.40.1':
@@ -8267,10 +8405,16 @@ snapshots:
   '@rollup/rollup-linux-ppc64-gnu@4.48.0':
     optional: true
 
+  '@rollup/rollup-linux-ppc64-gnu@4.48.1':
+    optional: true
+
   '@rollup/rollup-linux-riscv64-gnu@4.40.1':
     optional: true
 
   '@rollup/rollup-linux-riscv64-gnu@4.48.0':
+    optional: true
+
+  '@rollup/rollup-linux-riscv64-gnu@4.48.1':
     optional: true
 
   '@rollup/rollup-linux-riscv64-musl@4.40.1':
@@ -8279,10 +8423,16 @@ snapshots:
   '@rollup/rollup-linux-riscv64-musl@4.48.0':
     optional: true
 
+  '@rollup/rollup-linux-riscv64-musl@4.48.1':
+    optional: true
+
   '@rollup/rollup-linux-s390x-gnu@4.40.1':
     optional: true
 
   '@rollup/rollup-linux-s390x-gnu@4.48.0':
+    optional: true
+
+  '@rollup/rollup-linux-s390x-gnu@4.48.1':
     optional: true
 
   '@rollup/rollup-linux-x64-gnu@4.40.1':
@@ -8291,10 +8441,16 @@ snapshots:
   '@rollup/rollup-linux-x64-gnu@4.48.0':
     optional: true
 
+  '@rollup/rollup-linux-x64-gnu@4.48.1':
+    optional: true
+
   '@rollup/rollup-linux-x64-musl@4.40.1':
     optional: true
 
   '@rollup/rollup-linux-x64-musl@4.48.0':
+    optional: true
+
+  '@rollup/rollup-linux-x64-musl@4.48.1':
     optional: true
 
   '@rollup/rollup-win32-arm64-msvc@4.40.1':
@@ -8303,16 +8459,25 @@ snapshots:
   '@rollup/rollup-win32-arm64-msvc@4.48.0':
     optional: true
 
+  '@rollup/rollup-win32-arm64-msvc@4.48.1':
+    optional: true
+
   '@rollup/rollup-win32-ia32-msvc@4.40.1':
     optional: true
 
   '@rollup/rollup-win32-ia32-msvc@4.48.0':
     optional: true
 
+  '@rollup/rollup-win32-ia32-msvc@4.48.1':
+    optional: true
+
   '@rollup/rollup-win32-x64-msvc@4.40.1':
     optional: true
 
   '@rollup/rollup-win32-x64-msvc@4.48.0':
+    optional: true
+
+  '@rollup/rollup-win32-x64-msvc@4.48.1':
     optional: true
 
   '@rushstack/node-core-library@5.11.0(@types/node@22.7.4)':
@@ -8416,100 +8581,100 @@ snapshots:
     dependencies:
       solid-js: 1.9.5
 
-  '@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     dependencies:
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
     transitivePeerDependencies:
       - '@modyfi/vite-plugin-yaml'
 
-  '@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     dependencies:
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
     transitivePeerDependencies:
       - '@modyfi/vite-plugin-yaml'
 
-  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
+  '@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
 
-  '@spuxx/nest-auth@1.0.2(g6c7l7yyv2jefnevpymekdeyey)':
+  '@spuxx/nest-auth@1.0.2(nexmxfgqavayf27ll46ib5u4pa)':
     dependencies:
       '@nanogiants/nestjs-swagger-api-exception-decorator': 1.6.11(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))
       '@nestjs/common': 11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/swagger': 11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       class-transformer: 0.5.1
       class-validator: 0.14.1
       express-openid-connect: 2.19.2(express@5.1.0)
       reflect-metadata: 0.2.2
       rxjs: 7.8.1
 
-  '@spuxx/nest-testing@2.0.2(6yfxtw7s5d5limimku5uow6e6y)':
+  '@spuxx/nest-testing@2.0.2(a667yedz2db57r4s5uojsl5k5u)':
     dependencies:
       '@nestjs/common': 11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/testing': 11.0.3(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20))
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
-      '@spuxx/nest-auth': 1.0.2(g6c7l7yyv2jefnevpymekdeyey)
-      '@spuxx/nest-utils': 4.0.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.4.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/nest-auth': 1.0.2(nexmxfgqavayf27ll46ib5u4pa)
+      '@spuxx/nest-utils': 4.0.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.4.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       supertest: 7.0.0
 
-  '@spuxx/nest-utils@4.0.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.4.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
+  '@spuxx/nest-utils@4.0.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.4.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
     dependencies:
       '@nestjs/common': 11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/swagger': 11.2.0(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       class-transformer: 0.5.1
       class-validator: 0.14.1
       dotenv: 16.4.7
       reflect-metadata: 0.2.2
       rxjs: 7.8.1
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
+  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.5)
       '@corvu/dialog': 0.2.4(solid-js@1.9.5)
       '@corvu/drawer': 0.2.4(solid-js@1.9.5)
-      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       iconify-icon: 2.3.0
       solid-js: 1.9.5
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
+  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.5)
       '@corvu/dialog': 0.2.4(solid-js@1.9.5)
       '@corvu/drawer': 0.2.4(solid-js@1.9.5)
-      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
-      '@spuxx/js-utils': 2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.0)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.48.1)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       iconify-icon: 2.3.0
       solid-js: 1.9.5
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
+  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.5)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.5)
       '@corvu/dialog': 0.2.4(solid-js@1.9.5)
       '@corvu/drawer': 0.2.4(solid-js@1.9.5)
-      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
-      '@spuxx/js-utils': 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.0)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/browser-utils': 1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
+      '@spuxx/js-utils': 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.48.1)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)))
       iconify-icon: 2.3.0
       solid-js: 1.9.5
 
@@ -8651,12 +8816,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.5
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.5
 
-  '@tailwindcss/vite@4.1.5(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
+  '@tailwindcss/vite@4.1.5(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))':
     dependencies:
       '@tailwindcss/node': 4.1.5
       '@tailwindcss/oxide': 4.1.5
       tailwindcss: 4.1.5
-      vite: 7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
 
   '@tokenizer/inflate@0.2.7':
     dependencies:
@@ -9445,7 +9610,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.0)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1):
+  astro@5.13.1(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.48.1)(terser@5.34.1)(typescript@5.8.3)(yaml@2.5.1):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.7.1
@@ -9453,7 +9618,7 @@ snapshots:
       '@astrojs/telemetry': 3.3.0
       '@capsizecss/unpack': 2.4.0(encoding@0.1.13)
       '@oslojs/encoding': 1.1.0
-      '@rollup/pluginutils': 5.2.0(rollup@4.48.0)
+      '@rollup/pluginutils': 5.2.0(rollup@4.48.1)
       acorn: 8.15.0
       aria-query: 5.3.2
       axobject-query: 4.1.0
@@ -13080,6 +13245,32 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.48.0
       fsevents: 2.3.3
 
+  rollup@4.48.1:
+    dependencies:
+      '@types/estree': 1.0.8
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.48.1
+      '@rollup/rollup-android-arm64': 4.48.1
+      '@rollup/rollup-darwin-arm64': 4.48.1
+      '@rollup/rollup-darwin-x64': 4.48.1
+      '@rollup/rollup-freebsd-arm64': 4.48.1
+      '@rollup/rollup-freebsd-x64': 4.48.1
+      '@rollup/rollup-linux-arm-gnueabihf': 4.48.1
+      '@rollup/rollup-linux-arm-musleabihf': 4.48.1
+      '@rollup/rollup-linux-arm64-gnu': 4.48.1
+      '@rollup/rollup-linux-arm64-musl': 4.48.1
+      '@rollup/rollup-linux-loongarch64-gnu': 4.48.1
+      '@rollup/rollup-linux-ppc64-gnu': 4.48.1
+      '@rollup/rollup-linux-riscv64-gnu': 4.48.1
+      '@rollup/rollup-linux-riscv64-musl': 4.48.1
+      '@rollup/rollup-linux-s390x-gnu': 4.48.1
+      '@rollup/rollup-linux-x64-gnu': 4.48.1
+      '@rollup/rollup-linux-x64-musl': 4.48.1
+      '@rollup/rollup-win32-arm64-msvc': 4.48.1
+      '@rollup/rollup-win32-ia32-msvc': 4.48.1
+      '@rollup/rollup-win32-x64-msvc': 4.48.1
+      fsevents: 2.3.3
+
   router@2.2.0:
     dependencies:
       debug: 4.4.1
@@ -13978,9 +14169,9 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  unplugin-swc@1.5.1(@swc/core@1.10.12(@swc/helpers@0.5.17))(rollup@4.48.0)(webpack-sources@3.2.3):
+  unplugin-swc@1.5.1(@swc/core@1.10.12(@swc/helpers@0.5.17))(rollup@4.48.1)(webpack-sources@3.2.3):
     dependencies:
-      '@rollup/pluginutils': 5.1.3(rollup@4.48.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.48.1)
       '@swc/core': 1.10.12(@swc/helpers@0.5.17)
       load-tsconfig: 0.2.5
       unplugin: 1.14.1(webpack-sources@3.2.3)
@@ -14092,10 +14283,10 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-dts@4.5.0(@types/node@22.7.4)(rollup@4.48.0)(typescript@5.7.3)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
+  vite-plugin-dts@4.5.0(@types/node@22.7.4)(rollup@4.48.1)(typescript@5.7.3)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     dependencies:
       '@microsoft/api-extractor': 7.49.2(@types/node@22.7.4)
-      '@rollup/pluginutils': 5.1.4(rollup@4.48.0)
+      '@rollup/pluginutils': 5.1.4(rollup@4.48.1)
       '@volar/typescript': 2.4.11
       '@vue/language-core': 2.2.0(typescript@5.7.3)
       compare-versions: 6.1.1
@@ -14105,15 +14296,15 @@ snapshots:
       magic-string: 0.30.17
       typescript: 5.7.3
     optionalDependencies:
-      vite: 7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite-plugin-externalize-deps@0.9.0(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
+  vite-plugin-externalize-deps@0.9.0(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     dependencies:
-      vite: 7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
 
   vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@6.3.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     dependencies:
@@ -14141,7 +14332,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
+  vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     dependencies:
       '@babel/core': 7.26.10
       '@types/babel__core': 7.20.5
@@ -14149,29 +14340,29 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.5
       solid-refresh: 0.6.3(solid-js@1.9.5)
-      vite: 7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
-      vitefu: 1.0.6(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
+      vite: 7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vitefu: 1.0.6(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1))
     transitivePeerDependencies:
       - supports-color
 
-  vite-tsconfig-paths@5.1.4(typescript@5.7.2)(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
+  vite-tsconfig-paths@5.1.4(typescript@5.7.2)(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@5.7.2)
     optionalDependencies:
-      vite: 7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite-tsconfig-paths@5.1.4(typescript@5.7.3)(vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
+  vite-tsconfig-paths@5.1.4(typescript@5.7.3)(vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@5.7.3)
     optionalDependencies:
-      vite: 7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -14224,13 +14415,13 @@ snapshots:
       terser: 5.34.1
       yaml: 2.5.1
 
-  vite@7.1.1(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1):
+  vite@7.1.3(@types/node@22.7.4)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
       postcss: 8.5.6
-      rollup: 4.48.0
+      rollup: 4.48.1
       tinyglobby: 0.2.14
     optionalDependencies:
       '@types/node': 22.7.4
@@ -14240,13 +14431,13 @@ snapshots:
       terser: 5.34.1
       yaml: 2.5.1
 
-  vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1):
+  vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
       postcss: 8.5.6
-      rollup: 4.48.0
+      rollup: 4.48.1
       tinyglobby: 0.2.14
     optionalDependencies:
       '@types/node': 24.3.0
@@ -14264,9 +14455,9 @@ snapshots:
     optionalDependencies:
       vite: 6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
 
-  vitefu@1.0.6(vite@7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
+  vitefu@1.0.6(vite@7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     optionalDependencies:
-      vite: 7.1.1(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
+      vite: 7.1.3(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)
 
   vitefu@1.1.1(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.34.1)(yaml@2.5.1)):
     optionalDependencies:

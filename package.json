@@ -37,7 +37,7 @@
     "concurrently": "9.1.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "10.1.2",
-    "eslint-plugin-prettier": "5.2.3",
+    "eslint-plugin-prettier": "5.5.4",
     "prettier": "3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "release-please": "16.15.0"

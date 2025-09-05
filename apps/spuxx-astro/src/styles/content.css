@@ -1,12 +1,17 @@
 article {
-  display: flex;
-  flex-direction: column;
-}
+  hr {
+    background: var(--spx-color-gradient);
+    height: 2px;
+    border: none;
+    width: 100%;
+  }
 
-img {
-  box-sizing: border-box;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-  border-radius: var(--spx-border-radius);
+  img {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: var(--spx-border-radius);
+  }
 }

@@ -41,7 +41,7 @@ a.article-card {
   }
 
   code:not(:has(span)) {
-    padding: 0.25rem;
+    padding: 2px 4px;
     border-radius: var(--spx-border-radius);
   }
 

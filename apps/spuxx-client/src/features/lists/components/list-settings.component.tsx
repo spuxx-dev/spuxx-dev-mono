@@ -1,14 +1,14 @@
 import { List } from '@/services/api/lists/lists.types';
 import { intl } from '@spuxx/js-utils';
 import { Accordion, Input } from '@spuxx/solid';
-import { Component } from 'solid-js';
+import { Component, mergeProps } from 'solid-js';
 
 interface Props {
   list: List;
 }
 
-export const ListSettings: Component<Props> = () => {
-  // const p = {};
+export const ListSettings: Component<Props> = (props) => {
+  const p = mergeProps<[Partial<Props>, Props]>({}, props);
 
   return (
     <Accordion>
@@ -19,7 +19,7 @@ export const ListSettings: Component<Props> = () => {
         <Input
           label={intl('lists.component.settings.name.label')}
           size="full"
-          // value={props.list.name}
+          value={props.list.name}
         />
       </Accordion.Item>
     </Accordion>

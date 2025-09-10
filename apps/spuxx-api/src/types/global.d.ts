@@ -2,7 +2,7 @@ import { Model } from 'sequelize-typescript';
 
 declare global {
   type IncompleteModel<T extends Model> = {
-    // eslint-disable-next-line @typescript-eslint/ban-types
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
     [K in keyof T as T[K] extends Function
       ? never
       : K extends

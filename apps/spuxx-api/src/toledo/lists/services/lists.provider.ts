@@ -127,7 +127,7 @@ export class ListsProvider {
         `User '${preferred_username}' has deleted list '${list.id}'.`,
         ListsProvider.name
       );
-    } catch (error) {
+    } catch {
       return;
     }
   }

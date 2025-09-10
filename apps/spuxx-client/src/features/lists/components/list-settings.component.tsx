@@ -9,6 +9,8 @@ interface Props {
 
 export const ListSettings: Component<Props> = (props) => {
   const p = mergeProps<[Partial<Props>, Props]>({}, props);
+  // eslint-disable-next-line no-console
+  console.log(p);
 
   return (
     <Accordion>

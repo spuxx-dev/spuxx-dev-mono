@@ -30,7 +30,7 @@ export class UsersRegistrar {
         `User '${session.preferred_username}' (sub: '${session.sub}') has been seen.`,
         UsersRegistrar.name
       );
-    } catch (error) {
+    } catch {
       const newUser: IncompleteModel<User> & { id: string } = {
         id: session.sub,
         firstName: session.given_name,

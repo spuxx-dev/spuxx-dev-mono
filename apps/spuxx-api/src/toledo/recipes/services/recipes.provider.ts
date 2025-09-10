@@ -132,7 +132,7 @@ export class RecipesProvider {
         `User '${preferred_username}' has deleted recipe '${recipe.id}'.`,
         this.constructor.name
       );
-    } catch (error) {
+    } catch {
       return;
     }
   }

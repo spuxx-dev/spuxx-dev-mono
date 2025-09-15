@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/mdx": "4.3.3",
     "@astrojs/sitemap": "3.3.0",
-    "@astrojs/solid-js": "5.1.0",
+    "@astrojs/solid-js": "5.1.1",
     "@spuxx/browser-utils": "1.10.0",
     "@spuxx/js-utils": "2.0.1",
     "@spuxx/solid": "1.8.1",

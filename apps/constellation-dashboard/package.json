@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/solid-js": "5.0.8",
+    "@astrojs/solid-js": "5.1.1",
     "@spuxx/browser-utils": "1.10.0",
     "@spuxx/solid": "1.8.1",
     "astro": "^5.13.1",

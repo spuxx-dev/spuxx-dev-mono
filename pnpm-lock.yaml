@@ -48,8 +48,8 @@ importers:
         specifier: 1.10.0
         version: 1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1)))
       '@spuxx/solid':
-        specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)
+        specifier: 1.8.1
+        version: 1.8.1(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)
       astro:
         specifier: ^5.13.1
         version: 5.13.1(@types/node@24.5.0)(encoding@0.1.13)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.1)(terser@5.44.0)(typescript@5.8.3)(yaml@2.5.1)
@@ -199,8 +199,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1)))
       '@spuxx/solid':
-        specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)
+        specifier: 1.8.1
+        version: 1.8.1(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)
       astro:
         specifier: 5.13.1
         version: 5.13.1(@types/node@24.5.0)(encoding@0.1.13)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.50.1)(terser@5.44.0)(typescript@5.8.3)(yaml@2.5.1)
@@ -233,8 +233,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1)))
       '@spuxx/solid':
-        specifier: 1.7.0
-        version: 1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)
+        specifier: 1.8.1
+        version: 1.8.1(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)
       iconify-icon:
         specifier: 2.3.0
         version: 2.3.0
@@ -886,14 +886,14 @@ packages:
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@floating-ui/core@1.6.9':
-    resolution: {integrity: sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==}
+  '@floating-ui/core@1.7.3':
+    resolution: {integrity: sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==}
 
-  '@floating-ui/dom@1.6.13':
-    resolution: {integrity: sha512-umqzocjDgNRGTuO7Q8CU32dkHkECqI8ZdMZ5Swb6QAM0t5rnlrN3lGo1hdpscRd3WS8T6DKYK4ephgIH9iRh3w==}
+  '@floating-ui/dom@1.7.4':
+    resolution: {integrity: sha512-OOchDgh4F2CchOX94cRVqhvy7b3AFb+/rQXyswmzmGakRfkMgoWVjfnLWkRirfLEfuD4ysVW16eXzwt3jHIzKA==}
 
-  '@floating-ui/utils@0.2.9':
-    resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
+  '@floating-ui/utils@0.2.10':
+    resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
@@ -1997,18 +1997,18 @@ packages:
     resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
     engines: {node: '>=14.16'}
 
-  '@solid-primitives/memo@1.4.1':
-    resolution: {integrity: sha512-MzNCJNpXidQdLOZUsEkwpuq52uwT8zrFrBxEVMEr9N35yIIvGhjqwrI1M6xzPmJGzuVUe8anCk57q+N5gyRk0Q==}
+  '@solid-primitives/memo@1.4.3':
+    resolution: {integrity: sha512-CA+n9yaoqbYm+My5tY2RWb6EE16tVyehM4GzwQF4vCwvjYPAYk1JSRIVuMC0Xuj5ExD2XQJE5E2yAaKY2HTUsg==}
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/scheduled@1.5.0':
-    resolution: {integrity: sha512-RVw24IRNh1FQ4DCMb3OahB70tXIwc5vH8nhR4nNPsXwUPQeuOkLsDI5BlxaPk0vyZgqw9lDpufgI3HnPwplgDw==}
+  '@solid-primitives/scheduled@1.5.2':
+    resolution: {integrity: sha512-/j2igE0xyNaHhj6kMfcUQn5rAVSTLbAX+CDEBm25hSNBmNiHLu2lM7Usj2kJJ5j36D67bE8wR1hBNA8hjtvsQA==}
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/utils@6.3.0':
-    resolution: {integrity: sha512-e7hTlJ1Ywh2+g/Qug+n4L1mpfxsikoIS4/sHE2EK9WatQt8UJqop/vE6bsLnXlU1xuhb/jo94Ah5Y27rd4wP7A==}
+  '@solid-primitives/utils@6.3.2':
+    resolution: {integrity: sha512-hZ/M/qr25QOCcwDPOHtGjxTD8w2mNyVAYvcfgwzBHq2RwNqHNdDNsMZYap20+ruRwW4A3Cdkczyoz0TSxLCAPQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -2074,8 +2074,8 @@ packages:
       reflect-metadata: ^0.2.2
       rxjs: ^7.8.0
 
-  '@spuxx/solid@1.7.0':
-    resolution: {integrity: sha512-Ic03MpCE5pCiKQkqLWK19RYCu/UBn6h3Tn7SWMvjfAdY1Ub8IZxdY31V5jqWGhDnyoJMxFYISJAA2+5J38p1pg==}
+  '@spuxx/solid@1.8.1':
+    resolution: {integrity: sha512-SqtspZIOdiRblmvrHkQbWLgvEjdzsm6VPjpJdBszjWjCHw/Mmc17DRNzXDpLPVPAcjxLD8MOxgEaxqM1iyBYzw==}
     peerDependencies:
       '@spuxx/browser-utils': '@spuxx/browser-utils@*'
       '@spuxx/js-utils': ^1.3.0
@@ -7615,18 +7615,18 @@ snapshots:
     dependencies:
       '@corvu/dialog': 0.2.4(solid-js@1.9.9)
       '@corvu/utils': 0.4.2(solid-js@1.9.9)
-      '@solid-primitives/memo': 1.4.1(solid-js@1.9.9)
+      '@solid-primitives/memo': 1.4.3(solid-js@1.9.9)
       solid-js: 1.9.9
       solid-transition-size: 0.1.4(solid-js@1.9.9)
 
   '@corvu/utils@0.3.2(solid-js@1.9.9)':
     dependencies:
-      '@floating-ui/dom': 1.6.13
+      '@floating-ui/dom': 1.7.4
       solid-js: 1.9.9
 
   '@corvu/utils@0.4.2(solid-js@1.9.9)':
     dependencies:
-      '@floating-ui/dom': 1.6.13
+      '@floating-ui/dom': 1.7.4
       solid-js: 1.9.9
 
   '@cspotcode/source-map-support@0.8.1':
@@ -7879,16 +7879,16 @@ snapshots:
       '@eslint/core': 0.15.2
       levn: 0.4.1
 
-  '@floating-ui/core@1.6.9':
+  '@floating-ui/core@1.7.3':
     dependencies:
-      '@floating-ui/utils': 0.2.9
+      '@floating-ui/utils': 0.2.10
 
-  '@floating-ui/dom@1.6.13':
+  '@floating-ui/dom@1.7.4':
     dependencies:
-      '@floating-ui/core': 1.6.9
-      '@floating-ui/utils': 0.2.9
+      '@floating-ui/core': 1.7.3
+      '@floating-ui/utils': 0.2.10
 
-  '@floating-ui/utils@0.2.9': {}
+  '@floating-ui/utils@0.2.10': {}
 
   '@gar/promisify@1.1.3':
     optional: true
@@ -8941,17 +8941,17 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@solid-primitives/memo@1.4.1(solid-js@1.9.9)':
+  '@solid-primitives/memo@1.4.3(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/scheduled': 1.5.0(solid-js@1.9.9)
-      '@solid-primitives/utils': 6.3.0(solid-js@1.9.9)
+      '@solid-primitives/scheduled': 1.5.2(solid-js@1.9.9)
+      '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
       solid-js: 1.9.9
 
-  '@solid-primitives/scheduled@1.5.0(solid-js@1.9.9)':
+  '@solid-primitives/scheduled@1.5.2(solid-js@1.9.9)':
     dependencies:
       solid-js: 1.9.9
 
-  '@solid-primitives/utils@6.3.0(solid-js@1.9.9)':
+  '@solid-primitives/utils@6.3.2(solid-js@1.9.9)':
     dependencies:
       solid-js: 1.9.9
 
@@ -9040,7 +9040,7 @@ snapshots:
       reflect-metadata: 0.2.2
       rxjs: 7.8.1
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)':
+  '@spuxx/solid@1.8.1(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.9)
       '@corvu/dialog': 0.2.4(solid-js@1.9.9)
@@ -9050,7 +9050,7 @@ snapshots:
       iconify-icon: 2.3.0
       solid-js: 1.9.9
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)':
+  '@spuxx/solid@1.8.1(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.50.1)(vite@6.3.6(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.9)
       '@corvu/dialog': 0.2.4(solid-js@1.9.9)
@@ -9060,7 +9060,7 @@ snapshots:
       iconify-icon: 2.3.0
       solid-js: 1.9.9
 
-  '@spuxx/solid@1.7.0(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)':
+  '@spuxx/solid@1.8.1(@spuxx/browser-utils@1.10.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(@spuxx/js-utils@2.0.1(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.50.1)(vite@7.1.5(@types/node@24.5.0)(jiti@2.5.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.5.1))))(iconify-icon@2.3.0)(solid-js@1.9.9)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.9)
       '@corvu/dialog': 0.2.4(solid-js@1.9.9)

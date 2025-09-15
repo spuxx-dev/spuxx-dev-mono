@@ -16,7 +16,7 @@
     "@astrojs/solid-js": "5.1.0",
     "@spuxx/browser-utils": "1.10.0",
     "@spuxx/js-utils": "2.0.1",
-    "@spuxx/solid": "1.7.0",
+    "@spuxx/solid": "1.8.1",
     "astro": "5.13.1",
     "iconify-icon": "2.3.0",
     "solid-js": "1.9.9"

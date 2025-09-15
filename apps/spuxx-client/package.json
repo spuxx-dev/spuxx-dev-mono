@@ -16,7 +16,7 @@
     "tailwindcss": "4.1.13",
     "typescript": "5.7.2",
     "vite": "7.1.5",
-    "vite-plugin-solid": "2.11.6",
+    "vite-plugin-solid": "2.11.8",
     "vite-tsconfig-paths": "5.1.4"
   },
   "dependencies": {

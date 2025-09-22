@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@astrojs/solid-js": "5.1.1",
-    "@spuxx/browser-utils": "1.10.0",
+    "@spuxx/browser-utils": "1.11.2",
     "@spuxx/solid": "1.8.1",
     "astro": "^5.13.1",
     "iconify-icon": "2.3.0",

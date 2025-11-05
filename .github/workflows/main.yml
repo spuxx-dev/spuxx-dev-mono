@@ -11,22 +11,15 @@ permissions:
   packages: write
 
 jobs:
-  run_checks:
-    name: Run code checks
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_checks.yml@v4.1.0
-
-  run_unit_tests:
-    name: Run tests (vitest)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v4.1.0
-    with:
-      COVERAGE_DISABLE: true
+  quality_gates:
+    name: Quality Gates
+    uses: ./.github/workflows/quality_gates.yml
 
   staging_spuxx_api:
     name: Release artifact (spuxx-api)
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
     needs:
-    - run_checks
-    - run_unit_tests
+    - quality_gates
     with:
       tag: branch
       path: ./apps/spuxx-api
@@ -50,7 +43,7 @@ jobs:
     name: Release artifact (spuxx-astro)
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_publish_image.yml@v5.0.0
     needs:
-    - run_checks
+    - quality_gates
     with:
       tag: branch
       latest: true

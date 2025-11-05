@@ -22,8 +22,11 @@ describe('ListItemsController', () => {
   });
 
   describe('create', () => {
-    it(
+    test(
       'should successfully create two items',
+      {
+        retry: 3,
+      },
       async () => {
         // Create a new empty list
         let response = await supertest.post('/toledo/lists', {
@@ -74,9 +77,6 @@ describe('ListItemsController', () => {
         );
         expect(response.statusCode).toBe(200);
         expect(response.body.items).toEqual([firstItem, secondItem]);
-      },
-      {
-        retry: 3,
       }
     );
 

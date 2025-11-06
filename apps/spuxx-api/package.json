@@ -22,7 +22,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm vitest",
-    "test:vitest": "vitest --coverage"
+    "test:vitest": "vitest"
   },
   "dependencies": {
     "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.2",

@@ -15,8 +15,8 @@ export default mergeConfig(
       watch: false,
       setupFiles: [`./tests/vitest/vitest.setup.ts`],
       coverage: {
+        enabled: true,
         provider: 'v8',
-        all: true,
         include: [`./src/**/*.ts`],
         exclude: [
           '**/src/main.ts',

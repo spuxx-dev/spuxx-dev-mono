@@ -1,0 +1,5 @@
+.accordion {
+  :global(.spx-input:not(:first-child)) {
+    margin-top: var(--spx-spacing-md);
+  }
+}

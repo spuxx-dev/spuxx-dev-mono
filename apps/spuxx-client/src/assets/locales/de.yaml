@@ -18,6 +18,8 @@ lists:
       title: Einstellungen
       name:
         label: Name
+      icon:
+        label: Icon
 layout:
   side-nav:
     lists:

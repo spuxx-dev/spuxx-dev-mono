@@ -5,11 +5,14 @@ import { Container, Icon } from '@spuxx/solid';
 import { Component, createEffect, createSignal, Show } from 'solid-js';
 import { ListView } from '../components/list-view.component';
 import styles from './list.module.css';
+import { listsEndpoints } from '@/services/api/lists/lists.endpoints';
 
 export const ListPage: Component = () => {
   const params = useParams<Params>();
 
-  const [request, setRequest] = createSignal<HttpRequest | null>(null);
+  const [request, setRequest] = createSignal<HttpRequest<
+    typeof listsEndpoints.findListById
+  > | null>(null);
 
   createEffect(async () => {
     const request = Api.findListById({ args: { id: params.id } });

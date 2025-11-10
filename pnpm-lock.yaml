@@ -121,8 +121,8 @@ importers:
         specifier: 11.1.6
         version: 11.1.6(@nestjs/common@11.1.6(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8(@nestjs/common@11.1.6(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.8)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.8(@nestjs/common@11.1.6(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8))
       '@spuxx/nest-testing':
-        specifier: 2.0.2
-        version: 2.0.2(uv5b3ssstinmmo4soeju2ckewy)
+        specifier: 2.1.0
+        version: 2.1.0(uv5b3ssstinmmo4soeju2ckewy)
       '@swc/cli':
         specifier: 0.7.8
         version: 0.7.8(@swc/core@1.13.5(@swc/helpers@0.5.17))(chokidar@4.0.3)
@@ -1960,14 +1960,14 @@ packages:
       reflect-metadata: ^0.2.2
       rxjs: ^7.8.0
 
-  '@spuxx/nest-testing@2.0.2':
-    resolution: {integrity: sha512-SvUrH79NnO7smrzZ3Wv4IjlnMmd/Vt3OkDXQlMd03GMrGzKX+KV5+3cnOi/IEEzU4Zy+T/wr9wOc+BsIKtJveg==}
+  '@spuxx/nest-testing@2.1.0':
+    resolution: {integrity: sha512-MGg4sCx6zVGAhpAYx4GgDS9TcK8PcEPwl03evlirxG11IKMxBIZzbZkCI83ikcaRjg/l07eCLfNo5BOnSw7MzQ==}
     peerDependencies:
       '@nestjs/common': ^11.0.0
       '@nestjs/core': ^11.0.0
       '@nestjs/testing': ^11.0.0
       '@spuxx/js-utils': ^1.3.0
-      '@spuxx/nest-auth': ^1.0.0
+      '@spuxx/nest-auth': ^1.0.2
       '@spuxx/nest-utils': ^4.0.0
       supertest: ^7.0.0
 
@@ -8639,7 +8639,7 @@ snapshots:
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
 
-  '@spuxx/nest-testing@2.0.2(uv5b3ssstinmmo4soeju2ckewy)':
+  '@spuxx/nest-testing@2.1.0(uv5b3ssstinmmo4soeju2ckewy)':
     dependencies:
       '@nestjs/common': 11.1.6(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.8(@nestjs/common@11.1.6(class-transformer@0.5.1)(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.8)(reflect-metadata@0.2.2)(rxjs@7.8.2)

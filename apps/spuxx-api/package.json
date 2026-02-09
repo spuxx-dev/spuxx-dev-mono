@@ -28,7 +28,7 @@
     "@nestjs/core": "11.1.8",
     "@nestjs/platform-express": "11.1.13",
     "@nestjs/sequelize": "11.0.1",
-    "@nestjs/swagger": "11.2.0",
+    "@nestjs/swagger": "11.2.6",
     "@spuxx/js-utils": "2.0.1",
     "@spuxx/nest-auth": "1.1.0",
     "@spuxx/nest-utils": "4.1.0",

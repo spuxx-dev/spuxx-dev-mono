@@ -29,7 +29,7 @@
     "@nestjs/platform-express": "11.1.13",
     "@nestjs/sequelize": "11.0.1",
     "@nestjs/swagger": "11.2.6",
-    "@spuxx/js-utils": "2.0.1",
+    "@spuxx/js-utils": "2.1.0",
     "@spuxx/nest-auth": "1.1.0",
     "@spuxx/nest-utils": "4.1.0",
     "class-transformer": "0.5.1",

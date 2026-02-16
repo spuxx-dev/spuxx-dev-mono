@@ -45,7 +45,7 @@
     "@nestjs/cli": "11.0.10",
     "@nestjs/testing": "11.1.13",
     "@spuxx/nest-testing": "2.1.0",
-    "@swc/cli": "0.7.9",
+    "@swc/cli": "0.8.0",
     "@swc/core": "1.15.11",
     "@types/express": "5.0.6",
     "@types/node": "24.10.0",

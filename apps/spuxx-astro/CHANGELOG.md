@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.4.0](https://github.com/spuxx-dev/spuxx-dev-mono/compare/spuxx-astro-v1.3.0...spuxx-astro-v1.4.0) (2026-02-25)
+
+
+### Features
+
+* Add schlangi page ([8a64d1f](https://github.com/spuxx-dev/spuxx-dev-mono/commit/8a64d1fb57c2621e25322aa8102c612b3d854d87))
+* Add schlangi pictures ([3ff128c](https://github.com/spuxx-dev/spuxx-dev-mono/commit/3ff128c3eb11ba04f2dc3ef078b6058e5257886e))
+* Migrate to solid-js and @spuxx/solid ([2e55ca0](https://github.com/spuxx-dev/spuxx-dev-mono/commit/2e55ca0c27ed135ba7cfe2fd200d9e7d11a17347))
+* Update spuxx-astro app ([952851b](https://github.com/spuxx-dev/spuxx-dev-mono/commit/952851b1bdeb3c4fe3c3f2cbccb7d937603eba82))
+
+
+### Bug Fixes
+
+* Fix a couple of styling issues ([7a33352](https://github.com/spuxx-dev/spuxx-dev-mono/commit/7a33352c746445709a14666ed78e0893930d2c67))
+* Fix minor visual issues ([6d36511](https://github.com/spuxx-dev/spuxx-dev-mono/commit/6d36511f8fbf42fc1d0c080be7f963a5969109ae))
+
 ## [1.3.0](https://github.com/spuxx-dev/spuxx-dev-mono/compare/spuxx-astro-v1.2.0...spuxx-astro-v1.3.0) (2024-10-06)
 
 

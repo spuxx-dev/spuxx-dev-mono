@@ -116,7 +116,7 @@ importers:
     devDependencies:
       '@nestjs/cli':
         specifier: 11.0.16
-        version: 11.0.16(@swc/cli@0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@4.0.3))(@swc/core@1.15.11(@swc/helpers@0.5.17))(@types/node@24.10.0)
+        version: 11.0.16(@swc/cli@0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@5.0.0))(@swc/core@1.15.11(@swc/helpers@0.5.17))(@types/node@24.10.0)
       '@nestjs/testing':
         specifier: 11.1.13
         version: 11.1.13(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14))
@@ -125,7 +125,7 @@ importers:
         version: 2.1.0(pvzk53jqddyvngphpmzt5sifpi)
       '@swc/cli':
         specifier: 0.8.0
-        version: 0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@4.0.3)
+        version: 0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@5.0.0)
       '@swc/core':
         specifier: 1.15.11
         version: 1.15.11(@swc/helpers@0.5.17)
@@ -142,8 +142,8 @@ importers:
         specifier: 4.0.18
         version: 4.0.18(vitest@4.0.18(@types/node@24.10.0)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
       chokidar:
-        specifier: 4.0.3
-        version: 4.0.3
+        specifier: 5.0.0
+        version: 5.0.0
       source-map-support:
         specifier: 0.5.21
         version: 0.5.21
@@ -5311,8 +5311,8 @@ packages:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
     engines: {node: '>= 6'}
 
-  readdirp@4.1.1:
-    resolution: {integrity: sha512-h80JrZu/MHUZCyHu5ciuoI0+WxsCxzxJTILn6Fs8rxSnFPh+UVHYfeIxK1nVGugMqkfC4vJcBOYbkfkwYK0+gw==}
+  readdirp@4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
 
   readdirp@5.0.0:
@@ -7972,7 +7972,7 @@ snapshots:
       '@napi-rs/nice-win32-x64-msvc': 1.1.1
     optional: true
 
-  '@nestjs/cli@11.0.16(@swc/cli@0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@4.0.3))(@swc/core@1.15.11(@swc/helpers@0.5.17))(@types/node@24.10.0)':
+  '@nestjs/cli@11.0.16(@swc/cli@0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@5.0.0))(@swc/core@1.15.11(@swc/helpers@0.5.17))(@types/node@24.10.0)':
     dependencies:
       '@angular-devkit/core': 19.2.19(chokidar@4.0.3)
       '@angular-devkit/schematics': 19.2.19(chokidar@4.0.3)
@@ -7993,7 +7993,7 @@ snapshots:
       webpack: 5.104.1(@swc/core@1.15.11(@swc/helpers@0.5.17))
       webpack-node-externals: 3.0.0
     optionalDependencies:
-      '@swc/cli': 0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@4.0.3)
+      '@swc/cli': 0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@5.0.0)
       '@swc/core': 1.15.11(@swc/helpers@0.5.17)
     transitivePeerDependencies:
       - '@types/node'
@@ -8490,7 +8490,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@swc/cli@0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@4.0.3)':
+  '@swc/cli@0.8.0(@swc/core@1.15.11(@swc/helpers@0.5.17))(chokidar@5.0.0)':
     dependencies:
       '@swc/core': 1.15.11(@swc/helpers@0.5.17)
       '@swc/counter': 0.1.3
@@ -8503,7 +8503,7 @@ snapshots:
       source-map: 0.7.6
       tinyglobby: 0.2.15
     optionalDependencies:
-      chokidar: 4.0.3
+      chokidar: 5.0.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -9809,7 +9809,7 @@ snapshots:
 
   chokidar@4.0.3:
     dependencies:
-      readdirp: 4.1.1
+      readdirp: 4.1.2
 
   chokidar@5.0.0:
     dependencies:
@@ -12651,7 +12651,7 @@ snapshots:
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
 
-  readdirp@4.1.1: {}
+  readdirp@4.1.2: {}
 
   readdirp@5.0.0: {}
 

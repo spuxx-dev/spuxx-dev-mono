@@ -76,7 +76,7 @@ importers:
         version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
       '@nestjs/sequelize':
         specifier: 11.0.1
-        version: 11.0.1(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)(sequelize-typescript@2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.4.5)))(sequelize@6.37.7(mariadb@3.4.5))
+        version: 11.0.1(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)(sequelize-typescript@2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0))))(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)))
       '@nestjs/swagger':
         specifier: 11.2.6
         version: 11.2.6(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)
@@ -99,8 +99,8 @@ importers:
         specifier: 2.19.4
         version: 2.19.4(express@5.2.1)
       mariadb:
-        specifier: 3.4.5
-        version: 3.4.5
+        specifier: 3.5.1
+        version: 3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)
       reflect-metadata:
         specifier: 0.2.2
         version: 0.2.2
@@ -109,10 +109,10 @@ importers:
         version: 7.8.2
       sequelize:
         specifier: 6.37.7
-        version: 6.37.7(mariadb@3.4.5)
+        version: 6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0))
       sequelize-typescript:
         specifier: 2.1.6
-        version: 2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.4.5))
+        version: 2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)))
     devDependencies:
       '@nestjs/cli':
         specifier: 11.0.16
@@ -4555,9 +4555,17 @@ packages:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
 
-  mariadb@3.4.5:
-    resolution: {integrity: sha512-gThTYkhIS5rRqkVr+Y0cIdzr+GRqJ9sA2Q34e0yzmyhMCwyApf3OKAC1jnF23aSlIOqJuyaUFUcj7O1qZslmmQ==}
-    engines: {node: '>= 14'}
+  mariadb@3.5.1:
+    resolution: {integrity: sha512-ObKf/e7jU8pmwa5wTs1UwhLMrQYRBDwXPndej2Dv/rvbqsokJYlymubsNtpakVfjI+hd0bG3U6tiuVunDYoLtA==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      '@types/geojson': '>=7946.0.0'
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/geojson':
+        optional: true
+      '@types/node':
+        optional: true
 
   markdown-extensions@2.0.0:
     resolution: {integrity: sha512-o5vL7aDWatOTX8LzaS1WMoaoxIiLRQJuIKKe2wAw6IeULDHaqbiqiggmx+pKvZDb1Sj+pE46Sn1T7lCqfFtg1Q==}
@@ -8048,14 +8056,14 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@nestjs/sequelize@11.0.1(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)(sequelize-typescript@2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.4.5)))(sequelize@6.37.7(mariadb@3.4.5))':
+  '@nestjs/sequelize@11.0.1(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)(sequelize-typescript@2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0))))(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)))':
     dependencies:
       '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
-      sequelize: 6.37.7(mariadb@3.4.5)
-      sequelize-typescript: 2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.4.5))
+      sequelize: 6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0))
+      sequelize-typescript: 2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)))
 
   '@nestjs/swagger@11.2.6(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.3)(reflect-metadata@0.2.2)':
     dependencies:
@@ -8726,7 +8734,8 @@ snapshots:
       '@types/express-serve-static-core': 5.1.1
       '@types/serve-static': 2.2.0
 
-  '@types/geojson@7946.0.16': {}
+  '@types/geojson@7946.0.16':
+    optional: true
 
   '@types/hast@3.0.4':
     dependencies:
@@ -11593,13 +11602,14 @@ snapshots:
 
   map-obj@4.3.0: {}
 
-  mariadb@3.4.5:
+  mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0):
     dependencies:
+      denque: 2.1.0
+      iconv-lite: 0.7.2
+      lru-cache: 10.4.3
+    optionalDependencies:
       '@types/geojson': 7946.0.16
       '@types/node': 24.10.0
-      denque: 2.1.0
-      iconv-lite: 0.6.3
-      lru-cache: 10.4.3
 
   markdown-extensions@2.0.0: {}
 
@@ -12994,15 +13004,15 @@ snapshots:
 
   sequelize-pool@7.1.0: {}
 
-  sequelize-typescript@2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.4.5)):
+  sequelize-typescript@2.1.6(@types/node@24.10.0)(@types/validator@13.15.10)(reflect-metadata@0.2.2)(sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0))):
     dependencies:
       '@types/node': 24.10.0
       '@types/validator': 13.15.10
       glob: 7.2.0
       reflect-metadata: 0.2.2
-      sequelize: 6.37.7(mariadb@3.4.5)
+      sequelize: 6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0))
 
-  sequelize@6.37.7(mariadb@3.4.5):
+  sequelize@6.37.7(mariadb@3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)):
     dependencies:
       '@types/debug': 4.1.12
       '@types/validator': 13.15.4
@@ -13021,7 +13031,7 @@ snapshots:
       validator: 13.15.20
       wkx: 0.5.0
     optionalDependencies:
-      mariadb: 3.4.5
+      mariadb: 3.5.1(@types/geojson@7946.0.16)(@types/node@24.10.0)
     transitivePeerDependencies:
       - supports-color
 

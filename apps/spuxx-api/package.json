@@ -33,7 +33,7 @@
     "@spuxx/nest-auth": "1.1.0",
     "@spuxx/nest-utils": "4.1.0",
     "class-transformer": "0.5.1",
-    "class-validator": "0.14.3",
+    "class-validator": "0.15.1",
     "express-openid-connect": "2.19.4",
     "mariadb": "3.5.2",
     "reflect-metadata": "0.2.2",

@@ -1,0 +1,19 @@
+# Loco configuration file documentation
+# See: https://github.com/loco-rs/loco/blob/master/src/config.rs
+
+logger:
+  enable: true
+  pretty_backtrace: true
+  level: debug
+  format: compact
+
+server:
+  port: 5150
+  binding: localhost
+  host: http://localhost
+  middlewares:
+    fallback:
+      enable: false
+
+smtp:
+  enable: true

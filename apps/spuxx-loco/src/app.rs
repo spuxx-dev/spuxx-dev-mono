@@ -1,3 +1,4 @@
+use crate::home;
 use async_trait::async_trait;
 use loco_rs::{
     app::{AppContext, Hooks, Initializer},
@@ -9,8 +10,6 @@ use loco_rs::{
     task::Tasks,
     Result,
 };
-
-use crate::home;
 
 // #[allow(unused_imports)]
 // use crate::{controllers, tasks};

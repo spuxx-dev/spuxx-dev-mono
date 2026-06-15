@@ -11,3 +11,6 @@ server:
   port: 5150
   host: http://localhost
   middlewares:
+
+smtp:
+  enable: false

@@ -1,3 +1,4 @@
+use crate::config::CONFIG;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -14,8 +15,8 @@ impl HomeResponse {
         Self {
             name: env!("CARGO_PKG_NAME").to_string(),
             version: env!("CARGO_PKG_VERSION").to_string(),
-            robots_txt: concat!("/robots.txt").to_string(),
-            security_txt: "/security.txt".to_string(),
+            robots_txt: format!("{}/robots.txt", CONFIG.app_base_url),
+            security_txt: format!("{}/.well-known/security.txt", CONFIG.app_base_url),
         }
     }
 }

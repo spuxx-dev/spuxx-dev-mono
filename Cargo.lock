@@ -3097,10 +3097,16 @@ dependencies = [
  "serde",
  "serde_json",
  "serial_test",
+ "spuxx-utils",
  "tokio",
  "tracing",
  "tracing-subscriber",
 ]
+
+[[package]]
+name = "spuxx-utils"
+version = "0.1.0"
+source = "git+https://github.com/spuxx-dev/rslibs.git#7408f6b74a082cd6405d1ce31e0e67f109c78f12"
 
 [[package]]
 name = "stable_deref_trait"

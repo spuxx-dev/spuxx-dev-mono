@@ -1,5 +1,5 @@
 {
-  "apps/spuxx-astro": "1.3.0",
-  "apps/spuxx-api": "0.0.0",
-  "apps/spuxx-client": "0.0.0"
+  "apps/spuxx-astro": "1.4.0",
+  "apps/spuxx-api": "1.0.0",
+  "apps/spuxx-client": "1.0.0"
 }

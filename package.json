@@ -13,7 +13,6 @@
   "homepage": "https://github.com/spuxx-dev/spuxx-dev-mono",
   "packageManager": "pnpm@9.6.0",
   "scripts": {
-    "dev:constellation": "cd apps/constellation-dashboard && pnpm dev",
     "dev:astro": "cd apps/spuxx-astro && pnpm dev",
     "dev:client": "concurrently 'pnpm dev:api' 'cd apps/spuxx-client && pnpm dev'",
     "dev:api": "pnpm db:start && cd apps/spuxx-api && pnpm dev",

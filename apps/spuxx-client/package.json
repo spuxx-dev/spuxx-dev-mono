@@ -12,19 +12,19 @@
   "license": "MIT",
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "1.1.1",
-    "@tailwindcss/vite": "4.1.17",
-    "tailwindcss": "4.1.17",
+    "@tailwindcss/vite": "4.2.1",
+    "tailwindcss": "4.2.1",
     "typescript": "5.9.3",
-    "vite": "7.2.2",
-    "vite-plugin-solid": "2.11.10",
-    "vite-tsconfig-paths": "5.1.4"
+    "vite": "7.3.1",
+    "vite-plugin-solid": "2.11.11",
+    "vite-tsconfig-paths": "6.1.1"
   },
   "dependencies": {
-    "@solidjs/router": "0.15.3",
+    "@solidjs/router": "0.15.4",
     "@spuxx/browser-utils": "1.13.0",
-    "@spuxx/js-utils": "2.0.1",
-    "@spuxx/solid": "1.8.1",
+    "@spuxx/js-utils": "2.1.0",
+    "@spuxx/solid": "1.9.0",
     "iconify-icon": "3.0.2",
-    "solid-js": "^1.9.10"
+    "solid-js": "^1.9.11"
   }
 }

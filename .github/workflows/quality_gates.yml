@@ -7,10 +7,18 @@ permissions:
   contents: read
 
 jobs:
-  run_checks:
-    name: Run code checks
+  pnpm_run_checks:
+    name: Run checks (pnpm)
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_checks.yml@v5.0.0
 
-  run_unit_tests:
-    name: Run tests (vitest)
+  pnpm_run_tests:
+    name: Run tests (pnpm)
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v5.0.0
+
+  cargo_run_checks:
+    name: Run checks (cargo)
+    uses: spuxx-dev/cicd/.github/workflows/cargo_run_checks.yml@v1
+
+  cargo_run_tests:
+    name: Run tests (cargo)
+    uses: spuxx-dev/cicd/.github/workflows/cargo_run_tests.yml@v1

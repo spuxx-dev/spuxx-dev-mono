@@ -1,0 +1,29 @@
+# Loco configuration file documentation
+# See: https://github.com/loco-rs/loco/blob/master/src/config.rs
+
+logger:
+  enable: true
+  pretty_backtrace: true
+  level: debug
+  format: compact
+
+server:
+  port: 5150
+  binding: localhost
+  host: http://localhost
+  middlewares:
+    fallback:
+      enable: false
+
+initializers:
+  openapi:
+    swagger:
+      url: /api-docs/swagger-ui
+      spec_json_url: /api-docs/openapi-json
+    scalar:
+      url: /api-docs/scalar
+    redoc:
+      url: /api-docs/redoc
+
+smtp:
+  enable: false

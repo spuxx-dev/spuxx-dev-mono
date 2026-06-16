@@ -1,4 +1,4 @@
-use crate::home;
+use crate::{home, openapi::initializer::loco_openapi_initializer};
 use async_trait::async_trait;
 use loco_rs::{
     app::{AppContext, Hooks, Initializer},
@@ -40,7 +40,7 @@ impl Hooks for App {
     }
 
     async fn initializers(_ctx: &AppContext) -> Result<Vec<Box<dyn Initializer>>> {
-        Ok(vec![])
+        Ok(vec![loco_openapi_initializer()])
     }
 
     fn routes(_ctx: &AppContext) -> AppRoutes {

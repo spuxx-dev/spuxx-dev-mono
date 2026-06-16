@@ -15,5 +15,15 @@ server:
     fallback:
       enable: false
 
+initializers:
+  openapi:
+    swagger:
+      url: /api-docs/swagger-ui
+      spec_json_url: /api-docs/openapi-json
+    scalar:
+      url: /api-docs/scalar
+    redoc:
+      url: /api-docs/redoc
+
 smtp:
   enable: false

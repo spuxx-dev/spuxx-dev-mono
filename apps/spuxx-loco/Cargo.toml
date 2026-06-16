@@ -1,5 +1,6 @@
 [package]
 name = "spuxx-loco"
+description = "The rust loco backend for the spuxx.dev domain."
 version = "0.1.0"
 authors = ["spuxx <hi@spuxx.dev>"]
 edition = "2021"
@@ -24,7 +25,7 @@ tracing = { version = "0.1" }
 tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
 regex = { version = "1.11" }
 dotenvy = "0.15"
-loco-openapi = { version = "0.1", features = ["full"] }
+loco-openapi = { version = "0.1.2", features = ["full"] }
 
 [[bin]]
 name = "spuxx_loco-cli"

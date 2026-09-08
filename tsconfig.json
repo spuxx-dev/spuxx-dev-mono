@@ -1,9 +1,6 @@
 {
   "references": [
     {
-      "path": "./apps/spuxx-api/tsconfig.json"
-    },
-    {
       "path": "./apps/spuxx-client/tsconfig.json"
     }
   ]

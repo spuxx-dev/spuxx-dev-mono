@@ -20,7 +20,7 @@ export interface AppConfig {
 }
 
 export const appConfig: AppConfig = {
-  API_URL: 'https://api.spuxx.dev',
+  API_URL: 'https://loco.spuxx.dev',
   ACCOUNT_SERVICE_URL: 'https://auth.spuxx.dev/realms/main/account',
   DEFAULT_LOCALE: 'de',
   LOG_LEVEL: 'debug',

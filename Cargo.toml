@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = ["apps/spuxx-loco"]
+
+[workspace.dependencies]
+loco-rs = { version = "0.16", default-features = false }
+# Pin time to <0.3.47 — time 0.3.47 introduced the ModifierValue trait which
+# conflicts with cookie 0.18.1's blanket From impl (E0119). Remove once cookie
+# publishes a fix.
+time = "=0.3.46"

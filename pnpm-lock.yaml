@@ -82,8 +82,8 @@ importers:
   apps/spuxx-client:
     dependencies:
       '@solidjs/router':
-        specifier: 0.15.4
-        version: 0.15.4(solid-js@1.9.11)
+        specifier: 1.0.0
+        version: 1.0.0(solid-js@1.9.11)
       '@spuxx/browser-utils':
         specifier: 1.14.3
         version: 1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@25.5.0)(esbuild@0.28.2)(jiti@2.6.1)(terser@5.44.0)(yaml@2.9.0)))
@@ -1632,8 +1632,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solidjs/router@0.15.4':
-    resolution: {integrity: sha512-WOpgg9a9T638cR+5FGbFi/IV4l2FpmBs1GpIMSPa0Ce9vyJN7Wts+X2PqMf9IYn0zUj2MlSJtm1gp7/HI/n5TQ==}
+  '@solidjs/router@1.0.0':
+    resolution: {integrity: sha512-cCSk1hvgCowiMa9bzzYWHiLu1U4E22+DfJe6/rOwAyECKrxc3jrd5QnoW3sDDJtW+e077cz/M67bPl3DqOBw1Q==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -5677,7 +5677,7 @@ snapshots:
     dependencies:
       solid-js: 1.9.11
 
-  '@solidjs/router@0.15.4(solid-js@1.9.11)':
+  '@solidjs/router@1.0.0(solid-js@1.9.11)':
     dependencies:
       solid-js: 1.9.11
 

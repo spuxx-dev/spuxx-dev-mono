@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "3.7.4",
     "@astrojs/solid-js": "7.1.2",
     "@spuxx/browser-utils": "1.14.3",
-    "@spuxx/js-utils": "2.1.0",
+    "@spuxx/js-utils": "2.1.5",
     "@spuxx/solid": "1.9.0",
     "astro": "7.4.4",
     "iconify-icon": "3.0.2",

@@ -54,11 +54,11 @@ importers:
         specifier: 1.14.3
         version: 1.14.3(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
       '@spuxx/js-utils':
-        specifier: 2.1.0
-        version: 2.1.0(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
+        specifier: 2.1.5
+        version: 2.1.5(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
       '@spuxx/solid':
         specifier: 1.9.0
-        version: 1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.0(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)
+        version: 1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.5(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)
       astro:
         specifier: 7.4.4
         version: 7.4.4(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)
@@ -88,11 +88,11 @@ importers:
         specifier: 1.14.3
         version: 1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
       '@spuxx/js-utils':
-        specifier: 2.1.0
-        version: 2.1.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
+        specifier: 2.1.5
+        version: 2.1.5(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
       '@spuxx/solid':
         specifier: 1.9.0
-        version: 1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)
+        version: 1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.5(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)
       iconify-icon:
         specifier: 3.0.2
         version: 3.0.2
@@ -1471,8 +1471,8 @@ packages:
       '@modyfi/vite-plugin-yaml':
         optional: true
 
-  '@spuxx/js-utils@2.1.0':
-    resolution: {integrity: sha512-+g878KAB+/lldVRYDewmLETUijw8KyWRnxz0wAwX3E3Q+3RMaYpwsg4apI3m7QRbgeQULo520qqDrop95ySQeg==}
+  '@spuxx/js-utils@2.1.5':
+    resolution: {integrity: sha512-MIkhZZyrB/Psdk/VoX8olWJ6SZ27DdnnXf3KES04iXt9HjxFaQ7csCgYUiFhwS0b2H05hcxeCtktXd3oh7ekWA==}
     peerDependencies:
       '@modyfi/vite-plugin-yaml': ^1.1.0
     peerDependenciesMeta:
@@ -5390,31 +5390,31 @@ snapshots:
     optionalDependencies:
       '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))
 
-  '@spuxx/js-utils@2.1.0(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))':
+  '@spuxx/js-utils@2.1.5(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))':
     optionalDependencies:
       '@modyfi/vite-plugin-yaml': 1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))
 
-  '@spuxx/js-utils@2.1.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))':
+  '@spuxx/js-utils@2.1.5(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))':
     optionalDependencies:
       '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))
 
-  '@spuxx/solid@1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.0(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)':
+  '@spuxx/solid@1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.5(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.11)
       '@corvu/dialog': 0.2.4(solid-js@1.9.11)
       '@corvu/drawer': 0.2.4(solid-js@1.9.11)
       '@spuxx/browser-utils': 1.14.3(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
-      '@spuxx/js-utils': 2.1.0(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
+      '@spuxx/js-utils': 2.1.5(@modyfi/vite-plugin-yaml@1.1.0(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
       iconify-icon: 3.0.2
       solid-js: 1.9.11
 
-  '@spuxx/solid@1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)':
+  '@spuxx/solid@1.9.0(@spuxx/browser-utils@1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(@spuxx/js-utils@2.1.5(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1))))(iconify-icon@3.0.2)(solid-js@1.9.11)':
     dependencies:
       '@corvu/accordion': 0.2.5(solid-js@1.9.11)
       '@corvu/dialog': 0.2.4(solid-js@1.9.11)
       '@corvu/drawer': 0.2.4(solid-js@1.9.11)
       '@spuxx/browser-utils': 1.14.3(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
-      '@spuxx/js-utils': 2.1.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
+      '@spuxx/js-utils': 2.1.5(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.63.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.1)))
       iconify-icon: 3.0.2
       solid-js: 1.9.11
 

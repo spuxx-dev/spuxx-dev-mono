@@ -9,3 +9,15 @@ updates:
   directory: '/' # Location of package manifests
   schedule:
     interval: 'weekly'
+- package-ecosystem: 'docker'
+  directory: 'apps/spuxx-astro'
+  schedule:
+    interval: 'daily'
+- package-ecosystem: 'docker'
+  directory: 'apps/spuxx-client'
+  schedule:
+    interval: 'daily'
+- package-ecosystem: 'docker'
+  directory: 'apps/spuxx-loco'
+  schedule:
+    interval: 'daily'

@@ -14,7 +14,7 @@ RUN pnpm install --no-frozen-lockfile
 RUN pnpm build
 
 # Production stage
-FROM nginxinc/nginx-unprivileged:1.31.10-alpine3.24 AS runtime
+FROM nginx/nginx-unprivileged:1.31.10-alpine3.24 AS runtime
 COPY --from=build /app/.nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 

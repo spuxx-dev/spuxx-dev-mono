@@ -1,7 +1,13 @@
 {
   "packages": {
-    "apps/spuxx-astro": {},
-    "apps/spuxx-client": {},
-    "apps/spuxx-loco": {}
+    "apps/spuxx-astro": {
+      "release-type": "node"
+    },
+    "apps/spuxx-client": {
+      "release-type": "node"
+    },
+    "apps/spuxx-loco": {
+      "release-type": "rust"
+    }
   }
 }

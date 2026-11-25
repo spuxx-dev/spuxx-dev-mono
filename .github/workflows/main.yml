@@ -15,19 +15,6 @@ jobs:
     name: Quality Gates
     uses: ./.github/workflows/quality_gates.yml
 
-  staging_spuxx_api:
-    name: Release artifact (spuxx-api)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_push.yml@v4.1.0
-    needs:
-    - quality_gates
-    with:
-      tag: branch
-      path: ./apps/spuxx-api
-      dockerfile: ./apps/spuxx-api/Dockerfile
-      dockerhub_repository: spuxx-api
-    secrets:
-      dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
-
   release_astro:
     name: Release artifact (spuxx-astro)
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_publish_image.yml@v5.0.0
